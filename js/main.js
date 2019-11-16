@@ -104,6 +104,7 @@ search.addEventListener('keyup', function (e) {
 	) {
 		// console.log(specCom);
 		command = commands[specCom[0].id];
+		hideHelp();
 		icon.className = command.icon;
 		search.setAttribute('placeholder', command.makePlaceholder());
 	} else if (value.startsWith('http://') || value.startsWith('https://')) {
@@ -117,7 +118,7 @@ search.addEventListener('keyup', function (e) {
 		isBetterRainbow = true;
 	} else if (isBetterRainbow && value.toLowerCase() != "betterrainbow") {
 		isBetterRainbow = false;
-	} else if (value.toLowerCase.startsWith("color ") && value.length == 12) {
+	} else if (value.toLowerCase().startsWith("color ") && value.length == 12) {
 		color = "#" + value.substring(6, 12);
 	} else if (value == "rrr") {
 		randomizeColor();

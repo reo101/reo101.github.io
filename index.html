@@ -14,9 +14,23 @@
 
 <body>
     <canvas id="background"> </canvas>
+
+    <!-- 
+        Weather
+     -->
+
+    <div id="weather-wrapper">
+        <div id="current">
+
+        </div>
+        <div id="forecast">
+
+        </div>
+    </div>
+
     <!--
             Logo
-        -->
+    -->
 
     <div id="logo-wrapper">
         <a id="logo-box" href="http://reo.free.bg">
@@ -39,14 +53,14 @@
                 [<span class="bold">/d</span>] DuckDuckGo;
                 [<span class="bold">/g</span>] Google;
                 [<span class="bold">r/</span>] Reddit;
-                [<span class="bold">/z;/zg;/zf</span>] Zamunda;
+                [<span class="bold">/z,/zg,/zf</span>] Zamunda;
                 [<span class="bold">/t</span>] Torrents;
                 [<span class="bold">/s</span>] StackOverflow;
             </ul>
         </div>
     </div>
 
-        <!--
+    <!--
             BlitzLinks
         -->
 
@@ -86,6 +100,16 @@
                     <li><a href="http://training.zempirians.com/">› Zempirians</a></li>
                     <li><a href="https://crackwatch.com/all-games">› CrackWatch</a></li>
                     <li><a href="https://www.reddit.com/r/androidroot/">› r/AndroidRoot</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class="title" href="#">Games</a>
+                <ul>
+                    <li><a href="http://www.donttap.com/">› Dont Tap</a></li>
+                    <li><a href="https://play.typeracer.com/">› Type Racer</a></li>
+                    <li><a href="https://secrethitler.io/">› Secre tHitler</a></li>
+                    <li><a href="http://minesweeperonline.com/#">› Mine Sweeper</a></li>
+                    <li><a href="https://tetris.com/play-tetris">› Tetris</a></li>
                 </ul>
             </li>
             <li>
@@ -135,8 +159,10 @@
         JavaScript
     -->
 
+    <!-- Real JS -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
     <script src="js/mobile.js"></script>
+    <script src="js/weatherLogic.js"></script>
     <script src="js/bg.js"></script>
     <script src="js/main.js"></script>
 </body>
