@@ -2,6 +2,18 @@ var weather = document.getElementById("weather");
 var current = document.getElementById("current");
 var forecast = document.getElementById("forecast");
 
+
+!function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (!d.getElementById(id)) {
+        js = d.createElement(s);
+        js.id = id;
+        js.src = 'https://weatherwidget.io/js/widget.min.js';
+        fjs.parentNode.insertBefore(js, fjs);
+    }
+}(document, 'script', 'weatherwidget-io-js');
+
+
 function getLocation() {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(showPosition);
@@ -18,15 +30,16 @@ function showPosition(position) {
 }
 
 
-function getWeather(callback) {
-    let apiKey = '7cfd70cacba417bbb6f475a733bbef3a';
-    var weather = `http://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&units=metric&appid=${apiKey}`;
-    $.ajax({
-        dataType: "jsonp",
-        url: weather,
-        success: callback
-    });
-}
+// function getWeather(callback) {
+//     let apiKey = '8a3da9bdc288d670738352a29fdf0a1b';
+//     var weather = `http://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&units=metric&appid=${apiKey}`;
+//     window.open(weather, '_blank');
+//     $.ajax({
+//         dataType: "jsonp",
+//         url: weather,
+//         success: callback
+//     });
+// }
 
 // getWeather(function (data) {
 //     console.log('weather data received');
