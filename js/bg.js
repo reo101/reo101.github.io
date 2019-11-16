@@ -18,9 +18,10 @@ var columns = background.width / font_size; //number of columns for the rain
 var drops = [];
 //x below is the x coordinate
 //1 = y co-ordinate of the drop(same for every drop initially)
-for (var x = 0; x < columns * 4; x++)
+for (var x = 0; x < columns * 4; x++) {
     // drops[x] = 1;
     drops[x] = Math.round(Math.random() * background.height);
+}
 
 var color;
 var isRainbow = false;
@@ -36,7 +37,7 @@ function randomizeColor() {
 color = "#00ff00";
 //drawing the characters
 function draw() {
-    if(isRainbow)
+    if (isRainbow)
         randomizeColor();
     //Black BG for the canvas
     //translucent BG to show trail
@@ -52,7 +53,7 @@ function draw() {
         //a random japanese character to print
         var text = japanese[Math.floor(Math.random() * japanese.length)];
         //x = i*font_size, y = value of drops[i]*font_size
-        if(isBetterRainbow)
+        if (isBetterRainbow)
             randomizeColor();
         ctx.fillText(text, i % columns * font_size, drops[i] * font_size);
 
