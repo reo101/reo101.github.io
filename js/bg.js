@@ -35,7 +35,8 @@ function randomizeColor() {
     return clr;
 }
 // randomizeColor();
-color = `#00${randomizeColor().substring(3,5)}00`;
+// color = `#00${randomizeColor().substring(3,5)}00`;
+color = "#006600";
 //drawing the characters
 function draw() {
     if (isRainbow)

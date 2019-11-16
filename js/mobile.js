@@ -7,7 +7,7 @@ wrapperHTML = qucikWrapper.innerHTML;
 function shrink() {
     // help.innerHTML = "";
     // qucikWrapper.innerHTML = "";
-    help.innerHTML = '[<span class="bold">/d</span>];[<span class="bold">/g</span>];[<span class="bold">r/</span>];[<span class="bold">/z</span>];[<span class="bold">/zf</span>];[<span class="bold">/zg</span>];[<span class="bold">/t</span>]';
+    help.innerHTML = '[<span class="bold">/d</span>];[<span class="bold">/g</span>];[<span class="bold">r/</span>];[<span class="bold">/z</span>];[<span class="bold">/zf</span>];[<span class="bold">/zg</span>];[<span class="bold">/t</span>];[<span class="bold">/s</span>]';
 }
 
 function writeHelp() {

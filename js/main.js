@@ -21,6 +21,7 @@ var help = document.getElementById('help');
 }
 var icon = document.getElementById('search-icon');
 var form = document.getElementById('search-form');
+var logo = document.getElementById('logo');
 
 class Command {
 	constructor(id, command, label, url, prefix = '', suffix = '', isSpecial = false, isShortcut = false) {
@@ -89,6 +90,7 @@ search.addEventListener('keyup', function (e) {
 		for (var i = 0; i < commands.length; i++) {
 			if (value == commands[i].command) {
 				command = commands[i];
+				hideHelp();
 				icon.className = command.icon;
 				search.value = '';
 				search.setAttribute('name', command.prefix);
@@ -100,24 +102,29 @@ search.addEventListener('keyup', function (e) {
 		value.length < 5 &&
 		(specCom = commands.filter((com) => com.isSpecial == true && com.command == value)).length > 0
 	) {
-		console.log(specCom);
+		// console.log(specCom);
 		command = commands[specCom[0].id];
 		icon.className = command.icon;
 		search.setAttribute('placeholder', command.makePlaceholder());
 	} else if (value.startsWith('http://') || value.startsWith('https://')) {
 		command = { makeUrl: (value) => value };
-	} else if (value == "rainbow") {
+		hideHelp();
+	} else if (value.toLowerCase() == "rainbow") {
 		isRainbow = true;
-	} else if (isRainbow && value != "rainbow") {
+	} else if (isRainbow && value.toLowerCase() != "rainbow") {
 		isRainbow = false;
-	} else if (value == "betterrainbow") {
+	} else if (value.toLowerCase() == "betterrainbow") {
 		isBetterRainbow = true;
-	} else if (isBetterRainbow && value != "betterrainbow") {
+	} else if (isBetterRainbow && value.toLowerCase() != "betterrainbow") {
 		isBetterRainbow = false;
-	} else if (value.startsWith("color ") && value.length == 12) {
+	} else if (value.toLowerCase.startsWith("color ") && value.length == 12) {
 		color = "#" + value.substring(6, 12);
 	} else if (value == "rrr") {
 		randomizeColor();
+	} else if (value == "dimo2.jpg") {
+		logo.src = "assets/dimo2.jpg";
+	} else if (value != "dimo2.jpg" && logo.src.includes("dimo2")) {
+		logo.src = "assets/logo.png";
 	} else if (value.length == 0) {
 		showHelp();
 	}
@@ -137,23 +144,24 @@ search.addEventListener('keydown', function (e) {
 	if (key == 8) {
 		if (value == '' && command.icon != commands[0].icon) {
 			command = commands[0];
+			hideHelp();
 			icon.className = command.icon;
 			search.value = '';
 			search.setAttribute('name', command.prefix);
 			search.setAttribute('placeholder', command.makePlaceholder());
-			alert(command.makePlaceholder());
+			// alert(command.makePlaceholder());
 		}
 
 	}
 
 	if (value.length == 0 && String.fromCharCode(e.keyCode).match(/(\w|\s)/g)) {
 		help.style['max-height'] = '100px';
-		hideHelp();
+		// hideHelp();
 	}
 });
 
 function hideHelp() {
-	console.log(help.style);
+	// console.log(help.style);
 	help.style.opacity = 0;
 	// help.style.transform = "scale (0.0)";
 	help.style.margin = 0;
