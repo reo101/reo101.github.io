@@ -39,7 +39,7 @@ color = `#00${randomizeColor().substring(3,5)}00`;
 //drawing the characters
 function draw() {
     if (isRainbow)
-        randomizeColor();
+        color=randomizeColor();
     //Black BG for the canvas
     //translucent BG to show trail
     ctx.fillStyle = "rgba(0, 0, 0, 0.1)";
@@ -55,7 +55,7 @@ function draw() {
         var text = japanese[Math.floor(Math.random() * japanese.length)];
         //x = i*font_size, y = value of drops[i]*font_size
         if (isBetterRainbow)
-            randomizeColor();
+            color=randomizeColor();
         ctx.fillText(text, i % columns * font_size, drops[i] * font_size);
 
         //sending the drop back to the top randomly after it has crossed the screen
