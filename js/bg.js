@@ -20,7 +20,7 @@ var drops = [];
 //1 = y co-ordinate of the drop(same for every drop initially)
 for (var x = 0; x < columns * 4; x++) {
     // drops[x] = 1;
-    drops[x] = Math.round(Math.random() * background.height);
+    drops[x] = Math.round(Math.random() * (background.height/font_size));
 }
 
 var color;
