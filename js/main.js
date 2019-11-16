@@ -71,6 +71,7 @@ commands = [
 	new Command(10, '/zg', 'Zamunda Games', 'https://www.zamunda.net/', 'bananas?c4=1&c21=1&c1=1&c22=1&search=', '&gotonext=1&incldead=&field=name'),
 	new Command(11, 'shk', 'Shkolo', 'https://app.shkolo.bg/dashboard', '', '', true, true),
 	new Command(12, 'spme', 'Spotify stats', 'https://spotify.me', '', '', true, true),
+	new Command(13, '/s', 'Stack Overflow', 'https://www.stackoverflow.com/', 'search?q='),
 ];
 
 var command = commands[0];
