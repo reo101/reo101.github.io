@@ -28,13 +28,14 @@ var isRainbow = false;
 var isBetterRainbow = false;
 var letters = "0123456789ABCDEF";
 function randomizeColor() {
-    color = "#";
+    clr = "#";
     for (var j = 0; j < 6; j++) {
-        color += letters[(Math.floor(Math.random() * 16))];
+        clr += letters[(Math.floor(Math.random() * 16))];
     }
+    return clr;
 }
 // randomizeColor();
-color = "#00ff00";
+color = `#00${randomizeColor().substring(3,5)}00`;
 //drawing the characters
 function draw() {
     if (isRainbow)
