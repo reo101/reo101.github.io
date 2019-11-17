@@ -127,6 +127,10 @@ search.addEventListener('keyup', function (e) {
 		logo.src = "assets/dimo2.jpg";
 	} else if (value != "dimo2.jpg" && logo.src.includes("dimo2")) {
 		logo.src = "assets/logo.png";
+	} else if (value == "wthon") {
+		weather.style.opacity = 0.66;
+	} else if (value == "wthoff") {
+		weather.style.opacity = 0;
 	} else if (value.length == 0) {
 		showHelp();
 	}
@@ -166,14 +170,14 @@ function hideHelp() {
 	// console.log(help.style);
 	help.style.opacity = 0;
 	// help.style.transform = "scale (0.0)";
-	help.style.margin = 0;
+	help.style.margin = "0 auto 0 auto";
 	form.style.marginBottom = 0;
 }
 
 function showHelp() {
 	help.style.opacity = 1;
 	// help.style.transform = "scale (0.0)";
-	help.style.marginBottom = "3%";
+	help.style.margin = "0 auto 3% auto";
 	form.style.marginBottom = "2.5%";
 }
 

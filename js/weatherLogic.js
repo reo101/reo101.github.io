@@ -2,7 +2,14 @@ var weather = document.getElementById("weather");
 // var current = document.getElementById("current");
 // var forecast = document.getElementById("forecast");
 
-console.log(weather);
+// function getContent() {
+//     var $ = this.load(html);
+//     // window.frames['weather'].document.innerHtml;
+//     var url = $('weather').attr('src');
+//     request(url, function(err, res, html){
+//        console.log(html);
+//     });
+// }
 
 !function (d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
