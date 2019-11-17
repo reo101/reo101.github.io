@@ -7,74 +7,84 @@
 	margin: 0;
 }
 
-body {
-	background-color: #161616;
+// body {
+// 	background-color: #161616;
+// }
+
+#background {
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	touch-action: none;
+	width: calc(100%);/* - 2px); /* for borders */
+	height: calc(100%);/* - 2px); /* for borders */
+	/* border: 1px dashed; */
+	top:0;
+	left:0;
+	z-index: -1;
 }
 
+#weather-wrapper {
+	background-color: #47d306b2;
+	position: absolute;
+	display: inline-block;
+	width: 180px;
+	height: 560px;
+	opacity: 0.66;
+	right: 0;
+	top: 0;
+	/* transform: scale(0.7); */
+  }
+
 #logo-wrapper {
+	-webkit-box-align: flex;
+	-moz-box-align: flex;
+	-ms-flex-align: flex;
 	align-items: flex;
 	text-align: center;
 	width: 100%;
-	height: 250px;
-    padding-top: 12.5vh;
-    padding-bottom: 10vh;
+	height: 200px;
+	padding-top: 7.5vh;
+	padding-bottom: 5vh;
+	opacity: 0.5;
+	
+	#logo-box {
+		display: inline-block;
+		height: 200px;
+		width: 200px;
 
-    #logo {
-        display: inline-block;
-        height: 250px;
-        width: 250px;
-    }
+		#logo {
+			display: inline-block;
+			height: 200px;
+			width: 200px;
+		}
+		
+	}
 }
 
+// cant autoreformat code/ when i try it just prints øøøøøøøøøøøøøøøøøø how do I do that locally
+// and in github/ extension manager thingies/ locally?ohhhhhhh/ got it/ 1 sec
+// see how fucking easy?
+// =????? ????????do you have the live sass compiler installed? 
+// install live sass compiler first bruh
+//  then you watch sasssssssssssssssssssss
+// then you save this file, it automatically overwrites the .css
+// then in html, you just fucking take the shitty css 
+
 #search-wrapper{
-
+	
+	width: 100%;
+	
 	#search-form{
-		margin-bottom: 2.5%;
-	}
-
-	::-webkit-input-placeholder {
-		color: #A9A9A9;
-		opacity: 0.5;
-		transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-	}
-
-	input:focus::-webkit-input-placeholder {
-		opacity: 1;
-	}
-
-	:-moz-placeholder {
-		color: #A9A9A9;
-		opacity: 0.5;
-		transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-	}
-
-	input:focus:-moz-placeholder {
-		opacity: 1;
-	}
-
-	::-moz-placeholder {
-		color: #A9A9A9;
-		opacity: 0;
-		transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-	}
-
-	input:focus::-moz-placeholder {
-		opacity: 1;
-	}
-
-	:-ms-input-placeholder {
-		color: #A9A9A9;
-		opacity: 1;
-		transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-	}
-
-	input:focus:-ms-input-placeholder {
-		opacity: 1;
-	}
-
-	.search-block {
-		position: relative;
 		width: 40%;
+		background-color: rgba(24, 168, 11, 0.486);
+		border-radius: 15px 10px;
+		margin: 0 auto 2.5% auto;
+	}
+	
+	.search-block {
+		// position: relative;
+		width: 100%;
 		margin: 0vh auto 0px;
 		text-align: center;
 	}
@@ -85,12 +95,60 @@ body {
 			margin: 0vh auto 0vh;
 		}
 	}
+	::-webkit-input-placeholder {
+		color: #A9A9A9;
+		opacity: 0.5;
+		-moz-transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+		transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+	}
+
+	input:focus::-webkit-input-placeholder {
+		opacity: 1;
+	}
+
+	:-moz-placeholder {
+		color: #A9A9A9;
+		opacity: 0.5;
+		-moz-transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+		transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+	}
+
+	input:focus:-moz-placeholder {
+		opacity: 1;
+	}
+
+	::-moz-placeholder {
+		color: #A9A9A9;
+		opacity: 0.5; //baka left at at 0
+		-moz-transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+		transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+	}
+
+	input:focus::-moz-placeholder {
+		opacity: 1;
+	}
+
+	:-ms-input-placeholder {
+		color: #A9A9A9;
+		opacity: 1;
+		-moz-transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+		transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+	}
+
+	input:focus:-ms-input-placeholder {
+		opacity: 1;
+	}
+
 
 	.search-block label {
-		position: absolute;
+		position: inherit;
+		margin: 0 auto;
+		width: 100%;
+		background-color: rgba(127,127,127,0.15);
 		color: #A9A9A9;
 		top: 7px;
-		left: -20px;
+		left: 50%;//-20px;
+		-moz-transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 		transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 	}
 
@@ -104,6 +162,7 @@ body {
 		border-bottom: 2px solid transparent;
 		color: white;
 		outline: none;
+		-moz-transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 		transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 	}
 
@@ -117,11 +176,15 @@ body {
 
 	ul {
 		color: rgb(124, 124, 124);
-		margin-bottom: 5%;
+		margin: 0 auto 3% auto;
+		width: fit-content;
+		background-color: rgba(4, 95, 8, 0.5);
+		border-radius: 15px 10px;
+		// width: 100%;
 
 		.bold {
 			font-weight: bold;
-			color: rgb(155, 155, 155)
+			color: #f70000;
 		}
 	}
 }
@@ -142,13 +205,21 @@ body {
 			a {
 				text-decoration: none;
 				color: #F2F2F2;
+				// min-width: inherit;
+				background-color: rgba(127,127,127,0.15);
+				border-radius: 10%;
 				font-size: 15px;
 				padding: 5px;
+				margin-bottom: 10px;
 				display: inline-block;
 				position: relative;
 
 				&.title {
-					color: #A075FF;
+					// color: #A075FF;
+					color: #000000;
+					background-color: rgba(255, 255, 255, 0.5);
+  					background-blend-mode: darken;
+  					border-radius: 13px 25px;
 					font-size: 20px;
 					padding: 10px;
 
@@ -156,14 +227,16 @@ body {
 						content: "";
 						position: absolute;
 						width: 100%;
-						height: 2px;
+						height: 3px;
 						bottom: 0;
 						left: 0;
-						background-color: #A075FF;
+						background-color: #38e60e;
 						visibility: hidden;
 						-webkit-transform: scaleX(0);
+						-moz-transform: scaleX(0);
 						transform: scaleX(0);
 						-webkit-transition: all 0.2s ease-in-out 0s;
+						-moz-transition: all 0.2s ease-in-out 0s;
 						transition: all 0.2s ease-in-out 0s;
 					}
 				}
@@ -203,6 +276,7 @@ body {
 				position: absolute;
 				display: none;
 				-webkit-transition: all 0.2s ease-in-out 0s;
+				-moz-transition: all 0.2s ease-in-out 0s;
 					transition: all 0.2s ease-in-out 0s;
 
 				li {
@@ -219,15 +293,15 @@ body {
 
 @media (orientation: portrait) {
 
-	#help {
-		opacity: 0;
-	}
+	// #help {
+	// 	opacity: 0;
+	// }
 	
-	#quick-wrapper {
-		opacity: 0;
-	}
+	// #quick-wrapper {
+	// 	opacity: 0;
+	// }
 
-	#help *, #quick-wrapper *{
-		pointer-events: none;
-	}
+	// #help *, #quick-wrapper *{
+	// 	pointer-events: none;
+	// }
 }

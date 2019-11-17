@@ -1,7 +1,8 @@
 var weather = document.getElementById("weather");
-var current = document.getElementById("current");
-var forecast = document.getElementById("forecast");
+// var current = document.getElementById("current");
+// var forecast = document.getElementById("forecast");
 
+console.log(weather);
 
 !function (d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];

@@ -19,6 +19,7 @@ var help = document.getElementById('help');
 	style.sheet.insertRule(`#help {-${browserPrefix}-transition : margin 0.5s ease-in-out, opacity 0.3s ease-in-out, transform 0.5s ease-in-out;}`);
 	style.sheet.insertRule(`#search-form {-${browserPrefix}-transition : margin 0.5s ease-in-out;}`);
 }
+
 var icon = document.getElementById('search-icon');
 var form = document.getElementById('search-form');
 var logo = document.getElementById('logo');
@@ -172,7 +173,7 @@ function hideHelp() {
 function showHelp() {
 	help.style.opacity = 1;
 	// help.style.transform = "scale (0.0)";
-	help.style.marginBottom = "5%";
+	help.style.marginBottom = "3%";
 	form.style.marginBottom = "2.5%";
 }
 
