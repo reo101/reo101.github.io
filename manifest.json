@@ -1,10 +1,24 @@
 {
-	"name": "luna",
+	"private": true,
+	"name": "RTHP",
 	"description": "Overrides the new tab page with a custom made one by reo101 && taki",
-	"version": "1.1",
-	"incognito": "split",
+	"homepage": "https://github.com/reo101/reo101.github.io",
+	"version": "1.2",
+	"author": "reo101",
+	"authors": ["reo101", "taki"],
+	"incognito": "spanning",
+	// "keywords": [
+	//     "custom",
+    // 	"new",
+    // 	"tab",
+    // 	"page",
+    // 	"url"
+  	// ],
 	"chrome_url_overrides": {
 		"newtab": "index.html"
+	},
+	"chrome_settings_overrides" : {
+ 		"homepage": "index.html"
 	},
 	"background": {
 		"page": "index.html"

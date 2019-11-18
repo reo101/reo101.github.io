@@ -1,4 +1,5 @@
 var search = document.getElementById('search');
+window.onload = () => search.focus;
 var help = document.getElementById('help');
 {
 	var browserPrefix;
@@ -75,6 +76,7 @@ commands = [
 	new Command(12, 'spme', 'Spotify stats', 'https://spotify.me', '', '', true, true),
 	new Command(13, '/s', 'Stack Overflow', 'https://www.stackoverflow.com/', 'search?q='),
 	new Command(14, 'rs', 'RipSave', 'https://ripsave.com/ ', '', '', true, true),
+	new Command(15, 'xpi', 'Firefox XPI', 'http://reo.free.bg/xpi/', '', '', true, true),
 ];
 
 var command = commands[0];
