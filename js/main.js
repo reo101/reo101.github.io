@@ -132,6 +132,10 @@ search.addEventListener('keyup', function (e) {
 		weather.style.opacity = 0.66;
 	} else if (value == "wthoff") {
 		weather.style.opacity = 0;
+	} else if (value == "shrink") {
+		shrink();
+	} else if (value == "unshrink") {
+		unshrink();
 	} else if (e.keyCode == 8 && value.length == 0) {
 		showHelp();
 	}
