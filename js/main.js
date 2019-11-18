@@ -16,8 +16,8 @@ var help = document.getElementById('help');
 
 	var style = document.createElement('style');
 	document.head.appendChild(style);
-	style.sheet.insertRule(`#help {-${browserPrefix}-transition : margin 0.5s ease-in-out, opacity 0.3s ease-in-out, transform 0.5s ease-in-out;}`);
-	style.sheet.insertRule(`#search-form {-${browserPrefix}-transition : margin 0.5s ease-in-out;}`);
+	style.sheet.insertRule(`#help {-${browserPrefix}-transition : margin 0.25s ease-in-out, opacity 0.25s ease-in-out, transform 0.25s ease-in-out;}`);
+	style.sheet.insertRule(`#search-form {-${browserPrefix}-transition : margin 0.2s ease-in-out;}`);
 }
 
 var icon = document.getElementById('search-icon');
@@ -74,6 +74,7 @@ commands = [
 	new Command(11, 'shk', 'Shkolo', 'https://app.shkolo.bg/dashboard', '', '', true, true),
 	new Command(12, 'spme', 'Spotify stats', 'https://spotify.me', '', '', true, true),
 	new Command(13, '/s', 'Stack Overflow', 'https://www.stackoverflow.com/', 'search?q='),
+	new Command(14, 'rs', 'RipSave', 'https://ripsave.com/ ', '', '', true, true),
 ];
 
 var command = commands[0];

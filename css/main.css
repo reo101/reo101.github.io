@@ -66,6 +66,8 @@
   width: 40%;
   background-color: rgba(24, 168, 11, 0.486);
   border-radius: 15px 10px;
+  padding: 2px 5px 3px 2px;
+  /*ADDED*/
   margin: 0 auto 2.5% auto;
 }
 
@@ -73,6 +75,10 @@
   width: 100%;
   margin: 0vh auto 0px;
   text-align: center;
+}
+
+#search-wrapper .search-block ul {
+  font-weight: bold;
 }
 
 @media screen and (max-width: 1000px) {
@@ -141,8 +147,9 @@
 #search-wrapper .search-block input {
   width: 100%;
   margin: 0 auto;
-  padding: 5px 0;
-  font-size: 16px;
+  padding: 5px 5px 5px 5px;
+  font-size: 20px;
+  font-weight: bold;
   background: transparent;
   border: 2px solid transparent;
   border-bottom: 2px solid transparent;
@@ -168,6 +175,7 @@
   width: fit-content;
   background-color: rgba(4, 95, 8, 0.5);
   border-radius: 15px 10px;
+  padding: 7.5px 7.5px 10px 7.5px;
 }
 
 #search-wrapper ul .bold {
