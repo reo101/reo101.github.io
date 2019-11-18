@@ -16,8 +16,8 @@ var help = document.getElementById('help');
 
 	var style = document.createElement('style');
 	document.head.appendChild(style);
-	style.sheet.insertRule(`#help {-${browserPrefix}-transition : margin 0.25s ease-in-out, opacity 0.25s ease-in-out, transform 0.25s ease-in-out;}`);
-	style.sheet.insertRule(`#search-form {-${browserPrefix}-transition : margin 0.2s ease-in-out;}`);
+	style.sheet.insertRule(`#help {-${browserPrefix}-transition : margin 0.25s ease-in-out, opacity 0.3s ease-in-out, padding 0.3s ease-in-out, transform 0.25s ease-in-out;}`);
+	style.sheet.insertRule(`#search-form {-${browserPrefix}-transition : margin 0.25s ease-in-out;}`);
 }
 
 var icon = document.getElementById('search-icon');
@@ -132,7 +132,7 @@ search.addEventListener('keyup', function (e) {
 		weather.style.opacity = 0.66;
 	} else if (value == "wthoff") {
 		weather.style.opacity = 0;
-	} else if (value.length == 0) {
+	} else if (e.keyCode == 8 && value.length == 0) {
 		showHelp();
 	}
 });
@@ -171,6 +171,8 @@ function hideHelp() {
 	// console.log(help.style);
 	help.style.opacity = 0;
 	// help.style.transform = "scale (0.0)";
+	// help.style.height = "10px";
+	help.style.padding = "0";
 	help.style.margin = "0 auto 0 auto";
 	form.style.marginBottom = 0;
 }
@@ -178,6 +180,8 @@ function hideHelp() {
 function showHelp() {
 	help.style.opacity = 1;
 	// help.style.transform = "scale (0.0)";
+	// help.style.height = "100%";
+	help.style.padding = "7.5px 7.5px 10px 7.5px";
 	help.style.margin = "0 auto 3% auto";
 	form.style.marginBottom = "2.5%";
 }
