@@ -122,7 +122,7 @@ search.addEventListener('keyup', function (e) {
 	} else if (value.toLowerCase().startsWith("color ") && value.length == 12) {
 		color = "#" + value.substring(6, 12);
 	} else if (value == "rrr") {
-		randomizeColor();
+		color = randomizeColor();
 	} else if (value == "dimo2.jpg") {
 		logo.src = "assets/dimo2.jpg";
 	} else if (value != "dimo2.jpg" && logo.src.includes("dimo2")) {

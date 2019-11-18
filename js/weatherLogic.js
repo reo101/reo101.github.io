@@ -1,4 +1,5 @@
 var weather = document.getElementById("weather");
+weather.style.opacity = 0;
 // var current = document.getElementById("current");
 // var forecast = document.getElementById("forecast");
 

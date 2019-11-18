@@ -24,12 +24,11 @@
 }
 
 #weather-wrapper {
-  background-color: #47d306b2;
   position: absolute;
   display: inline-block;
   width: 180px;
   height: 560px;
-  opacity: 0.66;
+  opacity: 1;
   right: 0;
   top: 0;
   /* transform: scale(0.7); */

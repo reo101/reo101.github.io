@@ -1,6 +1,8 @@
 var background = document.getElementById("background");
 var ctx = background.getContext("2d");
 
+background.onclick = () => {document.getElementById("search").focus()};
+
 //making the canvas full screen
 background.height = window.innerHeight;
 background.width = window.innerWidth;
@@ -20,7 +22,7 @@ var drops = [];
 //1 = y co-ordinate of the drop(same for every drop initially)
 for (var x = 0; x < columns * 4; x++) {
     // drops[x] = 1;
-    drops[x] = Math.round(Math.random() * (background.height/font_size));
+    drops[x] = Math.round(Math.random() * (background.height / font_size));
 }
 
 var color;
@@ -40,7 +42,9 @@ color = "#006600";
 //drawing the characters
 function draw() {
     if (isRainbow)
-        color=randomizeColor();
+        color = randomizeColor();
+    if (isBetterRainbow)
+            setInterval(()=> {color = randomizeColor()}, 33);
     //Black BG for the canvas
     //translucent BG to show trail
     ctx.fillStyle = "rgba(0, 0, 0, 0.1)";
@@ -55,8 +59,7 @@ function draw() {
         //a random japanese character to print
         var text = japanese[Math.floor(Math.random() * japanese.length)];
         //x = i*font_size, y = value of drops[i]*font_size
-        if (isBetterRainbow)
-            color=randomizeColor();
+        
         ctx.fillText(text, i % columns * font_size, drops[i] * font_size);
 
         //sending the drop back to the top randomly after it has crossed the screen
