@@ -1,7 +1,7 @@
 var background = document.getElementById("background");
 var ctx = background.getContext("2d");
 
-background.onclick = () => {document.getElementById("search").focus()};
+// background.onclick = () => {document.getElementById("search").focus()};
 
 //making the canvas full screen
 background.height = window.innerHeight;

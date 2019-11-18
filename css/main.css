@@ -81,13 +81,6 @@
   font-weight: bold;
 }
 
-@media screen and (max-width: 1000px) {
-  #search-wrapper .search-block {
-    width: 60%;
-    margin: 0vh auto 0vh;
-  }
-}
-
 #search-wrapper ::-webkit-input-placeholder {
   color: #A9A9A9;
   opacity: 0.5;
