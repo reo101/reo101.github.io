@@ -7,13 +7,6 @@
 	"author": "reo101",
 	"authors": ["reo101", "taki"],
 	"incognito": "spanning",
-	// "keywords": [
-	//     "custom",
-    // 	"new",
-    // 	"tab",
-    // 	"page",
-    // 	"url"
-  	// ],
 	"chrome_url_overrides": {
 		"newtab": "index.html"
 	},
@@ -25,8 +18,8 @@
 	},
 	"applications": {
 		"gecko": {
-			"id": "reo101@reo.free.bg"
+			"id": "reo@reo.free.bg"
 		}
 	},
-	"manifest_version": 3
+	"manifest_version": 2
 }

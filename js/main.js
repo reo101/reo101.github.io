@@ -3,7 +3,7 @@ window.onload = () => search.focus;
 var help = document.getElementById('help');
 {
 	var browserPrefix;
-	navigator.sayswho = (function () {
+	navigator.sayswho = (() => {
 		var N = navigator.appName, ua = navigator.userAgent, tem;
 		var M = ua.match(/(opera|chrome|safari|firefox|msie)\/?\s*(\.?\d+(\.\d+)*)/i);
 		if (M && (tem = ua.match(/version\/([\.\d]+)/i)) != null) M[2] = tem[1];
@@ -81,7 +81,7 @@ commands = [
 
 var command = commands[0];
 
-search.addEventListener('keyup', function (e) {
+search.addEventListener('keyup', (e) => {
 	var value = search.value;
 	// if (e.keyCode == 13 || e.which == 13) {
 	// 	if (value.indexOf('.') > 0) {
@@ -114,6 +114,9 @@ search.addEventListener('keyup', function (e) {
 	} else if (value.startsWith('http://') || value.startsWith('https://')) {
 		command = { makeUrl: (value) => value };
 		hideHelp();
+	} else if (value.endsWith(".com") || value.endsWith(".org") || value.endsWith(".net") || value.endsWith(".bg")) {
+		command = { makeUrl: (value) => "http://" + value };
+		hideHelp();
 	} else if (value.toLowerCase() == "rainbow") {
 		isRainbow = true;
 	} else if (isRainbow && value.toLowerCase() != "rainbow") {
@@ -143,7 +146,7 @@ search.addEventListener('keyup', function (e) {
 	}
 });
 
-search.addEventListener('keydown', function (e) {
+search.addEventListener('keydown', (e) => {
 	var value = search.value;
 	var key = e.keyCode || e.which;
 	if (key == 13) {
@@ -173,7 +176,7 @@ search.addEventListener('keydown', function (e) {
 	}
 });
 
-function hideHelp() {
+var hideHelp = () => {
 	// console.log(help.style);
 	help.style.opacity = 0;
 	// help.style.transform = "scale (0.0)";
@@ -183,7 +186,7 @@ function hideHelp() {
 	form.style.marginBottom = 0;
 }
 
-function showHelp() {
+var showHelp = () => {
 	help.style.opacity = 1;
 	// help.style.transform = "scale (0.0)";
 	// help.style.height = "100%";
@@ -193,7 +196,7 @@ function showHelp() {
 }
 
 var prevWord = '';
-function isBackspace(val) {
+var isBackspace = (val) => {
 	prevWord = val;
 	var bool = val && val.length < prevWord.length;
 	return bool;
