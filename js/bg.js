@@ -36,40 +36,49 @@ var randomizeColor = () => {
     }
     return clr;
 }
+var animationRunning = true;
 // randomizeColor();
 // color = `#00${randomizeColor().substring(3,5)}00`;
 color = "#006600";
 //drawing the characters
+var delay = 50;
 var draw = () => {
     if (isRainbow)
         color = randomizeColor();
-    if (isBetterRainbow)
-            setInterval(()=> {color = randomizeColor()}, 33);
-    //Black BG for the canvas
-    //translucent BG to show trail
-    ctx.fillStyle = "rgba(0, 0, 0, 0.1)";
-    ctx.fillRect(0, 0, background.width, background.height);
+    if (animationRunning) {
+        //Black BG for the canvas
+        //translucent BG to show trail
+        ctx.fillStyle = "rgba(0, 0, 0, 0.1)";
+        ctx.fillRect(0, 0, background.width, background.height);
 
-    ctx.font = font_size + "px arial";
+        ctx.font = font_size + "px arial";
 
-    ctx.fillStyle = color; //green text
+        ctx.fillStyle = color; //green text
 
-    //looping over drops
-    for (var i = 0; i < drops.length; i++) {
-        //a random japanese character to print
-        var text = japanese[Math.floor(Math.random() * japanese.length)];
-        //x = i*font_size, y = value of drops[i]*font_size
-        
-        ctx.fillText(text, i % columns * font_size, drops[i] * font_size);
+        //looping over drops
 
-        //sending the drop back to the top randomly after it has crossed the screen
-        //adding a randomness to the reset to make the drops scattered on the Y axis
-        if (drops[i] * font_size > background.height && Math.random() > 0.975)
-            drops[i] = 0;
+        for (var i = 0; i < drops.length; i++) {
+            //a random japanese character to print
+            var text = japanese[Math.floor(Math.random() * japanese.length)];
+            //x = i*font_size, y = value of drops[i]*font_size
 
-        //incrementing Y coordinate
-        drops[i]++;
+            if (isBetterRainbow)
+                color = randomizeColor();
+                ctx.fillStyle = color;
+            ctx.fillText(text, i % columns * font_size, drops[i] * font_size);
+
+            //sending the drop back to the top randomly after it has crossed the screen
+            //adding a randomness to the reset to make the drops scattered on the Y axis
+            if (drops[i] * font_size > background.height && Math.random() > 0.975)
+                drops[i] = 0;
+
+            //incrementing Y coordinate
+            drops[i]++;
+        }
     }
+
+    window.setTimeout(draw, delay);
 }
 
-setInterval(draw, 50);
+draw();
+// setInterval(draw, delay);

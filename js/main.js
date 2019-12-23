@@ -17,7 +17,7 @@ var help = document.getElementById('help');
 
 	var style = document.createElement('style');
 	document.head.appendChild(style);
-	style.sheet.insertRule(`#help {-${browserPrefix}-transition : margin 0.25s ease-in-out, opacity 0.3s ease-in-out, padding 0.3s ease-in-out, transform 0.25s ease-in-out;}`);
+	style.sheet.insertRule(`#help {-${browserPrefix}-transition : margin 0.25s ease-in-out, opacity 0.3s ease-in-out, padding 0.3s ease-in-out, transform 0.25s ease-in-out, max-height 0.25s ease-in-out;}`);
 	style.sheet.insertRule(`#search-form {-${browserPrefix}-transition : margin 0.25s ease-in-out;}`);
 }
 
@@ -142,7 +142,19 @@ search.addEventListener('keyup', (e) => {
 		shrink();
 	} else if (value == "unshrink") {
 		unshrink();
+	}  else if (value == "freeze") {
+		// delay = 10000;
+		animationRunning = false;
+	} else if (value == "unfreeze") {
+		// delay = 50;
+		animationRunning = true;
 	} else if (e.keyCode == 8 && value.length == 0) {
+		if (command.isSpecial) {
+			command = commands[0];
+			search.setAttribute('name', command.prefix);
+			search.setAttribute('placeholder', command.makePlaceholder());
+			icon.className = command.icon;
+		}
 		showHelp();
 	}
 });
@@ -181,21 +193,23 @@ var hideHelp = () => {
 	// console.log(help.style);
 	help.style.opacity = 0;
 	// help.style.transform = "scale (0.0)";
-	// help.style.height = "10px";
-	help.style.padding = "0";
+	help.style['max-height'] = '0px';
+	// help.style.padding = "0";
 	help.style.margin = "0 auto 0 auto";
-	help.style.height = "26px";
+	// help.style.transform = "scaleY(0.1)";
 	form.style.marginBottom = 0;
+	// help.style.display = "none";
 }
 
 var showHelp = () => {
 	help.style.opacity = 1;
 	// help.style.transform = "scale (0.0)";
-	// help.style.height = "100%";
-	help.style.padding = "7.5px 7.5px 10px 7.5px";
+	help.style['max-height'] = '100px';
+	// help.style.padding = "7.5px 7.5px 10px 7.5px";
 	help.style.margin = "0 auto 3% auto";
-	help.style.height = "54px";
+	// help.style.transform = "scaleY(1)";
 	form.style.marginBottom = "2.5%";
+	// help.style.display = "inherit";
 }
 
 var prevWord = '';

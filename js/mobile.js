@@ -9,7 +9,7 @@ var shrink = () => {
     // help.innerHTML = "";
     // qucikWrapper.innerHTML = "";
     searchForm.style.width = "60%";
-    help.innerHTML = '[<span class="bold">/d</span>];[<span class="bold">/g</span>];[<span class="bold">r/</span>];<br>[<span class="bold">/z</span>];[<span class="bold">/zf</span>];[<span class="bold">/zg</span>];[<span class="bold">/t</span>];[<span class="bold">/s</span>]';
+    help.innerHTML = '[<span class="bold">/d</span>];[<span class="bold">/g</span>];[<span class="bold">r/</span>];<br>[<span class="bold">/z</span>];[<span class="bold">/zf</span>];[<span class="bold">/zg</span>];<br>[<span class="bold">/t</span>];[<span class="bold">/s</span>];[<span class="bold">/y</span>];[<span class="bold">/yt</span>];';
 }
 
 var unshrink = () => {
