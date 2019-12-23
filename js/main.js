@@ -17,7 +17,7 @@ var help = document.getElementById('help');
 
 	var style = document.createElement('style');
 	document.head.appendChild(style);
-	style.sheet.insertRule(`#help {-${browserPrefix}-transition : margin 0.25s ease-in-out, opacity 0.3s ease-in-out, padding 0.3s ease-in-out, transform 0.25s ease-in-out, max-height 0.25s ease-in-out;}`);
+	style.sheet.insertRule(`#help {-${browserPrefix}-transition : margin 0.25s ease-in-out, opacity 0.3s ease-in-out, padding 0.3s ease-in-out, transform 0.25s ease-in-out, max-height 0.4s ease-in-out;}`);
 	style.sheet.insertRule(`#search-form {-${browserPrefix}-transition : margin 0.25s ease-in-out;}`);
 }
 
