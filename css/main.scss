@@ -43,20 +43,20 @@ body {
 	align-items: flex;
 	text-align: center;
 	width: 100%;
-	height: 200px;
+	height: 150px;
 	padding-top: 7.5vh;
 	padding-bottom: 5vh;
 	opacity: 0.5;
 	
 	#logo-box {
 		display: inline-block;
-		height: 200px;
-		width: 200px;
+		height: 150px;
+		width: 150px;
 
 		#logo {
 			display: inline-block;
-			height: 200px;
-			width: 200px;
+			height: 150px;
+			width: 150px;
 		}
 		
 	}
@@ -286,6 +286,8 @@ body {
 				-webkit-transition: all 0.2s ease-in-out 0s;
 				-moz-transition: all 0.2s ease-in-out 0s;
 					transition: all 0.2s ease-in-out 0s;
+				
+				z-index: 2;
 
 				li {
 					display: block;
@@ -298,6 +300,16 @@ body {
 		}
 	}
 }
+
+// #visualizer {
+// 	position: absolute;
+// 	left: 0;
+// 	bottom: 0;
+// 	height: 30%;
+// 	width: 100%;
+// 	z-index: 1;
+// 	// background-color: red;
+// }
 
 @media (orientation: portrait) {
 

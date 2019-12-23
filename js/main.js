@@ -77,6 +77,7 @@ commands = [
 	new Command(13, '/s', 'Stack Overflow', 'https://www.stackoverflow.com/', 'search?q='),
 	new Command(14, 'rs', 'RipSave', 'https://ripsave.com/ ', '', '', true, true),
 	new Command(15, 'xpi', 'Firefox XPI', 'http://reo.free.bg/xpi/', '', '', true, true),
+	new Command(16, 'fmi', 'FMI Exams', 'https://www.fmi.uni-sofia.bg/bg/sample-exams-view', '', '', true, true),
 ];
 
 var command = commands[0];
@@ -183,6 +184,7 @@ var hideHelp = () => {
 	// help.style.height = "10px";
 	help.style.padding = "0";
 	help.style.margin = "0 auto 0 auto";
+	help.style.height = "26px";
 	form.style.marginBottom = 0;
 }
 
@@ -192,6 +194,7 @@ var showHelp = () => {
 	// help.style.height = "100%";
 	help.style.padding = "7.5px 7.5px 10px 7.5px";
 	help.style.margin = "0 auto 3% auto";
+	help.style.height = "54px";
 	form.style.marginBottom = "2.5%";
 }
 
