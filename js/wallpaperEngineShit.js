@@ -90,7 +90,7 @@ navigator.sayswho = (() => {
         var spacing = 10; // spacing between lines in pixels
         var lineWidth = 3; // width of lines in pixels
         var lineHeightMultiplier = 200; // multiplier for length * audioValue to pixels
-        var color = "red"; // color string ( rgba(255,0,0,1), #FF0000, red )
+        var color = "red"; // newColor string ( rgba(255,0,0,1), #FF0000, red )
     
         var totalWidth = transitionAudioData.length * spacing - spacing;
         var offsetX = (stage.canvas.width - totalWidth) / 2;
@@ -111,7 +111,7 @@ navigator.sayswho = (() => {
             // Set the width of the line, and the caps to 'round'
             line.graphics.setStrokeStyle(lineWidth, "round")
     
-            // Set the color of the line to 'red'
+            // Set the newColor of the line to 'red'
             line.graphics.beginStroke(color);
     
             // Draw the line from {x,y}, to {x,y}

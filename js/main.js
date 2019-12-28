@@ -1,30 +1,3 @@
-var search = document.getElementById('search');
-window.onload = () => search.focus;
-var help = document.getElementById('help');
-{
-	var browserPrefix;
-	navigator.sayswho = (() => {
-		var N = navigator.appName, ua = navigator.userAgent, tem;
-		var M = ua.match(/(opera|chrome|safari|firefox|msie)\/?\s*(\.?\d+(\.\d+)*)/i);
-		if (M && (tem = ua.match(/version\/([\.\d]+)/i)) != null) M[2] = tem[1];
-		M = M ? [M[1], M[2]] : [N, navigator.appVersion, '-?'];
-		M = M[0];
-		if (M == "Chrome") { browserPrefix = "webkit"; }
-		if (M == "Firefox") { browserPrefix = "moz"; }
-		if (M == "Safari") { browserPrefix = "webkit"; }
-		if (M == "MSIE") { browserPrefix = "ms"; }
-	})();
-
-	var style = document.createElement('style');
-	document.head.appendChild(style);
-	style.sheet.insertRule(`#help {-${browserPrefix}-transition : margin 0.25s ease-in-out, opacity 0.3s ease-in-out, padding 0.3s ease-in-out, transform 0.25s ease-in-out, max-height 0.4s ease-in-out;}`);
-	style.sheet.insertRule(`#search-form {-${browserPrefix}-transition : margin 0.25s ease-in-out;}`);
-}
-
-var icon = document.getElementById('search-icon');
-var form = document.getElementById('search-form');
-var logo = document.getElementById('logo');
-
 class Command {
 	constructor(id, command, label, url, prefix = '', suffix = '', isSpecial = false, isShortcut = false) {
 		this.id = id;
@@ -42,7 +15,7 @@ class Command {
 	}
 
 	makePlaceholder() {
-		let result;
+		// let result;
 		switch (this.label) {
 			case 'Torrents':
 				return '# Search Torrents';
@@ -50,8 +23,7 @@ class Command {
 			case 'Reddit':
 				return '# Open a subreddit';
 
-			case 'Zamunda Films':
-			case 'Zamunda Games':
+			case 'Zamunda Films', 'Zamunda Games':
 				return '# Seach for ' + this.label;
 
 			default:
@@ -130,9 +102,13 @@ search.addEventListener('keyup', (e) => {
 		color = "#" + value.substring(6, 12);
 	} else if (value == "rrr") {
 		color = randomizeColor();
-	} else if (value == "dimo2.jpg") {
+	} else if (value.length<20 && value.toLowerCase().startsWith("accent ") && ['red', 'green', 'blue', 'yellow'].indexOf(value.toLowerCase().substring(7)) !== -1) {
+		setAccents(value.substring(7));
+	} else if (!isDimo2 && value == "dimo2.jpg") {
+		isDimo2 = true;
 		logo.src = "assets/dimo2.jpg";
-	} else if (value != "dimo2.jpg" && logo.src.includes("dimo2")) {
+	} else if (isDimo2 && value != "dimo2.jpg" && logo.src.includes("dimo2")) {
+		isDimo2 = false;
 		logo.src = "assets/logo.png";
 	} else if (value == "wthon") {
 		weather.style.opacity = 0.66;
@@ -142,7 +118,7 @@ search.addEventListener('keyup', (e) => {
 		shrink();
 	} else if (value == "unshrink") {
 		unshrink();
-	}  else if (value == "freeze") {
+	} else if (value == "freeze") {
 		// delay = 10000;
 		animationRunning = false;
 	} else if (value == "unfreeze") {
