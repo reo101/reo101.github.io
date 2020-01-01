@@ -62,6 +62,7 @@ var form = document.getElementById('search-form');
 var logo = document.getElementById('logo');
 var root = document.documentElement;
 var isDimo2 = false;
+var accents = ["red", "green", "blue", "yellow", "white"];
 var setAccents = (newColor) => {
 	switch (newColor) {
 
@@ -97,6 +98,28 @@ var setAccents = (newColor) => {
 			root.style.setProperty('--search-wrapper-ul-cl', 	'rgb(124, 124, 124)			');
 			setCookie("accent", "blue", 10*60, false);
 			break;
+
+		case "yellow":
+			color = "#666600";
+			root.style.setProperty('--search-form-accent', 		'rgba(238, 223, 10, 0.486)	');
+			root.style.setProperty('--main-white-color', 		'rgb(169, 169, 169)			');
+			root.style.setProperty('--search-block-label', 		'rgba(127,127,127,0.15)		');
+			root.style.setProperty('--search-wrapper-ul-bg', 	'rgba(124, 133, 9, 0.5)		');
+			root.style.setProperty('--quick-wrapper-underline', 'rgb(251, 255, 0)			');
+			root.style.setProperty('--search-wrapper-ul-cl', 	'rgb(124, 124, 124)			');
+			setCookie("accent", "yellow", 10*60, false);
+			break;
+
+		case "white":
+			color = "#666666";
+			root.style.setProperty('--search-form-accent', 		'rgba(228, 228, 228, 0.486)	');
+			root.style.setProperty('--main-white-color', 		'rgb(2, 0, 0)				');
+			root.style.setProperty('--search-block-label', 		'rgba(127,127,127,0.15)		');
+			root.style.setProperty('--search-wrapper-ul-bg', 	'rgba(190, 190, 189, 0.5)	');
+			root.style.setProperty('--quick-wrapper-underline', 'rgb(255, 255, 255)			');
+			root.style.setProperty('--search-wrapper-ul-cl', 	'rgb(124, 124, 124)			');
+			setCookie("accent", "white", 10*60, false);
+			break;
 		/*
 			rgba(24, 168, 11, 0.486)
 			rgb(169, 169, 169)
@@ -129,7 +152,7 @@ for (var x = 0; x < columns * 4; x++) {
 }
 
 var color;
-setAccents(getCookie("accent"));
+setAccents(getCookie("accent") || "green");
 var isRainbow = false;
 var isBetterRainbow = false;
 var letters = "0123456789ABCDEF";
@@ -146,3 +169,10 @@ var animationRunning = true;
 // color = "#006600";
 //drawing the characters
 var delay = 50;
+var chinese = "田由甲申甴电甶男甸甹町画甼甽甾甿畀畁畂畃畄畅畆畇畈畉畊畋界畍畎畏畐畑";
+// var japanese = "ノ国需ロヱ楽発ノエロレ階革広事ト受2断か裁回みす況載む型発ヒ族同ちフわ府下ゅぞ";
+var japanese = "あいうえおかきくけこがぎぐげごさしすせそざじずぜぞたちつてとだぢづでどなにぬねのはひふへほばびぶべぼぱぴぷぺぽまみむめもやゆよらりるれろわゐゑを";
+
+var og = "01";
+
+var array = og.split("");
