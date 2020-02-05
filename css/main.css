@@ -45,7 +45,7 @@ body {
 
 #weather-wrapper {
   position: absolute;
-  display: inline-block;
+  display: none;
   width: 180px;
   height: 560px;
   opacity: 1;
