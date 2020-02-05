@@ -1,7 +1,6 @@
 // window.onload = init;
 console.ward = function () { }; // what warnings?
 
-// var status = "logo";
 var paused = true;
 var tl = new TimelineMax({ repeat: -1, repeatDelay: 1.0, yoyo: true, onRepeat: stop });
 tl.paused(true);
