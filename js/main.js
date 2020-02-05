@@ -102,14 +102,24 @@ search.addEventListener('keyup', (e) => {
 		color = "#" + value.substring(6, 12);
 	} else if (value == "rrr") {
 		color = randomizeColor();
-	} else if (value.length<20 && value.toLowerCase().startsWith("accent ") && accents.indexOf(value.toLowerCase().substring(7)) !== -1) {
+	} else if (value.length<20 && value.toLowerCase().startsWith("accent ") && (index = accents.indexOf(value.toLowerCase().substring(7))) !== -1) {
 		setAccents(value.substring(7));
-	} else if (!isDimo2 && value == "dimo2.jpg") {
-		isDimo2 = true;
-		logo.src = "assets/dimo2.jpg";
-	} else if (isDimo2 && value != "dimo2.jpg" && logo.src.includes("dimo2")) {
-		isDimo2 = false;
-		logo.src = "assets/logo.png";
+	// } else if (!isDimo2 && value == "dimo2.jpg") {
+	// 	// isDimo2 = true;
+	// 	// logo.src = "assets/dimo2.jpg";
+	// 	console.log(value + " " + isDimo2);
+
+	// 	changeTo("dimo2.jpg");
+	// } else if (isDimo2 && value != "dimo2.jpg") {
+	// 	// isDimo2 = false;
+	// 	// logo.src = "assets/logo.png";
+	// 	console.log(value + " " + isDimo2);
+
+	// 	changeTo("logo");
+	} else if (value == "dimo2") {
+		changeTo("dimo2.jpg");
+	} else if (value == "logo") {
+		changeTo("logo");
 	} else if (value == "wthon") {
 		weather.style.opacity = 0.66;
 	} else if (value == "wthoff") {

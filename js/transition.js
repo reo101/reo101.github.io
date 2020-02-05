@@ -1,17 +1,39 @@
 // window.onload = init;
 console.ward = function () { }; // what warnings?
 
-var unpaused = false;
-var tl = new TimelineMax({ repeat: -1, repeatDelay: 1.0, yoyo: true });
-function halt() {
-  if (unpaused) {
-    tl._repeat = 0;
-    unpaused = false;
-  } else {
-    tl._repeat = -1;
-    unpaused = true;
+// var status = "logo";
+var paused = true;
+var tl = new TimelineMax({ repeat: -1, repeatDelay: 1.0, yoyo: true, onRepeat: stop });
+tl.paused(true);
+
+function stop() {
+  // console.log("WRYYYYYYYYYYYYY " + paused);
+  setTimeout(() => tl.paused(true), 100);
+  paused = true;
+}
+
+function changeTo(whomstve) {
+  // let cycle = tl._cycle;
+  switch (whomstve) {
+    case "logo": //to normal
+      if (!isDimo2)
+        break;
+      if (paused)
+        tl.paused(false);
+      paused = false;
+      isDimo2 = false;
+      break;
+    case "dimo2.jpg": //to dimo2.jpg
+      if (isDimo2)
+        break;
+      if (paused)
+        tl.paused(false);
+      paused = false;
+      isDimo2 = true;
+      break;
   }
 }
+
 function transitionsInit() {
   // if(unpaused){
   //   tl.paused = !tl.paused;
@@ -21,20 +43,20 @@ function transitionsInit() {
   var root = new THREERoot({
     createCameraControls: !true,
     antialias: (window.devicePixelRatio === 1),
-    fov: 60
+    fov: 50
   });
 
   root.renderer.setClearColor(0x000000, 0);
   root.renderer.setPixelRatio(window.devicePixelRatio || 1);
   root.camera.position.set(0, 0, 60);
 
-  var width = 60;
-  var height = 60;
+  var width = 40;
+  var height = 40;
 
   var slide = new Slide(width, height, 'out');
   var l1 = new THREE.ImageLoader();
   l1.setCrossOrigin('Anonymous');
-  l1.load('assets/dimo2.jpg', function (img) {
+  l1.load('assets/logo.png', function (img) {
     slide.setImage(img);
   })
   root.scene.add(slide);
@@ -42,7 +64,7 @@ function transitionsInit() {
   var slide2 = new Slide(width, height, 'in');
   var l2 = new THREE.ImageLoader();
   l2.setCrossOrigin('Anonymous');
-  l2.load('assets/logo.png', function (img) {
+  l2.load('assets/dimo2.jpg', function (img) {
     slide2.setImage(img);
   })
 
@@ -67,7 +89,7 @@ function transitionsInit() {
 ////////////////////
 
 function Slide(width, height, animationPhase) {
-  var plane = new THREE.PlaneGeometry(/*width*/height, height, /*width*/height * 2, height * 2);
+  var plane = new THREE.PlaneGeometry(width, height, width * 2, height * 2);
 
   THREE.BAS.Utils.separateFaces(plane);
 
@@ -130,8 +152,7 @@ function Slide(width, height, animationPhase) {
 
     if (animationPhase === 'in') {
       delayY = THREE.Math.mapLinear(Math.abs(centroid.y), 0, height * 0.5, 0.0, maxDelayY)
-    }
-    else {
+    } else {
       delayY = THREE.Math.mapLinear(Math.abs(centroid.y), 0, height * 0.5, maxDelayY, 0.0)
     }
 
@@ -148,8 +169,7 @@ function Slide(width, height, animationPhase) {
     if (animationPhase === 'in') {
       control0.copy(centroid).sub(getControlPoint0(centroid));
       control1.copy(centroid).sub(getControlPoint1(centroid));
-    }
-    else { // out
+    } else { // out
       control0.copy(centroid).add(getControlPoint0(centroid));
       control1.copy(centroid).add(getControlPoint1(centroid));
     }
@@ -288,7 +308,8 @@ function THREERoot(params) {
   console.log(this.renderer.domElement);
   //   this.newCanvas = this.renderer.dom;
   //   this.newCanvas.style = "max-width:200px; max-heigth: 150px;";
-  this.renderer.setSize(258, 150);
+  // this.renderer.setSize(258, 150);
+  this.renderer.setSize(2.72 * 200, 200);
   console.log(this.renderer.domElement);
   document.getElementById('logo-wrapper').appendChild(this.renderer.domElement);
 
