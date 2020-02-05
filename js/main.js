@@ -202,7 +202,3 @@ var isBackspace = (val) => {
 	var bool = val && val.length < prevWord.length;
 	return bool;
 }
-
-transitionsInit();
-// logo.style.transform = "scale(0.0);";
-// document.getElementsByTagName("canvas")[1].style="max-height: 150px";

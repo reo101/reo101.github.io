@@ -8,14 +8,14 @@
 }
 
 :root {
-	// --search-form-accent: 				rgba(228, 228, 228, 0.486)		;
-	// --main-white-color: 				rgb(2, 0, 0)				;
-	// --search-block-label: 				rgba(127,127,127,0.15)		;
-	// --search-wrapper-ul-bg: 			rgba(190, 190, 189, 0.5)		;
-	// --quick-wrapper-underline: 			rgb(255, 255, 255)				;
-	// --search-wrapper-ul-cl: 			rgb(124, 124, 124)			;
+	--search-form-accent: 				rgba(228, 228, 228, 0.486)		;
+	--main-white-color: 				rgb(2, 0, 0)				;
+	--search-block-label: 				rgba(127,127,127,0.15)		;
+	--search-wrapper-ul-bg: 			rgba(190, 190, 189, 0.5)		;
+	--quick-wrapper-underline: 			rgb(255, 255, 255)				;
+	--search-wrapper-ul-cl: 			rgb(124, 124, 124)			;
 	
-	// --testis: green;
+	--testis: green;
 	
 	--search-form-accent: 		;//rgba(24, 168, 11, 0.486);
 	--main-white-color: 		;//rgb(169, 169, 169);
@@ -63,17 +63,17 @@ body {
 	align-items: flex;
 	text-align: center;
 	width: 100%;
+<<<<<<< HEAD
 	height: calc(150px+5vh+5vh);
 	// padding-bottom: 5vh;
 	// padding-top: 5vh;
+=======
+	height: 150px;
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+>>>>>>> parent of b29163c... Work in progress cool icon
 	opacity: 0.5;
-
-	// canvas {
-	// 	// transform: scale(0.8);
-	// 	max-height: 150px;
-	// 	max-width: 250px;
-	// }
-
+	
 	#logo-box {
 		display: inline-block;
 		height: 150px;
