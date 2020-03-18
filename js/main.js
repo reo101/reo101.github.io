@@ -102,20 +102,20 @@ search.addEventListener('keyup', (e) => {
 		color = "#" + value.substring(6, 12);
 	} else if (value == "rrr") {
 		color = randomizeColor();
-	} else if (value.length<20 && value.toLowerCase().startsWith("accent ") && (index = accents.indexOf(value.toLowerCase().substring(7))) !== -1) {
+	} else if (value.length < 20 && value.toLowerCase().startsWith("accent ") && (index = accents.indexOf(value.toLowerCase().substring(7))) !== -1) {
 		setAccents(value.substring(7));
-	// } else if (!isDimo2 && value == "dimo2.jpg") {
-	// 	// isDimo2 = true;
-	// 	// logo.src = "assets/dimo2.jpg";
-	// 	console.log(value + " " + isDimo2);
+		// } else if (!isDimo2 && value == "dimo2.jpg") {
+		// 	// isDimo2 = true;
+		// 	// logo.src = "assets/dimo2.jpg";
+		// 	console.log(value + " " + isDimo2);
 
-	// 	changeTo("dimo2.jpg");
-	// } else if (isDimo2 && value != "dimo2.jpg") {
-	// 	// isDimo2 = false;
-	// 	// logo.src = "assets/logo.png";
-	// 	console.log(value + " " + isDimo2);
+		// 	changeTo("dimo2.jpg");
+		// } else if (isDimo2 && value != "dimo2.jpg") {
+		// 	// isDimo2 = false;
+		// 	// logo.src = "assets/logo.png";
+		// 	console.log(value + " " + isDimo2);
 
-	// 	changeTo("logo");
+		// 	changeTo("logo");
 	} else if (value == "dimo2") {
 		changeTo("dimo2.jpg");
 	} else if (value == "logo") {
@@ -156,17 +156,17 @@ search.addEventListener('keydown', (e) => {
 		key = isBackspace(value) ? 8 : 0;
 	}
 
-	if (key == 8) {
-		if (value == ''){ // && command.icon != commands[0].icon) {
-			command = commands[0];
-			hideHelp();
-			icon.className = command.icon;
-			search.value = '';
-			search.setAttribute('name', command.prefix);
-			search.setAttribute('placeholder', command.makePlaceholder());
-		}
+	// if (key == 8) {
+	// 	if (value == '') { // && command.icon != commands[0].icon) {
+	// 		command = commands[0];
+	// 		hideHelp();
+	// 		icon.className = command.icon;
+	// 		search.value = '';
+	// 		search.setAttribute('name', command.prefix);
+	// 		search.setAttribute('placeholder', command.makePlaceholder());
+	// 	}
 
-	}
+	// }
 
 	// if (value.length == 0 && String.fromCharCode(e.keyCode).match(/(\w|\s)/g)) {
 	// 	help.style['max-height'] = '100px';

@@ -53,7 +53,7 @@ body {
   align-items: flex;
   text-align: center;
   width: 100%;
-  height: calc(150px+5vh+5vh);
+  height: 200;
   opacity: 0.5;
 }
 

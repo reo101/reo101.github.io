@@ -63,16 +63,10 @@ body {
 	align-items: flex;
 	text-align: center;
 	width: 100%;
-	height: calc(150px+5vh+5vh);
+	height: 200;//calc(150px+5vh+5vh);
 	// padding-bottom: 5vh;
 	// padding-top: 5vh;
 	opacity: 0.5;
-
-	// canvas {
-	// 	// transform: scale(0.8);
-	// 	max-height: 150px;
-	// 	max-width: 250px;
-	// }
 
 	#logo-box {
 		display: inline-block;
@@ -121,12 +115,6 @@ body {
 		}
 	}
 
-	// @media screen and (max-width: 1000px) {
-	// 	.search-block {
-	// 		width: 60%;
-	// 		margin: 0vh auto 0vh;
-	// 	}
-	// }
 	::-webkit-input-placeholder {
 		color: var(--main-white-color);
 		opacity: 0.5;
@@ -151,7 +139,7 @@ body {
 
 	::-moz-placeholder {
 		color: var(--main-white-color);
-		opacity: 0.5; //baka left at at 0
+		opacity: 0.5;
 		-moz-transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 		transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 	}

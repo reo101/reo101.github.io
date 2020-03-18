@@ -1,6 +1,7 @@
 // window.onload = init;
 console.ward = function () { }; // what warnings?
 
+// var status = "logo";
 var paused = true;
 var tl = new TimelineMax({ repeat: -1, repeatDelay: 1.0, yoyo: true, onRepeat: stop });
 tl.paused(true);
@@ -46,7 +47,7 @@ function transitionsInit() {
   });
 
   root.renderer.setClearColor(0x000000, 0);
-  root.renderer.setPixelRatio(window.devicePixelRatio || 1);
+  root.renderer.setPixelRatio(1);//window.devicePixelRatio || 1);
   root.camera.position.set(0, 0, 60);
 
   var width = 40;
@@ -304,17 +305,18 @@ function THREERoot(params) {
   //   this.renderer.setPixelRatio(2);
   //   this.renderer.setSize(100, 100);
   //   this.renderer.
-  console.log(this.renderer.domElement);
+  // console.log(this.renderer.domElement);
   //   this.newCanvas = this.renderer.dom;
   //   this.newCanvas.style = "max-width:200px; max-heigth: 150px;";
   // this.renderer.setSize(258, 150);
   this.renderer.setSize(2.72 * 200, 200);
-  console.log(this.renderer.domElement);
+  // this.renderer.setPixelRatio(1);
+  // console.log(this.renderer.domElement);
   document.getElementById('logo-wrapper').appendChild(this.renderer.domElement);
 
   this.camera = new THREE.PerspectiveCamera(
     params.fov,
-    window.innerWidth / window.innerHeight,
+    1,//window.innerWidth / window.innerHeight,
     params.zNear,
     params.zfar
   );

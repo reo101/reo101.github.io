@@ -3,7 +3,7 @@
 	"name": "RTHP",
 	"description": "Overrides the new tab page with a custom made one by reo101 && taki",
 	"homepage": "https://github.com/reo101/reo101.github.io",
-	"version": "1.4",
+	"version": "1.5",
 	"author": "reo101",
 	"authors": ["reo101", "taki"],
 	"incognito": "spanning",
