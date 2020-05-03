@@ -9,7 +9,7 @@ class Command {
 		this.isSpecial = isSpecial;
 		this.isShortcut = isShortcut;
 		this.hasCallback = hasCallback;
-		this.callbackScript = "none";
+		// this.callbackScript = "none";
 		this.callbackURLPrefix = callbackURLPrefix;
 		this.callbackURLSufix = callbackURLSufix;
 		this.decodeJSON = decodeJSON;
@@ -44,6 +44,8 @@ class Command {
 		var xhr = new XMLHttpRequest();
 
 		var url = "https://cors-anywhere.herokuapp.com/" + this.callbackURLPrefix + value + this.callbackURLSufix;
+		// console.log(url);
+
 
 		xhr.open("GET", url);
 		xhr.onload = xhr.onerror = () => {
@@ -57,6 +59,16 @@ class Command {
 			});
 			document.getElementById("options").innerHTML = list;
 
+			// autocompletion = new autoComplete({
+			// 	data: {
+			// 		src: array,
+			// 	},
+			// 	highlight: true,
+			// 	maxResults: 10,
+			// 	onSelection: feedback => {
+			// 		console.log(feedback);
+			// 	}
+			// });
 
 			// autocomplete(search, this.decodeJSON(rawValue));
 		};
@@ -69,9 +81,17 @@ class Command {
 }
 
 commands = [
-	new Command(0, [''], 'DuckDuckGo', 'https://duckduckgo.com/', '?q='),
-	new Command(1, ['/d'], 'DuckDuckGo', 'https://duckduckgo.com/', '?q='),
-	new Command(2, ['/g'], 'Google', 'https://google.com/', 'search?q=', false, false, false, true,
+	new Command(0, ['', '/d'], 'DuckDuckGo', 'https://duckduckgo.com/', '?q=', "", false, false, true,
+		"https://duckduckgo.com/ac/?q=", "&kl=wt-wt",
+		value => {
+			// console.log(value);
+			let array = JSON.parse(value);
+			// console.log(array);
+			array = array.map(element => element.phrase);
+			// console.log(array);
+			return array;
+		}),
+	new Command(1, ['/g'], 'Google', 'https://google.com/', 'search?q=', "", false, false, true,
 		"https://www.google.com/complete/search?q=",
 		"&cp=10&client=psy-ab&xssi=t&gs_ri=gws-wiz&hl=en-BG&authuser=0&psi=A4KtXrKPGuidlwSAyp2YAg.1588429313922",
 		value => {
@@ -83,27 +103,50 @@ commands = [
 			return array;
 			// autocomplete(search, array);
 		}),
-	new Command(3, ['/t'], 'Torrents', 'https://torrentz2.eu/', 'search?f='),
-	new Command(4, ['/x'], '1337x', 'https://1337x.to/', 'search/', '/1/'),
-	new Command(5, ['/y', '/yt'], 'YouTube', 'https://www.youtube.com/', 'results?search_query=', false, false, false, true, "http://suggestqueries.google.com/complete/search?client=firefox&ds=yt&q=", ""),
-	new Command(6, ['r/'], 'Reddit', 'https://www.reddit.com/', 'r/', '/', true),
-	new Command(7, ['/z'], 'Zamunda', 'https://www.zamunda.net/', 'bananas?c42=1&c25=1&c35=1&c20=1&c19=1&c5=1&c24=1&c7=1&c33=1&c4=1&c21=1&c1=1&c22=1&search=', '&gotonext=1&incldead=&field=name'),
-	new Command(8, ['/zf'], 'Zamunda Films', 'https://www.zamunda.net/', 'bananas?c42=1&c25=1&c35=1&c20=1&c19=1&c5=1&c24=1&c7=1&c33=1&search=', '&gotonext=1&incldead=&field=name'),
-	new Command(9, ['/zg'], 'Zamunda Games', 'https://www.zamunda.net/', 'bananas?c4=1&c21=1&c1=1&c22=1&search=', '&gotonext=1&incldead=&field=name'),
-	new Command(10, ['shk'], 'Shkolo', 'https://app.shkolo.bg/dashboard', '', '', true, true),
-	new Command(11, ['spme'], 'Spotify stats', 'https://spotify.me', '', '', true, true),
-	new Command(12, ['/s'], 'Stack Overflow', 'https://www.stackoverflow.com/', 'search?q='),
-	new Command(13, ['rs'], 'RipSave', 'https://ripsave.com/ ', '', '', true, true),
-	new Command(14, ['xpi'], 'Firefox XPI', 'http://reo.free.bg/xpi/', '', '', true, true),
-	new Command(15, ['fmi'], 'FMI Exams', 'https://www.fmi.uni-sofia.bg/bg/sample-exams-view', '', '', true, true),
+	new Command(2, ['/t'], 'Torrents', 'https://torrentz2.eu/', 'search?f=', "", false, false, true,
+		"https://torrentz2.eu/suggestions/",
+		"",
+		value => {
+			let array = eval(value);
+			array = array[1];
+			console.log(array);
+			return array;
+		}),
+	new Command(3, ['/x'], '1337x', 'https://1337x.to/', 'search/', '/1/'),
+	new Command(4, ['/y', '/yt'], 'YouTube', 'https://www.youtube.com/', 'results?search_query=', "", false, false, true,
+		"http://suggestqueries.google.com/complete/search?client=firefox&ds=yt&q=",
+		"",
+		value => {
+			let array = eval(value);
+			array = array[1];
+			console.log(array);
+			return array;
+		}),
+	new Command(5, ['r/'], 'Reddit', 'https://www.reddit.com/', 'r/', '/', true, false, true,
+		"https://oauth.reddit.com/api/subreddit_autocomplete_v2.json?query=",
+		"&raw_json=1&gilding_detail=1",
+		value => {
+			console.log(value);
+		}),
+	new Command(6, ['/z'], 'Zamunda', 'https://www.zamunda.net/', 'bananas?c42=1&c25=1&c35=1&c20=1&c19=1&c5=1&c24=1&c7=1&c33=1&c4=1&c21=1&c1=1&c22=1&search=', '&gotonext=1&incldead=&field=name'),
+	new Command(7, ['/zf'], 'Zamunda Films', 'https://www.zamunda.net/', 'bananas?c42=1&c25=1&c35=1&c20=1&c19=1&c5=1&c24=1&c7=1&c33=1&search=', '&gotonext=1&incldead=&field=name'),
+	new Command(8, ['/zg'], 'Zamunda Games', 'https://www.zamunda.net/', 'bananas?c4=1&c21=1&c1=1&c22=1&search=', '&gotonext=1&incldead=&field=name'),
+	new Command(9, ['shk'], 'Shkolo', 'https://app.shkolo.bg/dashboard', '', '', true, true),
+	new Command(10, ['spme'], 'Spotify stats', 'https://spotify.me', '', '', true, true),
+	new Command(11, ['/s'], 'Stack Overflow', 'https://www.stackoverflow.com/', 'search?q='),
+	new Command(12, ['rs'], 'RipSave', 'https://ripsave.com/ ', '', '', true, true),
+	new Command(13, ['xpi'], 'Firefox XPI', 'http://reo.free.bg/xpi/', '', '', true, true),
+	new Command(14, ['fmi'], 'FMI Exams', 'https://www.fmi.uni-sofia.bg/bg/sample-exams-view', '', '', true, true),
 ];
 
 var command = commands[0];
 
+// polyfill(document);
+
 search.addEventListener('keyup', (e) => {
 	var value = search.value;
-	if (command.hasCallback){
-		console.log(value);
+	if (command.hasCallback && e.keyCode != 38 && e.keyCode != 40) {
+		// console.log(value);
 		command.getCallbackdata(value);
 	}
 
@@ -117,6 +160,11 @@ search.addEventListener('keyup', (e) => {
 		value = value.trim();
 		for (var i = 0; i < commands.length; i++) {
 			for (var j = 0; j < commands[i].commands.length; j++) {
+				// if (commands[i].label == "Reddit") {
+					// console.log(value);
+					// console.log(commands[i].commands[j]);
+				// }
+
 				if (value == commands[i].commands[j]) {
 					command = commands[i];
 					hideHelp();
@@ -130,7 +178,7 @@ search.addEventListener('keyup', (e) => {
 		}
 	} else if (
 		value.length < 5 &&
-		(specCom = commands.filter((com) => com.isSpecial == true && com.command == value)).length > 0
+		(specCom = commands.filter((com) => com.isSpecial == true && com.commands.filter((com) => com==value).length>0)).length > 0
 	) {
 		// console.log(specCom);
 		command = commands[specCom[0].id];

@@ -35,6 +35,7 @@ ctx.fillStyle = "rgba(0, 0, 0, 1)";
 ctx.fillRect(0, 0, background.width, background.height);
 
 //main
+var autocompletion;
 var search = document.getElementById('search');
 var help = document.getElementById('help');
 {
