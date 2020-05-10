@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>👨‍💻🤔Java-jiq🤔👨‍💻</title>
+    <meta name="theme-color" content="#38e60e">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/favicon/favicon.ico">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <canvas id="background"> </canvas>
+
+    <!-- 
+        Weather
+     -->
+
+    <div id="weather-wrapper">
+        <a id="weather" name="weather" onload="getContent();" class="weatherwidget-io" data-label_1="GOLEMO BUCHINO"
+            data-label_2="WEATHER" data-theme="kiwi" data-basecolor="rgba(181, 242, 37, 0.5)" data-shadow="#0000002a"
+            data-accent="rgba(0, 255, 255, 0.1)" data-textcolor="#000000" data-highcolor="#ff0000"
+            data-lowcolor="#0000ff" data-cloudfill="#b0b79c">GOLEMO BUCHINO WEATHER</a>
+        <!-- <div id="current">
+
+        </div>
+        <div id="forecast">
+
+        </div> -->
+    </div>
+
+    <!--
+            Logo
+    -->
+
+    <div id="logo-wrapper">
+        <a id="logo-box" href="http://reo.free.bg">
+            <img id="logo" src="assets/newlogosmol.png">
+        </a>
+    </div>
+
+    <!--
+            Search
+        -->
+
+    <div id="search-wrapper">
+        <div class="search-block">
+            <div id="search-form" class="autocomplete">
+                <input type="text" name="q" id="search" autofocus="autofocus" autocomplete="off"
+                    placeholder="# Search with DuckDuckGo" list="options"/>
+                <label for="search"><span id="search-icon" class="fa fa-duckduckgo"></span></label>
+            </div>
+            <!-- <ul id="autoComplete_list"></ul> -->
+            <ul id="help">
+                [<span class="bold">/d</span>] DuckDuckGo;
+                [<span class="bold">/g</span>] Google;
+                [<span class="bold">r/</span>] Reddit; <br>
+                [<span class="bold">/z,/zg,/zf</span>] Zamunda;
+                [<span class="bold">/t</span>] Torrents;
+                [<span class="bold">/s</span>] StackOverflow; <br>
+                [<span class="bold">/y,/yt</span>] YouTube;
+            </ul>
+            <datalist id="options"></datalist>
+        </div>
+    </div>
+
+    <!--
+            BlitzLinks
+        -->
+
+    <div id="quick-wrapper">
+        <ul class="row">
+            <li>
+                <a class="title" href="#">Important</a>
+                <ul>
+                    <li><a href="https://www.fmi.uni-sofia.bg/bg/sample-exams-view">› FMI Exams</a></li>
+                    <li><a href="https://www.messenger.com/t/1053108054745664">› Messenger Group</a></li>
+                    <li><a href="https://reo101.github.io/index.html">› GitHub Version</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class="title" href="#">Coding</a>
+                <ul>
+                    <li><a href="https://www.stackoverflow.com/">› Stack OverFlow</a></li>
+                    <li><a href="https://www.w3schools.com/">› W3 Schools</a></li>
+                    <li><a href="https://github.com/">› GitHub</a></li>
+                    <!-- <li><a href="https://codepen.io/">› CodePen</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web">› Mozilla Dev</a></li>
+                    <li><a href="https://devdocs.io/">› DevDocs</a></li>
+                    <li><a href="https://www.quackit.com/">› Quackit</a></li> -->
+                </ul>
+            </li>
+            <li>
+                <a class="title" href="#">Legal</a>
+                <ul>
+                    <li><a href="http://search.taki-senpai.me/">› Google File Search</a></li>
+                    <li><a href="https://igg-games.com/">› IGG Games</a></li>
+                    <li><a href="https://cracked-games.org/">› Cracked-Games</a></li>
+                    <li><a href="https://www.zamunda.net/bananas">› Zamunda</a></li>
+                    <!-- <li><a href="https://www.reddit.com/r/Piracy/">› r/Piracy</a></li>
+                    <li><a href="https://www.reddit.com/r/HowToHack/">› r/HowToHack</a></li>
+                    <li><a href="http://training.zempirians.com/">› Zempirians</a></li>
+                    <li><a href="https://crackwatch.com/all-games">› CrackWatch</a></li>
+                    <li><a href="https://www.reddit.com/r/androidroot/">› r/AndroidRoot</a></li> -->
+                </ul>
+            </li>
+            <li>
+                <a class="title" href="#">Games</a>
+                <ul>
+                    <li><a href="http://www.donttap.com/">› Dont Tap</a></li>
+                    <li><a href="https://play.typeracer.com/">› Type Racer</a></li>
+                    <li><a href="https://secrethitler.io/">› Secret Hitler</a></li>
+                    <li><a href="http://minesweeperonline.com/#">› Mine Sweeper</a></li>
+                    <li><a href="https://tetris.com/play-tetris">› Tetris</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class="title" href="#">Steam</a>
+                <ul>
+                    <li><a href="steam://rungameid/431960">› Wallpaper Engine</a></li>
+                    <li><a href="steam://rungameid/620">› Portal 2</a></li>
+                    <li><a href="steam://rungameid/736260">› Baba Is You</a></li>
+                    <li><a href="steam://rungameid/105600">› Terraria</a></li>
+                    <li><a href="steam://rungameid/391220">› Rise of the Tomb Raider</a></li>
+                    <li><a href="steam://rungameid/440">› TF2</a></li>
+                    <li><a href="steam://rungameid/359100">› Qube 2</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class="title" href="#">Amusement</a>
+                <ul>
+                    <li><a href="http://www.kursisti.com/school/277/доц-Станислав-Димов">› dimo2</a></li>
+                    <li><a href="https://youtube.com/">› Youtube</a></li>
+                    <li><a href="https://www.twitch.tv/">› Twitch</a></li>
+                    <li><a href="https://reddit.com/">› Reddit</a></li>
+                    <li><a href="https://twitter.com/home">› Twitter</a></li>
+                    <li><a href="https://facebook.com/">› Facebook</a></li>
+                    <!-- <li><a href="https://www.instagram.com/">› Instagram</a></li>
+                    <li><a href="https://www.tumblr.com/dashboard">› Tumblr</a></li> -->
+                    <!-- <li><a href="https://danbooru.donmai.us/posts?tags=mafuyu_%28chibi21%29">› Depression-bleach</a> -->
+            </li>
+        </ul>
+        </li>
+        <li>
+            <a class="title" href="#">Anime</a>
+            <ul>
+                <li><a href="https://kissanime.ru/">› Kissanime</a></li>
+                <li><a href="https://kitsu.io/">› Kitsu</a></li>
+                <li><a href="https://horriblesubs.info/">› Horriblesubs</a></li>
+                <li><a href="https://nyaa.net/">› Nyaa</a></li>
+                <li><a href="https://9anime.nl/">› 9Anime</a></li>
+                <li><a href="https://animeflix.io/">› Animeflix</a></li>
+                <!-- <li><a href="https://www.reddit.com/r/Animewallpaper/">› r/Animewallpaper</a></li> -->
+            </ul>
+        </li>
+        <!-- <li>
+            <a class="title" href="#">4Chan</a>
+            <a class="title" href="http://www.4chan.org/">4Chan</a>
+            <ul>
+                <li><a href="http://boards.4channel.org/w/">› /w/ AnimeWallpaper</a></li>
+                <li><a href="http://boards.4channel.org/gd/">› /gd/ Graphic Designddddd</a></li>
+                <li><a href="http://boards.4chan.org/c/">› /c/ AnimeCute</a></li>
+                <li><a href="http://boards.4chan.org/b/">› /b/ Random</a></li>
+                <li><a href="http://boards.4chan.org/k/">› /k/ Weapons</a></li>
+                <li><a href="http://boards.4chan.org/gif/">› /gif/ Gifs</a></li>
+                <li><a href="http://boards.4chan.org/s4s/">› /s4s/ Shit4ChanSays</a></li>
+                <li><a href="http://boards.4chan.org/r9k/">› /r9k/ r9k</a></li>
+            </ul>
+        </li> 
+        </ul> -->
+    </div>
+
+    <!-- <canvas id="visualizer"></canvas> -->
+
+    <!--
+        JavaScript
+    -->
+
+    <!-- Real JS -->
+    <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script> -->
+    <!-- <script src='js/jquery.js'></script>
+    <script src='js/easel.js'></script>
+    <script src='js/tween.js'></script> -->
+    <!-- <script src="js/wallpaperEngineShit.js" defer></script> -->
+    <script src="js/variables.js"></script>
+    <script src="js/mobile.js"></script>
+    <script src="js/weatherLogic.js"></script>
+    <!-- <script src="js/cookiesLogic.js"></script> -->
+    <script src="js/bg.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenLite.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TimelineMax.min.js"></script> -->
+    <script src="js/three.js"></script>
+    <script src="js/tween.js"></script>
+    <script src="js/bas.js"></script>
+    <script src="js/orbit.js"></script>
+    <!-- <script src="js/transition.js"></script> -->
+    <!-- <script src="js/autocompletion.js"></script> -->
+    <!-- <script src="js/clamp.js"></script> -->
+    <!-- <script src="js/polyfill.js"></script> -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
+<!-- https://addons.mozilla.org/en-GB/developers/addon/ff1f2bbf430d434e9b1a/versions/4931870 -->
