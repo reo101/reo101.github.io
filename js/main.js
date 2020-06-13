@@ -147,7 +147,7 @@ var command = commands[0];
 
 search.addEventListener('keyup', (e) => {
 	var value = search.value;
-	if (command.hasCallback && e.keyCode != 38 && e.keyCode != 40) {
+	if (e.keyCode != 38 && e.keyCode != 40) {
 		// console.log(value);
 		command.getCallbackdata(value);
 	}
