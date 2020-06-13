@@ -262,11 +262,7 @@ search.addEventListener('keydown', (e) => {
 	var value = search.value;
 	var key = e.keyCode || e.which;
 	if (key == 13) {
-<<<<<<< HEAD
 		window.open(command.makeUrl(encodeURIComponent(value)), '_self');
-=======
-		window.open(command.makeUrl(value), '_self');
->>>>>>> refs/remotes/origin/master
 	}
 
 	if (key == 0 || key == 229) {
