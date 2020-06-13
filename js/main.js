@@ -38,6 +38,7 @@ class Command {
 
 	getCallbackdata(value) {
 		if (!this.hasCallback) {
+			document.getElementById("options").innerHTML = null;
 			return null;
 		}
 
