@@ -81,7 +81,7 @@ class Command {
 }
 
 commands = [
-	new Command(0, ['', '/d'], 'DuckDuckGo', 'https://duckduckgo.com/', '?q=', "", false, false, true,
+	new Command(0, ['', '/d', '/д'], 'DuckDuckGo', 'https://duckduckgo.com/', '?q=', "", false, false, true,
 		"https://duckduckgo.com/ac/?q=", "&kl=wt-wt",
 		value => {
 			// console.log(value);
@@ -91,7 +91,7 @@ commands = [
 			// console.log(array);
 			return array;
 		}),
-	new Command(1, ['/g'], 'Google', 'https://google.com/', 'search?q=', "", false, false, true,
+	new Command(1, ['/g', '/г'], 'Google', 'https://google.com/', 'search?q=', "", false, false, true,
 		"https://www.google.com/complete/search?q=",
 		"&cp=10&client=psy-ab&xssi=t&gs_ri=gws-wiz&hl=en-BG&authuser=0&psi=A4KtXrKPGuidlwSAyp2YAg.1588429313922",
 		value => {
@@ -137,6 +137,7 @@ commands = [
 	new Command(12, ['rs'], 'RipSave', 'https://ripsave.com/ ', '', '', true, true),
 	new Command(13, ['xpi'], 'Firefox XPI', 'http://reo.free.bg/xpi/', '', '', true, true),
 	new Command(14, ['fmi'], 'FMI Exams', 'https://www.fmi.uni-sofia.bg/bg/sample-exams-view', '', '', true, true),
+	new Command(15, ['/wa'], 'Wolfram Alpha', 'https://www.wolframalpha.com/', 'input/?i=', '', false, false)
 ];
 
 var command = commands[0];
@@ -250,7 +251,7 @@ search.addEventListener('keydown', (e) => {
 	var value = search.value;
 	var key = e.keyCode || e.which;
 	if (key == 13) {
-		window.open(command.makeUrl(value), '_self');
+		window.open(command.makeUrl(encodeURIComponent(value)), '_self');
 	}
 
 	if (key == 0 || key == 229) {
