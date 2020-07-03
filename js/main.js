@@ -44,7 +44,9 @@ class Command {
 
 		var xhr = new XMLHttpRequest();
 
-		var url = "https://cors-anywhere.herokuapp.com/" + this.callbackURLPrefix + value + this.callbackURLSufix;
+		var cors1 = "https://cors-anywhere.herokuapp.com/";
+		var cors2 = "https://crossorigin.me/https://";
+		var url = cors1 + this.callbackURLPrefix + value + this.callbackURLSufix;
 		// console.log(url);
 
 
@@ -82,10 +84,10 @@ class Command {
 }
 
 commands = [
-	new Command(0, ['', '/d', '/д'], 'DuckDuckGo', 'https://duckduckgo.com/', '?q=', "", false, false, true,
+	new Command(0, ['/d', '/д'], 'DuckDuckGo', 'https://duckduckgo.com/', '?q=', "", false, false, true,
 		"https://duckduckgo.com/ac/?q=", "&kl=wt-wt",
 		value => {
-			// console.log(value);
+			console.log(value);
 			let array = JSON.parse(value);
 			// console.log(array);
 			array = array.map(element => element.phrase);
@@ -129,10 +131,10 @@ commands = [
 		value => {
 			console.log(value);
 		}),
-	new Command(6, ['/z'], 'Zamunda', 'https://www.zamunda.net/', 'bananas?c42=1&c25=1&c35=1&c20=1&c19=1&c5=1&c24=1&c7=1&c33=1&c4=1&c21=1&c1=1&c22=1&search=', '&gotonext=1&incldead=&field=name'),
-	new Command(7, ['/zf'], 'Zamunda Films', 'https://www.zamunda.net/', 'bananas?c42=1&c25=1&c35=1&c20=1&c19=1&c5=1&c24=1&c7=1&c33=1&search=', '&gotonext=1&incldead=&field=name'),
-	new Command(8, ['/zg'], 'Zamunda Games', 'https://www.zamunda.net/', 'bananas?c4=1&c21=1&c1=1&c22=1&search=', '&gotonext=1&incldead=&field=name'),
-	new Command(9, ['shk'], 'Shkolo', 'https://app.shkolo.bg/dashboard', '', '', true, true),
+	new Command(6, ['/z', '/з'], 'Zamunda', 'https://www.zamunda.net/', 'bananas?c42=1&c25=1&c35=1&c20=1&c19=1&c5=1&c24=1&c7=1&c33=1&c4=1&c21=1&c1=1&c22=1&search=', '&gotonext=1&incldead=&field=name'),
+	new Command(7, ['/zf', '/зф'], 'Zamunda Films', 'https://www.zamunda.net/', 'bananas?c42=1&c25=1&c35=1&c20=1&c19=1&c5=1&c24=1&c7=1&c33=1&search=', '&gotonext=1&incldead=&field=name'),
+	new Command(8, ['/zg', '/зг'], 'Zamunda Games', 'https://www.zamunda.net/', 'bananas?c4=1&c21=1&c1=1&c22=1&search=', '&gotonext=1&incldead=&field=name'),
+	new Command(9, ['shk', 'шк'], 'Shkolo', 'https://app.shkolo.bg/dashboard', '', '', true, true),
 	new Command(10, ['spme'], 'Spotify stats', 'https://spotify.me', '', '', true, true),
 	new Command(11, ['/s'], 'Stack Overflow', 'https://www.stackoverflow.com/', 'search?q='),
 	new Command(12, ['rs'], 'RipSave', 'https://ripsave.com/ ', '', '', true, true),
@@ -207,26 +209,26 @@ search.addEventListener('keyup', (e) => {
 		color = randomizeColor();
 	} else if (value.length < 20 && value.toLowerCase().startsWith("accent ") && (index = accents.indexOf(value.toLowerCase().substring(7))) !== -1) {
 		setAccents(value.substring(7));
-		// } else if (!isDimo2 && value == "dimo2.jpg") {
-		// 	// isDimo2 = true;
-		// 	// logo.src = "assets/dimo2.jpg";
-		// 	console.log(value + " " + isDimo2);
+	// } else if (!isDimo2 && value == "dimo2.jpg") {
+	// 	// isDimo2 = true;
+	// 	// logo.src = "assets/dimo2.jpg";
+	// 	console.log(value + " " + isDimo2);
 
-		// 	changeTo("dimo2.jpg");
-		// } else if (isDimo2 && value != "dimo2.jpg") {
-		// 	// isDimo2 = false;
-		// 	// logo.src = "assets/logo.png";
-		// 	console.log(value + " " + isDimo2);
+	// 	changeTo("dimo2.jpg");
+	// } else if (isDimo2 && value != "dimo2.jpg") {
+	// 	// isDimo2 = false;
+	// 	// logo.src = "assets/logo.png";
+	// 	console.log(value + " " + isDimo2);
 
-		// 	changeTo("logo");
-	} else if (value == "dimo2") {
-		changeTo("dimo2.jpg");
-	} else if (value == "logo") {
-		changeTo("logo");
-	} else if (value == "wthon") {
-		weather.style.opacity = 0.66;
-	} else if (value == "wthoff") {
-		weather.style.opacity = 0;
+	// 	changeTo("logo");
+	// } else if (value == "dimo2") {
+	// 	changeTo("dimo2.jpg");
+	// } else if (value == "logo") {
+	// 	changeTo("logo");
+	// } else if (value == "wthon") {
+	// 	weather.style.opacity = 0.66;
+	// } else if (value == "wthoff") {
+	// 	weather.style.opacity = 0;
 	} else if (value == "shrink") {
 		shrink();
 	} else if (value == "unshrink") {
