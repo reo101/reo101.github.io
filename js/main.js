@@ -87,7 +87,7 @@ commands = [
 	new Command(0, ['/d', '/д'], 'DuckDuckGo', 'https://duckduckgo.com/', '?q=', "", false, false, true,
 		"https://duckduckgo.com/ac/?q=", "&kl=wt-wt",
 		value => {
-			console.log(value);
+			// console.log(value);
 			let array = JSON.parse(value);
 			// console.log(array);
 			array = array.map(element => element.phrase);
@@ -102,7 +102,7 @@ commands = [
 			value = value.substring(5);//.split[")]}'"];
 			let array = eval(value);
 			array = array[0].map(element => element[0]);
-			console.log(array);
+			// console.log(array);
 			return array;
 			// autocomplete(search, array);
 		}),
@@ -112,7 +112,7 @@ commands = [
 		value => {
 			let array = eval(value);
 			array = array[1];
-			console.log(array);
+			// console.log(array);
 			return array;
 		}),
 	new Command(3, ['/x'], '1337x', 'https://1337x.to/', 'search/', '/1/'),
@@ -122,14 +122,14 @@ commands = [
 		value => {
 			let array = eval(value);
 			array = array[1];
-			console.log(array);
+			// console.log(array);
 			return array;
 		}),
 	new Command(5, ['r/'], 'Reddit', 'https://www.reddit.com/', 'r/', '/', true, false, true,
 		"https://oauth.reddit.com/api/subreddit_autocomplete_v2.json?query=",
 		"&raw_json=1&gilding_detail=1",
 		value => {
-			console.log(value);
+			// console.log(value);
 		}),
 	new Command(6, ['/z', '/з'], 'Zamunda', 'https://www.zamunda.net/', 'bananas?c42=1&c25=1&c35=1&c20=1&c19=1&c5=1&c24=1&c7=1&c33=1&c4=1&c21=1&c1=1&c22=1&search=', '&gotonext=1&incldead=&field=name'),
 	new Command(7, ['/zf', '/зф'], 'Zamunda Films', 'https://www.zamunda.net/', 'bananas?c42=1&c25=1&c35=1&c20=1&c19=1&c5=1&c24=1&c7=1&c33=1&search=', '&gotonext=1&incldead=&field=name'),
@@ -239,6 +239,18 @@ search.addEventListener('keyup', (e) => {
 	} else if (value == "unfreeze") {
 		// delay = 50;
 		animationRunning = true;
+	} else if (value.endsWith(" animate")) {
+		clearAllAnimatedText();
+		message = value.substring(0, value.indexOf(" animate"));
+		animatedText = textToAnimation(message, "AnimationTextDiv", "fadeInAnimation", "animStyles1", "whoosh", true, true, true, "testbed");
+		checkAllAnimatedText();
+	} else if (value.endsWith(" wanimate")) {
+		clearAllAnimatedText();
+		message = value.substring(0, value.indexOf(" wanimate"));
+		animatedText = textToAnimation(message, "AnimationTextDiv", "fadeInAnimation", "animStyles1", "whoosh", false, true, true, "testbed");
+		checkAllAnimatedText();
+	} else if (false) {
+		// NEW
 	} else if (e.keyCode == 8 && value.length == 0) {
 		if (command.isSpecial) {
 			command = commands[0];

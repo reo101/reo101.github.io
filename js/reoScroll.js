@@ -16,17 +16,21 @@ function makeDummyStyle(idName, id, animName, timeOffset){
 
 var animatedElements = [];
 
-function textToAnimation(text="test", divId="div", animIdName="anim", animationName="whoosh", inChars=true, appendStyles=false, appendDiv=false, parentDivId) {
+function textToAnimation(text="test", divId="div", animIdName="anim", styleIdName="anim", animationName="whoosh", inChars=true, appendStyles=false, appendDiv=false, parentDivId) {
     let div = document.createElement("DIV");
     div.id=divId;
     var pieces = [];
+    // console.log(text);
+    // console.log(text.replace(/\\n/g, "\n").split("\n"));
+    text = text.replace(/\\n/g, "\n");
+    
     for(let i=0, rows = text.split("\n"), row;  i<rows.length; i++){
         row = rows[i];
         // console.log(row);
         pieces.push(inChars?[...row]:row.split(" ").map(str => str+" "));
     }
 
-    console.log(pieces);
+    // console.log(pieces);
 
     // let pieces = inChars?[...text]:text.split(" ").map(str => str+" ");
 
@@ -49,6 +53,7 @@ function textToAnimation(text="test", divId="div", animIdName="anim", animationN
     }
 
     globalStyle.appendChild(document.createTextNode(stylesArray.join("")));
+    globalStyle.id = styleIdName;
     
     if(appendStyles)
         document.head.appendChild(globalStyle);
@@ -61,13 +66,21 @@ function textToAnimation(text="test", divId="div", animIdName="anim", animationN
         "style": globalStyle
     };
 
-    animatedElements.push(div);
+    animatedElements.push(data);
 
     return data;
 }
 
-function startAnimation (elem){
+function startAnimation(elem) {
     elem.childNodes.forEach(span => span.style="animation-play-state: running;");
+}
+
+function clearAllAnimatedText() {
+    for(let i=0; i < animatedElements.length; i++){
+        document.getElementById(animatedElements[i].style.id).remove();
+        animatedElements[i].div.remove();
+    }
+    animatedElements = [];
 }
 ////////////////////////////////////////////////////////////
 
@@ -90,11 +103,11 @@ function check(elem) {
     }
 }
 
-function checkAll() {
-    animatedElements.forEach(elem => check(elem));
+function checkAllAnimatedText() {
+    animatedElements.forEach(data => check(data.div));
 }
 
-window.onscroll = checkAll;
+window.onscroll = checkAllAnimatedText;
 ////////////////////////////////////////////////////////////
 
 let message = `
@@ -104,7 +117,7 @@ now forfeit.
 - Skingrad Guard 
 `;
 
-let test = textToAnimation(message, "divdiv", "testisAnim", "whoosh", true, true, true, "testbed");
+let animatedText = textToAnimation(message, "AnimationTextDiv", "fadeInAnimation", "animStyles1", "whoosh", true, true, true, "testbed");
 
 ////////////////////////////////////////////////////////////
-checkAll();
+checkAllAnimatedText();
