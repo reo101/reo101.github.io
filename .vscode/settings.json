@@ -12,7 +12,11 @@
         "titleBar.inactiveForeground": "#e7e7e799",
         "statusBar.background": "#001a00",
         "statusBarItem.hoverBackground": "#004d00",
-        "statusBar.foreground": "#e7e7e7"
+        "statusBar.foreground": "#e7e7e7",
+        "activityBar.activeBackground": "#004d00",
+        "statusBar.border": "#001a00",
+        "titleBar.border": "#001a00"
     },
-    "peacock.color": "#001a00"
+    "peacock.color": "#001a00",
+    "liveServer.settings.port": 5501
 }

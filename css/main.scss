@@ -344,6 +344,32 @@ body {
 	}
 }
 
+@-webkit-keyframes whoosh {
+	0% {
+		opacity: 0;
+		-webkit-transform: skewX(-12deg);
+		padding-left: 6px;
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: skewX(0deg);
+		padding-left: 0px;
+	}
+}
+
+@keyframes whoosh {
+	0% {
+		opacity: 0;
+		transform: skewX(-12deg);
+		padding-left: 6px;
+	}
+	100% {
+		opacity: 1;
+		transform: skewX(0deg);
+		padding-left: 0px;
+	}
+}
+
 // #visualizer {
 // 	position: absolute;
 // 	left: 0;
