@@ -190,297 +190,33 @@ body {
   color: #f70000;
 }
 
-#autoComplete_wrapper {
-  position: relative;
-  display: inline-block;
-}
-
-#autoComplete {
-  position: relative;
-  padding: 0 2rem 0 3.5rem;
-  height: 2.1rem;
-  width: 6rem;
-  font-size: 1.2rem;
-  outline: none;
-  border-radius: 50rem;
-  border: 0.05rem solid #ff7a7a;
-  caret-color: #ff7a7a;
-  color: rgba(255, 255, 255, 0);
-  background-image: url(./images/magnifier.svg);
-  background-repeat: no-repeat;
-  background-size: 1.2rem;
-  background-origin: border-box;
-  background-position: center;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-  -webkit-transition: all -webkit-transform 0.4s ease;
-  text-overflow: ellipsis;
-}
-
-#autoComplete::-webkit-input-placeholder {
-  color: rgba(255, 122, 122, 0);
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-#autoComplete:-ms-input-placeholder {
-  color: rgba(255, 122, 122, 0);
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-#autoComplete::-ms-input-placeholder {
-  color: rgba(255, 122, 122, 0);
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-#autoComplete::placeholder {
-  color: rgba(255, 122, 122, 0);
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-#autoComplete:hover::-webkit-input-placeholder {
-  color: rgba(255, 122, 122, 0.3);
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  -webkit-transition: all -webkit-transform 0.3s ease;
-}
-
-#autoComplete:hover:-ms-input-placeholder {
-  color: rgba(255, 122, 122, 0.3);
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  -webkit-transition: all -webkit-transform 0.3s ease;
-}
-
-#autoComplete:hover::-ms-input-placeholder {
-  color: rgba(255, 122, 122, 0.3);
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  -webkit-transition: all -webkit-transform 0.3s ease;
-}
-
-#autoComplete:hover::placeholder {
-  color: rgba(255, 122, 122, 0.3);
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  -webkit-transition: all -webkit-transform 0.3s ease;
-}
-
-#autoComplete:focus::-webkit-input-placeholder {
-  padding: 0.1rem 0.6rem;
-  font-size: 1rem;
-  color: rgba(255, 122, 122, 0.3);
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  -webkit-transition: all -webkit-transform 0.3s ease;
-}
-
-#autoComplete:focus:-ms-input-placeholder {
-  padding: 0.1rem 0.6rem;
-  font-size: 1rem;
-  color: rgba(255, 122, 122, 0.3);
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  -webkit-transition: all -webkit-transform 0.3s ease;
-}
-
-#autoComplete:focus::-ms-input-placeholder {
-  padding: 0.1rem 0.6rem;
-  font-size: 1rem;
-  color: rgba(255, 122, 122, 0.3);
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  -webkit-transition: all -webkit-transform 0.3s ease;
-}
-
-#autoComplete:focus::placeholder {
-  padding: 0.1rem 0.6rem;
-  font-size: 1rem;
-  color: rgba(255, 122, 122, 0.3);
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  -webkit-transition: all -webkit-transform 0.3s ease;
-}
-
-#autoComplete::-moz-selection {
-  color: transparent;
-}
-
-#autoComplete::selection {
-  color: transparent;
-}
-
-#autoComplete:focus::-moz-selection {
-  color: #fff;
-  background-color: #ff7a7a;
-}
-
-#autoComplete:focus::selection {
-  color: #fff;
-  background-color: #ff7a7a;
-}
-
-#autoComplete:hover {
-  padding: 0 2rem 0 3.5rem;
-  color: #ff7a7a;
-  height: 3rem;
-  width: 16.5rem;
-  background-image: url(./images/magnifier.svg);
-  background-size: 1.7rem;
-  background-position: left 1.05rem top 0.7rem;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  -webkit-transition: all -webkit-transform 0.3s ease;
-}
-
-#autoComplete:focus {
-  padding: 0 2rem 0 3.5rem;
-  color: #ff7a7a;
-  height: 3rem;
-  width: 16.5rem;
-  border: 0.05rem solid #ff7a7a;
-  background-image: url(./images/magnifier.svg);
-  background-size: 1.5rem;
-  background-position: left 1.05rem top 0.8rem;
-  -webkit-box-shadow: rgba(255, 122, 122, 0.1) 0px 0px 20px 5px;
-          box-shadow: rgba(255, 122, 122, 0.1) 0px 0px 20px 5px;
-}
-
-#autoComplete_list {
-  position: fixed;
-  z-index: 1000;
-  padding: 0;
-  left: 0;
-  right: 0;
-  margin-top: 0;
-  margin-left: auto;
-  margin-right: auto;
-  width: 18rem;
-  -webkit-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out;
-  -webkit-transition: all -webkit-transform 0.1s ease;
-}
-
-.autoComplete_result {
-  margin: 0.15rem auto;
-  padding: 0.6rem;
-  max-width: 280px;
-  border: 0.05rem solid #e3e3e3;
+.datalist-polyfill {
   list-style: none;
-  text-align: left;
-  font-size: 1.1rem;
-  color: #7b7b7b;
-  -webkit-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out;
-  background-color: #fff;
+  display: none;
+  background: white;
+  -webkit-box-shadow: 0 2px 2px #999;
+          box-shadow: 0 2px 2px #999;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  max-height: 300px;
+  overflow-y: auto;
 }
 
-.autoComplete_result::-moz-selection {
-  color: rgba(255, 255, 255, 0);
-  background-color: rgba(255, 255, 255, 0);
+.datalist-polyfill:empty {
+  display: none !important;
 }
 
-.autoComplete_result::selection {
-  color: rgba(255, 255, 255, 0);
-  background-color: rgba(255, 255, 255, 0);
+.datalist-polyfill > li {
+  padding: 3px;
+  font: 13px "Lucida Grande", Sans-Serif;
 }
 
-.autoComplete_result:last-child {
-  border-radius: 0 0 1rem 1rem;
-}
-
-.autoComplete_result:hover {
-  cursor: pointer;
-  background-color: rgba(255, 248, 248, 0.9);
-  border-left: 2px solid #ff7a7a;
-  border-right: 2px solid #ff7a7a;
-  border-top: 2px solid transparent;
-  border-bottom: 2px solid transparent;
-}
-
-.autoComplete_result:focus {
-  outline: none;
-  background-color: rgba(255, 248, 248, 0.9);
-  border-left: 2px solid #ff7a7a;
-  border-right: 2px solid #ff7a7a;
-  border-top: 2px solid transparent;
-  border-bottom: 2px solid transparent;
-}
-
-.autoComplete_highlighted {
-  opacity: 1;
-  color: #ff7a7a;
-  font-weight: bold;
-}
-
-.autoComplete_highlighted::-moz-selection {
-  color: rgba(255, 255, 255, 0);
-  background-color: rgba(255, 255, 255, 0);
-}
-
-.autoComplete_highlighted::selection {
-  color: rgba(255, 255, 255, 0);
-  background-color: rgba(255, 255, 255, 0);
-}
-
-.autoComplete_selected {
-  cursor: pointer;
-  background-color: rgba(255, 248, 248, 0.9);
-  border-left: 2px solid #ff7a7a;
-  border-right: 2px solid #ff7a7a;
-  border-top: 2px solid transparent;
-  border-bottom: 2px solid transparent;
-}
-
-@media only screen and (max-width: 600px) {
-  #autoComplete {
-    width: 5rem;
-  }
-  #autoComplete:focus {
-    width: 11rem;
-    background-size: 1.6rem;
-    background-position: left 1.1rem top 0.75rem;
-  }
-  .autoComplete_result:first-child {
-    border-radius: 1rem 1rem 0 0;
-  }
-  .autoComplete_result:last-child {
-    border-radius: 0 0 1rem 1rem;
-  }
-  .autoComplete_result:only-child {
-    border-radius: 1rem;
-  }
-}
-
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  #autoComplete {
-    border-width: 1px;
-  }
-  #autoComplete:hover {
-    border-width: 1px;
-  }
-  #autoComplete:focus {
-    border-width: 1px;
-  }
-}
-
-@-moz-document url-prefix() {
-  #autoComplete {
-    border-width: 1px;
-    background-size: 1.2rem;
-    background-origin: border-box;
-    background-position: center;
-  }
-  #autoComplete:hover {
-    border-width: 1px;
-  }
-  #autoComplete:focus {
-    border-width: 1px;
-    background-position: left 1.1rem top 0.8rem;
-  }
+.datalist-polyfill__active {
+  background: #3875d7;
+  color: white;
 }
 
 #quick-wrapper {
@@ -580,5 +316,33 @@ body {
 
 #quick-wrapper ul li ul li a {
   display: block !important;
+}
+
+@-webkit-keyframes whoosh {
+  0% {
+    opacity: 0;
+    -webkit-transform: skewX(-12deg);
+    padding-left: 6px;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: skewX(0deg);
+    padding-left: 0px;
+  }
+}
+
+@keyframes whoosh {
+  0% {
+    opacity: 0;
+    -webkit-transform: skewX(-12deg);
+            transform: skewX(-12deg);
+    padding-left: 6px;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: skewX(0deg);
+            transform: skewX(0deg);
+    padding-left: 0px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
