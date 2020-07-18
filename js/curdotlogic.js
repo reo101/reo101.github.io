@@ -70,6 +70,7 @@ window.onload= () => {
       cursor.over("#search", {
         scale: 0.001,
         borderColor: "#ffffff",
+        easing: 0,
         // background: "#00acee"
         background: "transparent"
       });
