@@ -1,0 +1,859 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/a3c87ab5/
+#background	css/main.css	/^#background {$/;"	i
+#logo-wrapper	css/main.css	/^#logo-wrapper {$/;"	i
+#logo-wrapper #logo-box	css/main.css	/^#logo-wrapper #logo-box {$/;"	i
+#logo-wrapper #logo-box #logo	css/main.css	/^#logo-wrapper #logo-box #logo {$/;"	i
+#quick-wrapper	css/main.css	/^#quick-wrapper {$/;"	i
+#quick-wrapper ul	css/main.css	/^#quick-wrapper ul {$/;"	s
+#quick-wrapper ul li	css/main.css	/^#quick-wrapper ul li {$/;"	s
+#quick-wrapper ul li a	css/main.css	/^#quick-wrapper ul li a {$/;"	s
+#quick-wrapper ul li a.title	css/main.css	/^#quick-wrapper ul li a.title {$/;"	c
+#quick-wrapper ul li a.title:before	css/main.css	/^#quick-wrapper ul li a.title:before {$/;"	c
+#quick-wrapper ul li a:before	css/main.css	/^#quick-wrapper ul li a:before {$/;"	s
+#quick-wrapper ul li a:hover:before	css/main.css	/^#quick-wrapper ul li a:hover:before {$/;"	s
+#quick-wrapper ul li ul	css/main.css	/^#quick-wrapper ul li ul {$/;"	s
+#quick-wrapper ul li ul li	css/main.css	/^#quick-wrapper ul li ul li {$/;"	s
+#quick-wrapper ul li ul li a	css/main.css	/^#quick-wrapper ul li ul li a {$/;"	s
+#quick-wrapper ul li:hover ul	css/main.css	/^#quick-wrapper ul li:hover ul {$/;"	s
+#search-wrapper	css/main.css	/^#search-wrapper {$/;"	i
+#search-wrapper #search-form	css/main.css	/^#search-wrapper #search-form {$/;"	i
+#search-wrapper .search-block	css/main.css	/^#search-wrapper .search-block {$/;"	c
+#search-wrapper .search-block input	css/main.css	/^#search-wrapper .search-block input {$/;"	s
+#search-wrapper .search-block input:focus	css/main.css	/^#search-wrapper .search-block input:hover, #search-wrapper .search-block input:focus {$/;"	s
+#search-wrapper .search-block input:focus + label	css/main.css	/^#search-wrapper .search-block input:hover + label, #search-wrapper .search-block input:focus + l/;"	s
+#search-wrapper .search-block input:hover	css/main.css	/^#search-wrapper .search-block input:hover, #search-wrapper .search-block input:focus {$/;"	s
+#search-wrapper .search-block input:hover + label	css/main.css	/^#search-wrapper .search-block input:hover + label, #search-wrapper .search-block input:focus + l/;"	s
+#search-wrapper .search-block label	css/main.css	/^#search-wrapper .search-block label {$/;"	s
+#search-wrapper .search-block ul	css/main.css	/^#search-wrapper .search-block ul {$/;"	s
+#search-wrapper :-moz-placeholder	css/main.css	/^#search-wrapper :-moz-placeholder {$/;"	s
+#search-wrapper :-ms-input-placeholder	css/main.css	/^#search-wrapper :-ms-input-placeholder {$/;"	s
+#search-wrapper ::-moz-placeholder	css/main.css	/^#search-wrapper ::-moz-placeholder {$/;"	s
+#search-wrapper ::-webkit-input-placeholder	css/main.css	/^#search-wrapper ::-webkit-input-placeholder {$/;"	s
+#search-wrapper input:focus:-moz-placeholder	css/main.css	/^#search-wrapper input:focus:-moz-placeholder {$/;"	s
+#search-wrapper input:focus:-ms-input-placeholder	css/main.css	/^#search-wrapper input:focus:-ms-input-placeholder {$/;"	s
+#search-wrapper input:focus::-moz-placeholder	css/main.css	/^#search-wrapper input:focus::-moz-placeholder {$/;"	s
+#search-wrapper input:focus::-webkit-input-placeholder	css/main.css	/^#search-wrapper input:focus::-webkit-input-placeholder {$/;"	s
+#search-wrapper ul	css/main.css	/^#search-wrapper ul {$/;"	s
+#search-wrapper ul .bold	css/main.css	/^#search-wrapper ul .bold {$/;"	c
+#weather-wrapper	css/main.css	/^#weather-wrapper {$/;"	i
+*	css/main.css	/^* {$/;"	s
+.bold	css/main.scss	/^		.bold {$/;"	c
+.datalist-polyfill	css/main.css	/^.datalist-polyfill {$/;"	c
+.datalist-polyfill	css/main.scss	/^.datalist-polyfill > li {$/;"	c
+.datalist-polyfill	css/main.scss	/^.datalist-polyfill {$/;"	c
+.datalist-polyfill > li	css/main.css	/^.datalist-polyfill > li {$/;"	s
+.datalist-polyfill:empty	css/main.css	/^.datalist-polyfill:empty {$/;"	c
+.datalist-polyfill:empty	css/main.scss	/^.datalist-polyfill:empty {$/;"	c
+.datalist-polyfill__active	css/main.css	/^.datalist-polyfill__active {$/;"	c
+.datalist-polyfill__active	css/main.scss	/^.datalist-polyfill__active {$/;"	c
+.search-block	css/main.scss	/^	.search-block input {$/;"	c
+.search-block	css/main.scss	/^	.search-block input:hover + label, .search-block input:focus + label {$/;"	c
+.search-block	css/main.scss	/^	.search-block input:hover, .search-block input:focus {$/;"	c
+.search-block	css/main.scss	/^	.search-block label {$/;"	c
+.search-block	css/main.scss	/^	.search-block {$/;"	c
+.title	css/main.scss	/^				&.title {$/;"	c
+0	manifest.json	/^	"authors": ["reo101", "taki"],$/;"	s	array:authors
+1	manifest.json	/^	"authors": ["reo101", "taki"],$/;"	s	array:authors
+:root	css/main.css	/^:root {$/;"	s
+Animation	js/jquery.js	/^function Animation( elem, properties, options ) {$/;"	f
+AnonymousFunction82ff78ad0100	js/curdot.js	/^parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcelRequire,u="funct/;"	f
+AnonymousFunctionc21861540100	js/mobile.js	/^window.addEventListener("orientationchange", function () {$/;"	f
+AnonymousFunctioneadc227c0100	js/jquery.js	/^} )( typeof window !== "undefined" ? window : this, function( window, noGlobal ) {$/;"	f
+AnonymousFunctioneadc227c0200	js/jquery.js	/^	fcamelCase = function( all, letter ) {$/;"	f
+AnonymousFunctioneadc227c0300	js/jquery.js	/^	toArray: function() {$/;"	f
+AnonymousFunctioneadc227c0400	js/jquery.js	/^	get: function( num ) {$/;"	f
+AnonymousFunctioneadc227c0500	js/jquery.js	/^	pushStack: function( elems ) {$/;"	f
+AnonymousFunctioneadc227c0600	js/jquery.js	/^	each: function( callback ) {$/;"	f
+AnonymousFunctioneadc227c0700	js/jquery.js	/^	map: function( callback ) {$/;"	f
+AnonymousFunctioneadc227c0800	js/jquery.js	/^		return this.pushStack( jQuery.map( this, function( elem, i ) {$/;"	f	function:AnonymousFunctioneadc227c0700
+AnonymousFunctioneadc227c0900	js/jquery.js	/^	slice: function() {$/;"	f
+AnonymousFunctioneadc227c0a00	js/jquery.js	/^	first: function() {$/;"	f
+AnonymousFunctioneadc227c0b00	js/jquery.js	/^	last: function() {$/;"	f
+AnonymousFunctioneadc227c0c00	js/jquery.js	/^	eq: function( i ) {$/;"	f
+AnonymousFunctioneadc227c0d00	js/jquery.js	/^	end: function() {$/;"	f
+AnonymousFunctioneadc227c0e00	js/jquery.js	/^jQuery.extend = jQuery.fn.extend = function() {$/;"	f
+AnonymousFunctioneadc227c0f00	js/jquery.js	/^	error: function( msg ) {$/;"	f
+AnonymousFunctioneadc227c1000	js/jquery.js	/^	noop: function() {},$/;"	f
+AnonymousFunctioneadc227c10000	js/jquery.js	/^		return domManip( this, arguments, function( elem ) {$/;"	f	function:AnonymousFunctioneadc227cff00
+AnonymousFunctioneadc227c10100	js/jquery.js	/^	after: function() {$/;"	f
+AnonymousFunctioneadc227c10200	js/jquery.js	/^		return domManip( this, arguments, function( elem ) {$/;"	f	function:AnonymousFunctioneadc227c10100
+AnonymousFunctioneadc227c10300	js/jquery.js	/^	empty: function() {$/;"	f
+AnonymousFunctioneadc227c10400	js/jquery.js	/^	clone: function( dataAndEvents, deepDataAndEvents ) {$/;"	f
+AnonymousFunctioneadc227c10500	js/jquery.js	/^		return this.map( function() {$/;"	f	function:AnonymousFunctioneadc227c10400
+AnonymousFunctioneadc227c10600	js/jquery.js	/^	html: function( value ) {$/;"	f
+AnonymousFunctioneadc227c10700	js/jquery.js	/^		return access( this, function( value ) {$/;"	f	function:AnonymousFunctioneadc227c10600
+AnonymousFunctioneadc227c10800	js/jquery.js	/^	replaceWith: function() {$/;"	f
+AnonymousFunctioneadc227c10900	js/jquery.js	/^		return domManip( this, arguments, function( elem ) {$/;"	f	function:AnonymousFunctioneadc227c10800
+AnonymousFunctioneadc227c10a00	js/jquery.js	/^}, function( name, original ) {$/;"	f
+AnonymousFunctioneadc227c10b00	js/jquery.js	/^var getStyles = function( elem ) {$/;"	f
+AnonymousFunctioneadc227c10c00	js/jquery.js	/^( function() {$/;"	f
+AnonymousFunctioneadc227c10d00	js/jquery.js	/^		pixelPosition: function() {$/;"	f
+AnonymousFunctioneadc227c10e00	js/jquery.js	/^		boxSizingReliable: function() {$/;"	f
+AnonymousFunctioneadc227c10f00	js/jquery.js	/^		pixelMarginRight: function() {$/;"	f
+AnonymousFunctioneadc227c1100	js/jquery.js	/^	isFunction: function( obj ) {$/;"	f
+AnonymousFunctioneadc227c11000	js/jquery.js	/^		reliableMarginLeft: function() {$/;"	f
+AnonymousFunctioneadc227c11100	js/jquery.js	/^			get: function( elem, computed ) {$/;"	f
+AnonymousFunctioneadc227c11200	js/jquery.js	/^	style: function( elem, name, value, extra ) {$/;"	f
+AnonymousFunctioneadc227c11300	js/jquery.js	/^	css: function( elem, name, extra, styles ) {$/;"	f
+AnonymousFunctioneadc227c11400	js/jquery.js	/^jQuery.each( [ "height", "width" ], function( i, name ) {$/;"	f
+AnonymousFunctioneadc227c11500	js/jquery.js	/^						swap( elem, cssShow, function() {$/;"	f
+AnonymousFunctioneadc227c11600	js/jquery.js	/^	function( elem, computed ) {$/;"	f
+AnonymousFunctioneadc227c11700	js/jquery.js	/^					swap( elem, { marginLeft: 0 }, function() {$/;"	f
+AnonymousFunctioneadc227c11800	js/jquery.js	/^}, function( prefix, suffix ) {$/;"	f
+AnonymousFunctioneadc227c11900	js/jquery.js	/^	css: function( name, value ) {$/;"	f
+AnonymousFunctioneadc227c11a00	js/jquery.js	/^		return access( this, function( elem, name, value ) {$/;"	f	function:AnonymousFunctioneadc227c11900
+AnonymousFunctioneadc227c11b00	js/jquery.js	/^	init: function( elem, options, prop, end, easing, unit ) {$/;"	c
+AnonymousFunctioneadc227c11c00	js/jquery.js	/^	cur: function() {$/;"	f
+AnonymousFunctioneadc227c11d00	js/jquery.js	/^	run: function( percent ) {$/;"	c
+AnonymousFunctioneadc227c11e00	js/jquery.js	/^		get: function( tween ) {$/;"	f
+AnonymousFunctioneadc227c11f00	js/jquery.js	/^		set: function( tween ) {$/;"	f
+AnonymousFunctioneadc227c1200	js/jquery.js	/^	isWindow: function( obj ) {$/;"	f
+AnonymousFunctioneadc227c12000	js/jquery.js	/^	set: function( tween ) {$/;"	f
+AnonymousFunctioneadc227c12100	js/jquery.js	/^	linear: function( p ) {$/;"	f
+AnonymousFunctioneadc227c12200	js/jquery.js	/^	swing: function( p ) {$/;"	f
+AnonymousFunctioneadc227c12300	js/jquery.js	/^	window.setTimeout( function() {$/;"	f
+AnonymousFunctioneadc227c12400	js/jquery.js	/^		anim.always( function() {$/;"	f
+AnonymousFunctioneadc227c12500	js/jquery.js	/^			anim.always( function() {$/;"	f
+AnonymousFunctioneadc227c12600	js/jquery.js	/^					anim.done( function() {$/;"	f
+AnonymousFunctioneadc227c12700	js/jquery.js	/^		anim.always( function() {$/;"	f
+AnonymousFunctioneadc227c12800	js/jquery.js	/^			anim.done( function() {$/;"	f
+AnonymousFunctioneadc227c12900	js/jquery.js	/^		deferred = jQuery.Deferred().always( function() {$/;"	f	function:Animation
+AnonymousFunctioneadc227c12a00	js/jquery.js	/^			createTween: function( prop, end ) {$/;"	f
+AnonymousFunctioneadc227c12b00	js/jquery.js	/^			stop: function( gotoEnd ) {$/;"	f
+AnonymousFunctioneadc227c12c00	js/jquery.js	/^		"*": [ function( prop, value ) {$/;"	f
+AnonymousFunctioneadc227c12d00	js/jquery.js	/^	tweener: function( props, callback ) {$/;"	f
+AnonymousFunctioneadc227c12e00	js/jquery.js	/^	prefilter: function( callback, prepend ) {$/;"	f
+AnonymousFunctioneadc227c12f00	js/jquery.js	/^jQuery.speed = function( speed, easing, fn ) {$/;"	f
+AnonymousFunctioneadc227c1300	js/jquery.js	/^	isNumeric: function( obj ) {$/;"	f
+AnonymousFunctioneadc227c13000	js/jquery.js	/^	fadeTo: function( speed, to, easing, callback ) {$/;"	f
+AnonymousFunctioneadc227c13100	js/jquery.js	/^	animate: function( prop, speed, easing, callback ) {$/;"	f
+AnonymousFunctioneadc227c13200	js/jquery.js	/^	stop: function( type, clearQueue, gotoEnd ) {$/;"	f
+AnonymousFunctioneadc227c13300	js/jquery.js	/^		return this.each( function() {$/;"	f	function:AnonymousFunctioneadc227c13200
+AnonymousFunctioneadc227c13400	js/jquery.js	/^	finish: function( type ) {$/;"	f
+AnonymousFunctioneadc227c13500	js/jquery.js	/^		return this.each( function() {$/;"	f	function:AnonymousFunctioneadc227c13400
+AnonymousFunctioneadc227c13600	js/jquery.js	/^jQuery.each( [ "toggle", "show", "hide" ], function( i, name ) {$/;"	f
+AnonymousFunctioneadc227c13700	js/jquery.js	/^}, function( name, props ) {$/;"	f
+AnonymousFunctioneadc227c13800	js/jquery.js	/^jQuery.fx.tick = function() {$/;"	f
+AnonymousFunctioneadc227c13900	js/jquery.js	/^jQuery.fx.timer = function( timer ) {$/;"	f
+AnonymousFunctioneadc227c13a00	js/jquery.js	/^jQuery.fx.start = function() {$/;"	f
+AnonymousFunctioneadc227c13b00	js/jquery.js	/^jQuery.fx.stop = function() {$/;"	f
+AnonymousFunctioneadc227c13c00	js/jquery.js	/^jQuery.fn.delay = function( time, type ) {$/;"	f
+AnonymousFunctioneadc227c13d00	js/jquery.js	/^	return this.queue( type, function( next, hooks ) {$/;"	f	function:AnonymousFunctioneadc227c13c00
+AnonymousFunctioneadc227c13e00	js/jquery.js	/^( function() {$/;"	f
+AnonymousFunctioneadc227c13f00	js/jquery.js	/^	attr: function( name, value ) {$/;"	f
+AnonymousFunctioneadc227c1400	js/jquery.js	/^	isPlainObject: function( obj ) {$/;"	f
+AnonymousFunctioneadc227c14000	js/jquery.js	/^	removeAttr: function( name ) {$/;"	f
+AnonymousFunctioneadc227c14100	js/jquery.js	/^		return this.each( function() {$/;"	f	function:AnonymousFunctioneadc227c14000
+AnonymousFunctioneadc227c14200	js/jquery.js	/^	attr: function( elem, name, value ) {$/;"	f
+AnonymousFunctioneadc227c14300	js/jquery.js	/^			set: function( elem, value ) {$/;"	f
+AnonymousFunctioneadc227c14400	js/jquery.js	/^	removeAttr: function( elem, value ) {$/;"	f
+AnonymousFunctioneadc227c14500	js/jquery.js	/^	set: function( elem, value, name ) {$/;"	f
+AnonymousFunctioneadc227c14600	js/jquery.js	/^jQuery.each( jQuery.expr.match.bool.source.match( \/\\w+\/g ), function( i, name ) {$/;"	f
+AnonymousFunctioneadc227c14700	js/jquery.js	/^	prop: function( name, value ) {$/;"	f
+AnonymousFunctioneadc227c14800	js/jquery.js	/^	removeProp: function( name ) {$/;"	f
+AnonymousFunctioneadc227c14900	js/jquery.js	/^		return this.each( function() {$/;"	f	function:AnonymousFunctioneadc227c14800
+AnonymousFunctioneadc227c14a00	js/jquery.js	/^	prop: function( elem, name, value ) {$/;"	f
+AnonymousFunctioneadc227c14b00	js/jquery.js	/^			get: function( elem ) {$/;"	f
+AnonymousFunctioneadc227c14c00	js/jquery.js	/^		get: function( elem ) {$/;"	f
+AnonymousFunctioneadc227c14d00	js/jquery.js	/^		set: function( elem ) {$/;"	f
+AnonymousFunctioneadc227c14e00	js/jquery.js	/^], function() {$/;"	f
+AnonymousFunctioneadc227c14f00	js/jquery.js	/^	addClass: function( value ) {$/;"	f
+AnonymousFunctioneadc227c1500	js/jquery.js	/^	isEmptyObject: function( obj ) {$/;"	f
+AnonymousFunctioneadc227c15000	js/jquery.js	/^			return this.each( function( j ) {$/;"	f	function:AnonymousFunctioneadc227c14f00
+AnonymousFunctioneadc227c15100	js/jquery.js	/^	removeClass: function( value ) {$/;"	f
+AnonymousFunctioneadc227c15200	js/jquery.js	/^			return this.each( function( j ) {$/;"	f	function:AnonymousFunctioneadc227c15100
+AnonymousFunctioneadc227c15300	js/jquery.js	/^	toggleClass: function( value, stateVal ) {$/;"	f
+AnonymousFunctioneadc227c15400	js/jquery.js	/^			return this.each( function( i ) {$/;"	f	function:AnonymousFunctioneadc227c15300
+AnonymousFunctioneadc227c15500	js/jquery.js	/^		return this.each( function() {$/;"	f	function:AnonymousFunctioneadc227c15300
+AnonymousFunctioneadc227c15600	js/jquery.js	/^	hasClass: function( selector ) {$/;"	f
+AnonymousFunctioneadc227c15700	js/jquery.js	/^	val: function( value ) {$/;"	f
+AnonymousFunctioneadc227c15800	js/jquery.js	/^		return this.each( function( i ) {$/;"	f	function:AnonymousFunctioneadc227c15700
+AnonymousFunctioneadc227c15900	js/jquery.js	/^				val = jQuery.map( val, function( value ) {$/;"	f	function:AnonymousFunctioneadc227c15700.AnonymousFunctioneadc227c15800
+AnonymousFunctioneadc227c15a00	js/jquery.js	/^			get: function( elem ) {$/;"	f
+AnonymousFunctioneadc227c15b00	js/jquery.js	/^			get: function( elem ) {$/;"	f
+AnonymousFunctioneadc227c15c00	js/jquery.js	/^			set: function( elem, value ) {$/;"	f
+AnonymousFunctioneadc227c15d00	js/jquery.js	/^jQuery.each( [ "radio", "checkbox" ], function() {$/;"	f
+AnonymousFunctioneadc227c15e00	js/jquery.js	/^	trigger: function( event, data, elem, onlyHandlers ) {$/;"	f
+AnonymousFunctioneadc227c15f00	js/jquery.js	/^	simulate: function( type, elem, event ) {$/;"	f
+AnonymousFunctioneadc227c1600	js/jquery.js	/^	type: function( obj ) {$/;"	f
+AnonymousFunctioneadc227c16000	js/jquery.js	/^	trigger: function( type, data ) {$/;"	f
+AnonymousFunctioneadc227c16100	js/jquery.js	/^		return this.each( function() {$/;"	f	function:AnonymousFunctioneadc227c16000
+AnonymousFunctioneadc227c16200	js/jquery.js	/^	triggerHandler: function( type, data ) {$/;"	f
+AnonymousFunctioneadc227c16300	js/jquery.js	/^	function( i, name ) {$/;"	f
+AnonymousFunctioneadc227c16400	js/jquery.js	/^	hover: function( fnOver, fnOut ) {$/;"	f
+AnonymousFunctioneadc227c16500	js/jquery.js	/^	jQuery.each( { focus: "focusin", blur: "focusout" }, function( orig, fix ) {$/;"	f
+AnonymousFunctioneadc227c16600	js/jquery.js	/^jQuery.parseXML = function( data ) {$/;"	f
+AnonymousFunctioneadc227c16700	js/jquery.js	/^		jQuery.each( obj, function( i, v ) {$/;"	f
+AnonymousFunctioneadc227c16800	js/jquery.js	/^jQuery.param = function( a, traditional ) {$/;"	f
+AnonymousFunctioneadc227c16900	js/jquery.js	/^		jQuery.each( a, function() {$/;"	f
+AnonymousFunctioneadc227c16a00	js/jquery.js	/^	serialize: function() {$/;"	f
+AnonymousFunctioneadc227c16b00	js/jquery.js	/^	serializeArray: function() {$/;"	f
+AnonymousFunctioneadc227c16c00	js/jquery.js	/^		return this.map( function() {$/;"	f	function:AnonymousFunctioneadc227c16b00
+AnonymousFunctioneadc227c16d00	js/jquery.js	/^		.filter( function() {$/;"	f
+AnonymousFunctioneadc227c16e00	js/jquery.js	/^		.map( function( i, elem ) {$/;"	f
+AnonymousFunctioneadc227c16f00	js/jquery.js	/^					jQuery.map( val, function( val ) {$/;"	f	function:AnonymousFunctioneadc227c16e00
+AnonymousFunctioneadc227c1700	js/jquery.js	/^	globalEval: function( code ) {$/;"	f
+AnonymousFunctioneadc227c17000	js/jquery.js	/^	return function( dataTypeExpression, func ) {$/;"	f	function:addToPrefiltersOrTransports
+AnonymousFunctioneadc227c17100	js/jquery.js	/^		jQuery.each( structure[ dataType ] || [], function( _, prefilterOrFactory ) {$/;"	f
+AnonymousFunctioneadc227c17200	js/jquery.js	/^	ajaxSetup: function( target, settings ) {$/;"	f
+AnonymousFunctioneadc227c17300	js/jquery.js	/^	ajax: function( url, options ) {$/;"	f
+AnonymousFunctioneadc227c17400	js/jquery.js	/^				timeoutTimer = window.setTimeout( function() {$/;"	f	function:AnonymousFunctioneadc227c17300
+AnonymousFunctioneadc227c17500	js/jquery.js	/^	getJSON: function( url, data, callback ) {$/;"	f
+AnonymousFunctioneadc227c17600	js/jquery.js	/^	getScript: function( url, callback ) {$/;"	f
+AnonymousFunctioneadc227c17700	js/jquery.js	/^jQuery.each( [ "get", "post" ], function( i, method ) {$/;"	f
+AnonymousFunctioneadc227c17800	js/jquery.js	/^jQuery._evalUrl = function( url ) {$/;"	f
+AnonymousFunctioneadc227c17900	js/jquery.js	/^	wrapAll: function( html ) {$/;"	f
+AnonymousFunctioneadc227c17a00	js/jquery.js	/^			wrap.map( function() {$/;"	f
+AnonymousFunctioneadc227c17b00	js/jquery.js	/^	wrapInner: function( html ) {$/;"	f
+AnonymousFunctioneadc227c17c00	js/jquery.js	/^			return this.each( function( i ) {$/;"	f	function:AnonymousFunctioneadc227c17b00
+AnonymousFunctioneadc227c17d00	js/jquery.js	/^		return this.each( function() {$/;"	f	function:AnonymousFunctioneadc227c17b00
+AnonymousFunctioneadc227c17e00	js/jquery.js	/^	wrap: function( html ) {$/;"	f
+AnonymousFunctioneadc227c17f00	js/jquery.js	/^		return this.each( function( i ) {$/;"	f	function:AnonymousFunctioneadc227c17e00
+AnonymousFunctioneadc227c1800	js/jquery.js	/^	camelCase: function( string ) {$/;"	f
+AnonymousFunctioneadc227c18000	js/jquery.js	/^	unwrap: function( selector ) {$/;"	c
+AnonymousFunctioneadc227c18100	js/jquery.js	/^		this.parent( selector ).not( "body" ).each( function() {$/;"	f	function:parent
+AnonymousFunctioneadc227c18200	js/jquery.js	/^jQuery.expr.pseudos.hidden = function( elem ) {$/;"	f
+AnonymousFunctioneadc227c18300	js/jquery.js	/^jQuery.expr.pseudos.visible = function( elem ) {$/;"	f
+AnonymousFunctioneadc227c18400	js/jquery.js	/^jQuery.ajaxSettings.xhr = function() {$/;"	f
+AnonymousFunctioneadc227c18500	js/jquery.js	/^jQuery.ajaxTransport( function( options ) {$/;"	f
+AnonymousFunctioneadc227c18600	js/jquery.js	/^					return function() {$/;"	f	function:AnonymousFunctioneadc227c18500.callback
+AnonymousFunctioneadc227c18700	js/jquery.js	/^							window.setTimeout( function() {$/;"	f
+AnonymousFunctioneadc227c18800	js/jquery.js	/^jQuery.ajaxPrefilter( function( s ) {$/;"	f
+AnonymousFunctioneadc227c18900	js/jquery.js	/^		"text script": function( text ) {$/;"	f
+AnonymousFunctioneadc227c18a00	js/jquery.js	/^jQuery.ajaxPrefilter( "script", function( s ) {$/;"	f
+AnonymousFunctioneadc227c18b00	js/jquery.js	/^jQuery.ajaxTransport( "script", function( s ) {$/;"	f
+AnonymousFunctioneadc227c18c00	js/jquery.js	/^					callback = function( evt ) {$/;"	f	function:AnonymousFunctioneadc227c18b00
+AnonymousFunctioneadc227c18d00	js/jquery.js	/^	jsonpCallback: function() {$/;"	c
+AnonymousFunctioneadc227c18e00	js/jquery.js	/^jQuery.ajaxPrefilter( "json jsonp", function( s, originalSettings, jqXHR ) {$/;"	f
+AnonymousFunctioneadc227c18f00	js/jquery.js	/^		jqXHR.always( function() {$/;"	f
+AnonymousFunctioneadc227c1900	js/jquery.js	/^	nodeName: function( elem, name ) {$/;"	f
+AnonymousFunctioneadc227c19000	js/jquery.js	/^support.createHTMLDocument = ( function() {$/;"	f
+AnonymousFunctioneadc227c19100	js/jquery.js	/^jQuery.parseHTML = function( data, context, keepScripts ) {$/;"	f
+AnonymousFunctioneadc227c19200	js/jquery.js	/^jQuery.fn.load = function( url, params, callback ) {$/;"	f
+AnonymousFunctioneadc227c19300	js/jquery.js	/^		} ).done( function( responseText ) {$/;"	f
+AnonymousFunctioneadc227c19400	js/jquery.js	/^		} ).always( callback && function( jqXHR, status ) {$/;"	f
+AnonymousFunctioneadc227c19500	js/jquery.js	/^			self.each( function() {$/;"	f
+AnonymousFunctioneadc227c19600	js/jquery.js	/^], function( i, type ) {$/;"	f
+AnonymousFunctioneadc227c19700	js/jquery.js	/^jQuery.expr.pseudos.animated = function( elem ) {$/;"	f
+AnonymousFunctioneadc227c19800	js/jquery.js	/^	return jQuery.grep( jQuery.timers, function( fn ) {$/;"	f
+AnonymousFunctioneadc227c19900	js/jquery.js	/^	setOffset: function( elem, options, i ) {$/;"	f
+AnonymousFunctioneadc227c19a00	js/jquery.js	/^	offset: function( options ) {$/;"	f
+AnonymousFunctioneadc227c19b00	js/jquery.js	/^				this.each( function( i ) {$/;"	f	function:AnonymousFunctioneadc227c19a00
+AnonymousFunctioneadc227c19c00	js/jquery.js	/^	position: function() {$/;"	f
+AnonymousFunctioneadc227c19d00	js/jquery.js	/^	offsetParent: function() {$/;"	f
+AnonymousFunctioneadc227c19e00	js/jquery.js	/^		return this.map( function() {$/;"	f	function:AnonymousFunctioneadc227c19d00
+AnonymousFunctioneadc227c19f00	js/jquery.js	/^jQuery.each( { scrollLeft: "pageXOffset", scrollTop: "pageYOffset" }, function( method, prop ) {$/;"	f
+AnonymousFunctioneadc227c1a00	js/jquery.js	/^	each: function( obj, callback ) {$/;"	f
+AnonymousFunctioneadc227c1a000	js/jquery.js	/^		return access( this, function( elem, method, val ) {$/;"	f	function:jQuery.fn
+AnonymousFunctioneadc227c1a100	js/jquery.js	/^jQuery.each( [ "top", "left" ], function( i, prop ) {$/;"	f
+AnonymousFunctioneadc227c1a200	js/jquery.js	/^		function( elem, computed ) {$/;"	f
+AnonymousFunctioneadc227c1a300	js/jquery.js	/^jQuery.each( { Height: "height", Width: "width" }, function( name, type ) {$/;"	f
+AnonymousFunctioneadc227c1a400	js/jquery.js	/^		function( defaultExtra, funcName ) {$/;"	f
+AnonymousFunctioneadc227c1a500	js/jquery.js	/^			return access( this, function( elem, type, value ) {$/;"	f	function:jQuery.fn
+AnonymousFunctioneadc227c1a600	js/jquery.js	/^	bind: function( types, data, fn ) {$/;"	f
+AnonymousFunctioneadc227c1a700	js/jquery.js	/^	unbind: function( types, fn ) {$/;"	f
+AnonymousFunctioneadc227c1a800	js/jquery.js	/^	delegate: function( selector, types, data, fn ) {$/;"	f
+AnonymousFunctioneadc227c1a900	js/jquery.js	/^	undelegate: function( selector, types, fn ) {$/;"	f
+AnonymousFunctioneadc227c1aa00	js/jquery.js	/^	define( "jquery", [], function() {$/;"	f
+AnonymousFunctioneadc227c1ab00	js/jquery.js	/^jQuery.noConflict = function( deep ) {$/;"	f
+AnonymousFunctioneadc227c1b00	js/jquery.js	/^	trim: function( text ) {$/;"	f
+AnonymousFunctioneadc227c1c00	js/jquery.js	/^	makeArray: function( arr, results ) {$/;"	f
+AnonymousFunctioneadc227c1d00	js/jquery.js	/^	inArray: function( elem, arr, i ) {$/;"	f
+AnonymousFunctioneadc227c1e00	js/jquery.js	/^	merge: function( first, second ) {$/;"	f
+AnonymousFunctioneadc227c1f00	js/jquery.js	/^	grep: function( elems, callback, invert ) {$/;"	f
+AnonymousFunctioneadc227c2000	js/jquery.js	/^	map: function( elems, callback, arg ) {$/;"	f
+AnonymousFunctioneadc227c2100	js/jquery.js	/^	proxy: function( fn, context ) {$/;"	f
+AnonymousFunctioneadc227c2200	js/jquery.js	/^function( i, name ) {$/;"	f
+AnonymousFunctioneadc227c2300	js/jquery.js	/^(function( window ) {$/;"	f
+AnonymousFunctioneadc227c2400	js/jquery.js	/^	indexOf = function( list, elem ) {$/;"	f
+AnonymousFunctioneadc227c2500	js/jquery.js	/^	funescape = function( _, escaped, escapedWhitespace ) {$/;"	f
+AnonymousFunctioneadc227c2600	js/jquery.js	/^	fcssescape = function( ch, asCodePoint ) {$/;"	f
+AnonymousFunctioneadc227c2700	js/jquery.js	/^	unloadHandler = function() {$/;"	f
+AnonymousFunctioneadc227c2800	js/jquery.js	/^		function( elem ) {$/;"	f
+AnonymousFunctioneadc227c2900	js/jquery.js	/^		function( target, els ) {$/;"	f
+AnonymousFunctioneadc227c2a00	js/jquery.js	/^		function( target, els ) {$/;"	f
+AnonymousFunctioneadc227c2b00	js/jquery.js	/^	return function( elem ) {$/;"	f	function:createInputPseudo
+AnonymousFunctioneadc227c2c00	js/jquery.js	/^	return function( elem ) {$/;"	f	function:createButtonPseudo
+AnonymousFunctioneadc227c2d00	js/jquery.js	/^	return function( elem ) {$/;"	f	function:createDisabledPseudo
+AnonymousFunctioneadc227c2e00	js/jquery.js	/^	return markFunction(function( argument ) {$/;"	f	function:createPositionalPseudo
+AnonymousFunctioneadc227c2f00	js/jquery.js	/^		return markFunction(function( seed, matches ) {$/;"	f	function:createPositionalPseudo.AnonymousFunctioneadc227c2e00
+AnonymousFunctioneadc227c3000	js/jquery.js	/^isXML = Sizzle.isXML = function( elem ) {$/;"	f
+AnonymousFunctioneadc227c3100	js/jquery.js	/^setDocument = Sizzle.setDocument = function( node ) {$/;"	f
+AnonymousFunctioneadc227c3200	js/jquery.js	/^	support.attributes = assert(function( el ) {$/;"	f
+AnonymousFunctioneadc227c3300	js/jquery.js	/^	support.getElementsByTagName = assert(function( el ) {$/;"	f
+AnonymousFunctioneadc227c3400	js/jquery.js	/^	support.getById = assert(function( el ) {$/;"	f
+AnonymousFunctioneadc227c3500	js/jquery.js	/^			return function( elem ) {$/;"	f	function:Expr.filter
+AnonymousFunctioneadc227c3600	js/jquery.js	/^			return function( elem ) {$/;"	f	function:Expr.filter
+AnonymousFunctioneadc227c3700	js/jquery.js	/^		assert(function( el ) {$/;"	f	function:AnonymousFunctioneadc227c3100
+AnonymousFunctioneadc227c3800	js/jquery.js	/^		assert(function( el ) {$/;"	f	function:AnonymousFunctioneadc227c3100
+AnonymousFunctioneadc227c3900	js/jquery.js	/^		assert(function( el ) {$/;"	f	function:AnonymousFunctioneadc227c3100
+AnonymousFunctioneadc227c3a00	js/jquery.js	/^Sizzle.matches = function( expr, elements ) {$/;"	f
+AnonymousFunctioneadc227c3b00	js/jquery.js	/^Sizzle.matchesSelector = function( elem, expr ) {$/;"	f
+AnonymousFunctioneadc227c3c00	js/jquery.js	/^Sizzle.contains = function( context, elem ) {$/;"	f
+AnonymousFunctioneadc227c3d00	js/jquery.js	/^Sizzle.attr = function( elem, name ) {$/;"	f
+AnonymousFunctioneadc227c3e00	js/jquery.js	/^Sizzle.escape = function( sel ) {$/;"	f
+AnonymousFunctioneadc227c3f00	js/jquery.js	/^Sizzle.error = function( msg ) {$/;"	f
+AnonymousFunctioneadc227c4000	js/jquery.js	/^Sizzle.uniqueSort = function( results ) {$/;"	f
+AnonymousFunctioneadc227c4100	js/jquery.js	/^getText = Sizzle.getText = function( elem ) {$/;"	f
+AnonymousFunctioneadc227c4200	js/jquery.js	/^		"ATTR": function( match ) {$/;"	f
+AnonymousFunctioneadc227c4300	js/jquery.js	/^		"CHILD": function( match ) {$/;"	f
+AnonymousFunctioneadc227c4400	js/jquery.js	/^		"PSEUDO": function( match ) {$/;"	f
+AnonymousFunctioneadc227c4500	js/jquery.js	/^		"TAG": function( nodeNameSelector ) {$/;"	f
+AnonymousFunctioneadc227c4600	js/jquery.js	/^		"CLASS": function( className ) {$/;"	f
+AnonymousFunctioneadc227c4700	js/jquery.js	/^				classCache( className, function( elem ) {$/;"	f	function:AnonymousFunctioneadc227c4600
+AnonymousFunctioneadc227c4800	js/jquery.js	/^		"ATTR": function( name, operator, check ) {$/;"	f
+AnonymousFunctioneadc227c4900	js/jquery.js	/^			return function( elem ) {$/;"	f	function:AnonymousFunctioneadc227c4800
+AnonymousFunctioneadc227c4a00	js/jquery.js	/^		"CHILD": function( type, what, argument, first, last ) {$/;"	f
+AnonymousFunctioneadc227c4b00	js/jquery.js	/^		"PSEUDO": function( pseudo, argument ) {$/;"	f
+AnonymousFunctioneadc227c4c00	js/jquery.js	/^					markFunction(function( seed, matches ) {$/;"	f
+AnonymousFunctioneadc227c4d00	js/jquery.js	/^		"not": markFunction(function( selector ) {$/;"	f
+AnonymousFunctioneadc227c4e00	js/jquery.js	/^				markFunction(function( seed, matches, context, xml ) {$/;"	f	function:AnonymousFunctioneadc227c4d00
+AnonymousFunctioneadc227c4f00	js/jquery.js	/^		"has": markFunction(function( selector ) {$/;"	f
+AnonymousFunctioneadc227c5000	js/jquery.js	/^			return function( elem ) {$/;"	f	function:AnonymousFunctioneadc227c4f00
+AnonymousFunctioneadc227c5100	js/jquery.js	/^		"contains": markFunction(function( text ) {$/;"	f
+AnonymousFunctioneadc227c5200	js/jquery.js	/^			return function( elem ) {$/;"	f	function:AnonymousFunctioneadc227c5100
+AnonymousFunctioneadc227c5300	js/jquery.js	/^		"lang": markFunction( function( lang ) {$/;"	f
+AnonymousFunctioneadc227c5400	js/jquery.js	/^			return function( elem ) {$/;"	f	function:AnonymousFunctioneadc227c5300
+AnonymousFunctioneadc227c5500	js/jquery.js	/^		"target": function( elem ) {$/;"	f
+AnonymousFunctioneadc227c5600	js/jquery.js	/^		"root": function( elem ) {$/;"	f
+AnonymousFunctioneadc227c5700	js/jquery.js	/^		"focus": function( elem ) {$/;"	f
+AnonymousFunctioneadc227c5800	js/jquery.js	/^		"checked": function( elem ) {$/;"	f
+AnonymousFunctioneadc227c5900	js/jquery.js	/^		"selected": function( elem ) {$/;"	f
+AnonymousFunctioneadc227c5a00	js/jquery.js	/^		"empty": function( elem ) {$/;"	f
+AnonymousFunctioneadc227c5b00	js/jquery.js	/^		"parent": function( elem ) {$/;"	f
+AnonymousFunctioneadc227c5c00	js/jquery.js	/^		"header": function( elem ) {$/;"	f
+AnonymousFunctioneadc227c5d00	js/jquery.js	/^		"input": function( elem ) {$/;"	f
+AnonymousFunctioneadc227c5e00	js/jquery.js	/^		"button": function( elem ) {$/;"	f
+AnonymousFunctioneadc227c5f00	js/jquery.js	/^		"text": function( elem ) {$/;"	f
+AnonymousFunctioneadc227c6000	js/jquery.js	/^		"first": createPositionalPseudo(function() {$/;"	f
+AnonymousFunctioneadc227c6100	js/jquery.js	/^		"last": createPositionalPseudo(function( matchIndexes, length ) {$/;"	f
+AnonymousFunctioneadc227c6200	js/jquery.js	/^		"eq": createPositionalPseudo(function( matchIndexes, length, argument ) {$/;"	f
+AnonymousFunctioneadc227c6300	js/jquery.js	/^		"even": createPositionalPseudo(function( matchIndexes, length ) {$/;"	f
+AnonymousFunctioneadc227c6400	js/jquery.js	/^		"odd": createPositionalPseudo(function( matchIndexes, length ) {$/;"	f
+AnonymousFunctioneadc227c6500	js/jquery.js	/^		"lt": createPositionalPseudo(function( matchIndexes, length, argument ) {$/;"	f
+AnonymousFunctioneadc227c6600	js/jquery.js	/^		"gt": createPositionalPseudo(function( matchIndexes, length, argument ) {$/;"	f
+AnonymousFunctioneadc227c6700	js/jquery.js	/^tokenize = Sizzle.tokenize = function( selector, parseOnly ) {$/;"	f
+AnonymousFunctioneadc227c6800	js/jquery.js	/^	return markFunction(function( seed, results, context, xml ) {$/;"	f	function:setMatcher
+AnonymousFunctioneadc227c6900	js/jquery.js	/^		matchContext = addCombinator( function( elem ) {$/;"	f	function:matcherFromTokens
+AnonymousFunctioneadc227c6a00	js/jquery.js	/^		matchAnyContext = addCombinator( function( elem ) {$/;"	f	function:matcherFromTokens
+AnonymousFunctioneadc227c6b00	js/jquery.js	/^compile = Sizzle.compile = function( selector, match \/* Internal Use Only *\/ ) {$/;"	f
+AnonymousFunctioneadc227c6c00	js/jquery.js	/^select = Sizzle.select = function( selector, context, results, seed ) {$/;"	f
+AnonymousFunctioneadc227c6d00	js/jquery.js	/^support.sortDetached = assert(function( el ) {$/;"	f
+AnonymousFunctioneadc227c6e00	js/jquery.js	/^if ( !assert(function( el ) {$/;"	f
+AnonymousFunctioneadc227c6f00	js/jquery.js	/^	addHandle( "type|href|height|width", function( elem, name, isXML ) {$/;"	f
+AnonymousFunctioneadc227c7000	js/jquery.js	/^if ( !support.attributes || !assert(function( el ) {$/;"	f
+AnonymousFunctioneadc227c7100	js/jquery.js	/^	addHandle( "value", function( elem, name, isXML ) {$/;"	f
+AnonymousFunctioneadc227c7200	js/jquery.js	/^if ( !assert(function( el ) {$/;"	f
+AnonymousFunctioneadc227c7300	js/jquery.js	/^	addHandle( booleans, function( elem, name, isXML ) {$/;"	f
+AnonymousFunctioneadc227c7400	js/jquery.js	/^var dir = function( elem, dir, until ) {$/;"	f
+AnonymousFunctioneadc227c7500	js/jquery.js	/^var siblings = function( n, elem ) {$/;"	f
+AnonymousFunctioneadc227c7600	js/jquery.js	/^		return jQuery.grep( elements, function( elem, i ) {$/;"	f
+AnonymousFunctioneadc227c7700	js/jquery.js	/^		return jQuery.grep( elements, function( elem ) {$/;"	f
+AnonymousFunctioneadc227c7800	js/jquery.js	/^	return jQuery.grep( elements, function( elem ) {$/;"	f
+AnonymousFunctioneadc227c7900	js/jquery.js	/^jQuery.filter = function( expr, elems, not ) {$/;"	f
+AnonymousFunctioneadc227c7a00	js/jquery.js	/^		jQuery.find.matches( expr, jQuery.grep( elems, function( elem ) {$/;"	f
+AnonymousFunctioneadc227c7b00	js/jquery.js	/^	find: function( selector ) {$/;"	f
+AnonymousFunctioneadc227c7c00	js/jquery.js	/^			return this.pushStack( jQuery( selector ).filter( function() {$/;"	f	function:AnonymousFunctioneadc227c7b00
+AnonymousFunctioneadc227c7d00	js/jquery.js	/^	filter: function( selector ) {$/;"	f
+AnonymousFunctioneadc227c7e00	js/jquery.js	/^	not: function( selector ) {$/;"	f
+AnonymousFunctioneadc227c7f00	js/jquery.js	/^	is: function( selector ) {$/;"	f
+AnonymousFunctioneadc227c8000	js/jquery.js	/^	init = jQuery.fn.init = function( selector, context, root ) {$/;"	f
+AnonymousFunctioneadc227c8100	js/jquery.js	/^	has: function( target ) {$/;"	f
+AnonymousFunctioneadc227c8200	js/jquery.js	/^		return this.filter( function() {$/;"	f	function:AnonymousFunctioneadc227c8100
+AnonymousFunctioneadc227c8300	js/jquery.js	/^	closest: function( selectors, context ) {$/;"	f
+AnonymousFunctioneadc227c8400	js/jquery.js	/^	index: function( elem ) {$/;"	f
+AnonymousFunctioneadc227c8500	js/jquery.js	/^	add: function( selector, context ) {$/;"	f
+AnonymousFunctioneadc227c8600	js/jquery.js	/^	addBack: function( selector ) {$/;"	f
+AnonymousFunctioneadc227c8700	js/jquery.js	/^	parent: function( elem ) {$/;"	f
+AnonymousFunctioneadc227c8800	js/jquery.js	/^	parents: function( elem ) {$/;"	f
+AnonymousFunctioneadc227c8900	js/jquery.js	/^	parentsUntil: function( elem, i, until ) {$/;"	f
+AnonymousFunctioneadc227c8a00	js/jquery.js	/^	next: function( elem ) {$/;"	f
+AnonymousFunctioneadc227c8b00	js/jquery.js	/^	prev: function( elem ) {$/;"	f
+AnonymousFunctioneadc227c8c00	js/jquery.js	/^	nextAll: function( elem ) {$/;"	f
+AnonymousFunctioneadc227c8d00	js/jquery.js	/^	prevAll: function( elem ) {$/;"	f
+AnonymousFunctioneadc227c8e00	js/jquery.js	/^	nextUntil: function( elem, i, until ) {$/;"	f
+AnonymousFunctioneadc227c8f00	js/jquery.js	/^	prevUntil: function( elem, i, until ) {$/;"	f
+AnonymousFunctioneadc227c9000	js/jquery.js	/^	siblings: function( elem ) {$/;"	f
+AnonymousFunctioneadc227c9100	js/jquery.js	/^	children: function( elem ) {$/;"	f
+AnonymousFunctioneadc227c9200	js/jquery.js	/^	contents: function( elem ) {$/;"	f
+AnonymousFunctioneadc227c9300	js/jquery.js	/^}, function( name, fn ) {$/;"	f
+AnonymousFunctioneadc227c9400	js/jquery.js	/^	jQuery.each( options.match( rnotwhite ) || [], function( _, flag ) {$/;"	f
+AnonymousFunctioneadc227c9500	js/jquery.js	/^jQuery.Callbacks = function( options ) {$/;"	f
+AnonymousFunctioneadc227c9600	js/jquery.js	/^			add: function() {$/;"	f
+AnonymousFunctioneadc227c9700	js/jquery.js	/^						jQuery.each( args, function( _, arg ) {$/;"	f
+AnonymousFunctioneadc227c9800	js/jquery.js	/^			remove: function() {$/;"	f
+AnonymousFunctioneadc227c9900	js/jquery.js	/^				jQuery.each( arguments, function( _, arg ) {$/;"	f
+AnonymousFunctioneadc227c9a00	js/jquery.js	/^			has: function( fn ) {$/;"	f
+AnonymousFunctioneadc227c9b00	js/jquery.js	/^			empty: function() {$/;"	f
+AnonymousFunctioneadc227c9c00	js/jquery.js	/^			disable: function() {$/;"	f
+AnonymousFunctioneadc227c9d00	js/jquery.js	/^			disabled: function() {$/;"	f
+AnonymousFunctioneadc227c9e00	js/jquery.js	/^			lock: function() {$/;"	f
+AnonymousFunctioneadc227c9f00	js/jquery.js	/^			locked: function() {$/;"	f
+AnonymousFunctioneadc227ca000	js/jquery.js	/^			fireWith: function( context, args ) {$/;"	f
+AnonymousFunctioneadc227ca100	js/jquery.js	/^			fire: function() {$/;"	f
+AnonymousFunctioneadc227ca200	js/jquery.js	/^			fired: function() {$/;"	f
+AnonymousFunctioneadc227ca300	js/jquery.js	/^	Deferred: function( func ) {$/;"	f
+AnonymousFunctioneadc227ca400	js/jquery.js	/^					return jQuery.Deferred( function( newDefer ) {$/;"	f
+AnonymousFunctioneadc227ca500	js/jquery.js	/^						jQuery.each( tuples, function( i, tuple ) {$/;"	f
+AnonymousFunctioneadc227ca600	js/jquery.js	/^						return function() {$/;"	f	function:AnonymousFunctioneadc227ca300.promise.then.resolve
+AnonymousFunctioneadc227ca700	js/jquery.js	/^					return jQuery.Deferred( function( newDefer ) {$/;"	f	function:AnonymousFunctioneadc227ca300.promise
+AnonymousFunctioneadc227ca800	js/jquery.js	/^				promise: function( obj ) {$/;"	f
+AnonymousFunctioneadc227ca900	js/jquery.js	/^		jQuery.each( tuples, function( i, tuple ) {$/;"	f
+AnonymousFunctioneadc227caa00	js/jquery.js	/^					function() {$/;"	f
+AnonymousFunctioneadc227cab00	js/jquery.js	/^	when: function( singleValue ) {$/;"	f
+AnonymousFunctioneadc227cac00	js/jquery.js	/^				return function( value ) {$/;"	f	function:AnonymousFunctioneadc227cab00.updateFunc
+AnonymousFunctioneadc227cad00	js/jquery.js	/^jQuery.Deferred.exceptionHook = function( error, stack ) {$/;"	f
+AnonymousFunctioneadc227cae00	js/jquery.js	/^jQuery.readyException = function( error ) {$/;"	f
+AnonymousFunctioneadc227caf00	js/jquery.js	/^	window.setTimeout( function() {$/;"	f
+AnonymousFunctioneadc227cb000	js/jquery.js	/^jQuery.fn.ready = function( fn ) {$/;"	f
+AnonymousFunctioneadc227cb100	js/jquery.js	/^		.catch( function( error ) {$/;"	f
+AnonymousFunctioneadc227cb200	js/jquery.js	/^	holdReady: function( hold ) {$/;"	f
+AnonymousFunctioneadc227cb300	js/jquery.js	/^	ready: function( wait ) {$/;"	f
+AnonymousFunctioneadc227cb400	js/jquery.js	/^var access = function( elems, fn, key, value, chainable, emptyGet, raw ) {$/;"	f
+AnonymousFunctioneadc227cb500	js/jquery.js	/^var acceptData = function( owner ) {$/;"	f
+AnonymousFunctioneadc227cb600	js/jquery.js	/^	cache: function( owner ) {$/;"	f
+AnonymousFunctioneadc227cb700	js/jquery.js	/^	set: function( owner, data, value ) {$/;"	f
+AnonymousFunctioneadc227cb800	js/jquery.js	/^	get: function( owner, key ) {$/;"	f
+AnonymousFunctioneadc227cb900	js/jquery.js	/^	access: function( owner, key, value ) {$/;"	c
+AnonymousFunctioneadc227cba00	js/jquery.js	/^	remove: function( owner, key ) {$/;"	f
+AnonymousFunctioneadc227cbb00	js/jquery.js	/^	hasData: function( owner ) {$/;"	f
+AnonymousFunctioneadc227cbc00	js/jquery.js	/^	hasData: function( elem ) {$/;"	f
+AnonymousFunctioneadc227cbd00	js/jquery.js	/^	data: function( elem, name, data ) {$/;"	f
+AnonymousFunctioneadc227cbe00	js/jquery.js	/^	removeData: function( elem, name ) {$/;"	f
+AnonymousFunctioneadc227cbf00	js/jquery.js	/^	_data: function( elem, name, data ) {$/;"	f
+AnonymousFunctioneadc227cc000	js/jquery.js	/^	_removeData: function( elem, name ) {$/;"	f
+AnonymousFunctioneadc227cc100	js/jquery.js	/^	data: function( key, value ) {$/;"	f
+AnonymousFunctioneadc227cc200	js/jquery.js	/^			return this.each( function() {$/;"	f	function:AnonymousFunctioneadc227cc100
+AnonymousFunctioneadc227cc300	js/jquery.js	/^		return access( this, function( value ) {$/;"	c	class:AnonymousFunctioneadc227cc100
+AnonymousFunctioneadc227cc400	js/jquery.js	/^			this.each( function() {$/;"	f	function:AnonymousFunctioneadc227cc100.AnonymousFunctioneadc227cc300
+AnonymousFunctioneadc227cc500	js/jquery.js	/^	removeData: function( key ) {$/;"	f
+AnonymousFunctioneadc227cc600	js/jquery.js	/^		return this.each( function() {$/;"	f	function:AnonymousFunctioneadc227cc500
+AnonymousFunctioneadc227cc700	js/jquery.js	/^	queue: function( elem, type, data ) {$/;"	f
+AnonymousFunctioneadc227cc800	js/jquery.js	/^	dequeue: function( elem, type ) {$/;"	f
+AnonymousFunctioneadc227cc900	js/jquery.js	/^	_queueHooks: function( elem, type ) {$/;"	f
+AnonymousFunctioneadc227cca00	js/jquery.js	/^			empty: jQuery.Callbacks( "once memory" ).add( function() {$/;"	f
+AnonymousFunctioneadc227ccb00	js/jquery.js	/^	queue: function( type, data ) {$/;"	f
+AnonymousFunctioneadc227ccc00	js/jquery.js	/^			this.each( function() {$/;"	f	function:AnonymousFunctioneadc227ccb00
+AnonymousFunctioneadc227ccd00	js/jquery.js	/^	dequeue: function( type ) {$/;"	f
+AnonymousFunctioneadc227cce00	js/jquery.js	/^		return this.each( function() {$/;"	f	function:AnonymousFunctioneadc227ccd00
+AnonymousFunctioneadc227ccf00	js/jquery.js	/^	clearQueue: function( type ) {$/;"	f
+AnonymousFunctioneadc227cd000	js/jquery.js	/^	promise: function( type, obj ) {$/;"	f
+AnonymousFunctioneadc227cd100	js/jquery.js	/^var isHiddenWithinTree = function( elem, el ) {$/;"	f
+AnonymousFunctioneadc227cd200	js/jquery.js	/^var swap = function( elem, options, callback, args ) {$/;"	f
+AnonymousFunctioneadc227cd300	js/jquery.js	/^	show: function() {$/;"	f
+AnonymousFunctioneadc227cd400	js/jquery.js	/^	hide: function() {$/;"	f
+AnonymousFunctioneadc227cd500	js/jquery.js	/^	toggle: function( state ) {$/;"	f
+AnonymousFunctioneadc227cd600	js/jquery.js	/^		return this.each( function() {$/;"	f	function:AnonymousFunctioneadc227cd500
+AnonymousFunctioneadc227cd700	js/jquery.js	/^( function() {$/;"	f
+AnonymousFunctioneadc227cd800	js/jquery.js	/^	return elem.each( function() {$/;"	f
+AnonymousFunctioneadc227cd900	js/jquery.js	/^	add: function( elem, types, handler, data, selector ) {$/;"	f
+AnonymousFunctioneadc227cda00	js/jquery.js	/^	remove: function( elem, types, handler, selector, mappedTypes ) {$/;"	f
+AnonymousFunctioneadc227cdb00	js/jquery.js	/^	dispatch: function( nativeEvent ) {$/;"	f
+AnonymousFunctioneadc227cdc00	js/jquery.js	/^	handlers: function( event, handlers ) {$/;"	f
+AnonymousFunctioneadc227cdd00	js/jquery.js	/^	addProp: function( name, hook ) {$/;"	f
+AnonymousFunctioneadc227cde00	js/jquery.js	/^				function() {$/;"	f
+AnonymousFunctioneadc227cdf00	js/jquery.js	/^				function() {$/;"	f
+AnonymousFunctioneadc227ce000	js/jquery.js	/^			set: function( value ) {$/;"	f
+AnonymousFunctioneadc227ce100	js/jquery.js	/^	fix: function( originalEvent ) {$/;"	f
+AnonymousFunctioneadc227ce200	js/jquery.js	/^			trigger: function() {$/;"	f
+AnonymousFunctioneadc227ce300	js/jquery.js	/^			trigger: function() {$/;"	f
+AnonymousFunctioneadc227ce400	js/jquery.js	/^			trigger: function() {$/;"	f
+AnonymousFunctioneadc227ce500	js/jquery.js	/^			_default: function( event ) {$/;"	f
+AnonymousFunctioneadc227ce600	js/jquery.js	/^			postDispatch: function( event ) {$/;"	f
+AnonymousFunctioneadc227ce700	js/jquery.js	/^jQuery.removeEvent = function( elem, type, handle ) {$/;"	f
+AnonymousFunctioneadc227ce800	js/jquery.js	/^jQuery.Event = function( src, props ) {$/;"	c
+AnonymousFunctioneadc227ce900	js/jquery.js	/^	preventDefault: function() {$/;"	c
+AnonymousFunctioneadc227cea00	js/jquery.js	/^	stopPropagation: function() {$/;"	c
+AnonymousFunctioneadc227ceb00	js/jquery.js	/^	stopImmediatePropagation: function() {$/;"	c
+AnonymousFunctioneadc227cec00	js/jquery.js	/^	which: function( event ) {$/;"	f
+AnonymousFunctioneadc227ced00	js/jquery.js	/^}, function( orig, fix ) {$/;"	f
+AnonymousFunctioneadc227cee00	js/jquery.js	/^	on: function( types, selector, data, fn ) {$/;"	f
+AnonymousFunctioneadc227cef00	js/jquery.js	/^	one: function( types, selector, data, fn ) {$/;"	f
+AnonymousFunctioneadc227cf000	js/jquery.js	/^	off: function( types, selector, fn ) {$/;"	f
+AnonymousFunctioneadc227cf100	js/jquery.js	/^		return this.each( function() {$/;"	f	function:AnonymousFunctioneadc227cf000
+AnonymousFunctioneadc227cf200	js/jquery.js	/^		return collection.each( function( index ) {$/;"	f
+AnonymousFunctioneadc227cf300	js/jquery.js	/^	htmlPrefilter: function( html ) {$/;"	f
+AnonymousFunctioneadc227cf400	js/jquery.js	/^	clone: function( elem, dataAndEvents, deepDataAndEvents ) {$/;"	f
+AnonymousFunctioneadc227cf500	js/jquery.js	/^	cleanData: function( elems ) {$/;"	f
+AnonymousFunctioneadc227cf600	js/jquery.js	/^	detach: function( selector ) {$/;"	f
+AnonymousFunctioneadc227cf700	js/jquery.js	/^	remove: function( selector ) {$/;"	f
+AnonymousFunctioneadc227cf800	js/jquery.js	/^	text: function( value ) {$/;"	f
+AnonymousFunctioneadc227cf900	js/jquery.js	/^		return access( this, function( value ) {$/;"	f	function:AnonymousFunctioneadc227cf800
+AnonymousFunctioneadc227cfa00	js/jquery.js	/^				this.empty().each( function() {$/;"	f	function:AnonymousFunctioneadc227cf800.AnonymousFunctioneadc227cf900
+AnonymousFunctioneadc227cfb00	js/jquery.js	/^	append: function() {$/;"	f
+AnonymousFunctioneadc227cfc00	js/jquery.js	/^		return domManip( this, arguments, function( elem ) {$/;"	f	function:AnonymousFunctioneadc227cfb00
+AnonymousFunctioneadc227cfd00	js/jquery.js	/^	prepend: function() {$/;"	f
+AnonymousFunctioneadc227cfe00	js/jquery.js	/^		return domManip( this, arguments, function( elem ) {$/;"	f	function:AnonymousFunctioneadc227cfd00
+AnonymousFunctioneadc227cff00	js/jquery.js	/^	before: function() {$/;"	f
+Command	js/main.js	/^class Command {$/;"	c
+DOMEval	js/jquery.js	/^	function DOMEval( code, doc ) {$/;"	f	function:AnonymousFunctioneadc227c0100
+Data	js/jquery.js	/^function Data() {$/;"	c
+Identity	js/jquery.js	/^function Identity( v ) {$/;"	f
+Module	js/curdot.js	/^parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcelRequire,u="funct/;"	c	class:f
+Sizzle	js/jquery.js	/^function Sizzle( selector, context, results, seed ) {$/;"	f
+Thrower	js/jquery.js	/^function Thrower( ex ) {$/;"	f
+Tween	js/jquery.js	/^function Tween( elem, options, prop, end, easing ) {$/;"	f
+aAmusement	index.html	/^            <li id="aAmusement">$/;"	I
+aAnime	index.html	/^            <li id="aAnime">$/;"	I
+aCoding	index.html	/^            <li id="aCoding">$/;"	I
+aGames	index.html	/^            <li id="aGames">$/;"	I
+aImportant	index.html	/^            <li id="aImportant">$/;"	I
+aLegal	index.html	/^            <li id="aLegal">$/;"	I
+aSteam	index.html	/^            <li id="aSteam">$/;"	I
+abort	js/jquery.js	/^				abort: function( statusText ) {$/;"	m	class:AnonymousFunctioneadc227c17300.jqXHR
+accents	js/variables.js	/^var accents = ["red", "green", "blue", "yellow", "white"];$/;"	v
+activityBar.activeBackground	.vscode/settings.json	/^        "activityBar.activeBackground": "#004d00",$/;"	s	object:workbench.colorCustomizations
+activityBar.activeBorder	.vscode/settings.json	/^        "activityBar.activeBorder": "#000020",$/;"	s	object:workbench.colorCustomizations
+activityBar.background	.vscode/settings.json	/^        "activityBar.background": "#004d00",$/;"	s	object:workbench.colorCustomizations
+activityBar.foreground	.vscode/settings.json	/^        "activityBar.foreground": "#e7e7e7",$/;"	s	object:workbench.colorCustomizations
+activityBar.inactiveForeground	.vscode/settings.json	/^        "activityBar.inactiveForeground": "#e7e7e799",$/;"	s	object:workbench.colorCustomizations
+activityBarBadge.background	.vscode/settings.json	/^        "activityBarBadge.background": "#000020",$/;"	s	object:workbench.colorCustomizations
+activityBarBadge.foreground	.vscode/settings.json	/^        "activityBarBadge.foreground": "#e7e7e7",$/;"	s	object:workbench.colorCustomizations
+add	js/jquery.js	/^		add = function( key, valueOrFunction ) {$/;"	f	function:AnonymousFunctioneadc227c16800
+addCombinator	js/jquery.js	/^function addCombinator( matcher, combinator, base ) {$/;"	f
+addGetHookIf	js/jquery.js	/^function addGetHookIf( conditionFn, hookFn ) {$/;"	f
+addHandle	js/jquery.js	/^function addHandle( attrs, handler ) {$/;"	f
+addToPrefiltersOrTransports	js/jquery.js	/^function addToPrefiltersOrTransports( structure ) {$/;"	f
+adjustCSS	js/jquery.js	/^function adjustCSS( elem, prop, valueParts, tween ) {$/;"	f
+adoptValue	js/jquery.js	/^function adoptValue( value, resolve, reject ) {$/;"	f
+ajaxConvert	js/jquery.js	/^function ajaxConvert( s, response, jqXHR, isSuccess ) {$/;"	f
+ajaxExtend	js/jquery.js	/^function ajaxExtend( target, src ) {$/;"	f
+ajaxHandleResponses	js/jquery.js	/^function ajaxHandleResponses( s, jqXHR, responses ) {$/;"	f
+always	js/jquery.js	/^				always: function() {$/;"	m	class:AnonymousFunctioneadc227ca300.promise
+animatedElements	js/reoScroll.js	/^var animatedElements = [];$/;"	v
+animationRunning	js/variables.js	/^var animationRunning = true;$/;"	v
+anymatch	package-lock.json	/^        "anymatch": "3.1.1",$/;"	s	object:dependencies.chokidar.requires
+anymatch	package-lock.json	/^    "anymatch": {$/;"	o	object:dependencies
+applications	manifest.json	/^	"applications": {$/;"	o
+array	js/variables.js	/^var array = og.split("");$/;"	v
+assert	js/jquery.js	/^function assert( fn ) {$/;"	f
+attrHandle	js/jquery.js	/^	attrHandle[ name ] = function( elem, name, isXML ) {$/;"	f	function:AnonymousFunctioneadc227c14600
+attrs	js/jquery.js	/^		attrs = { height: type };$/;"	c	class:genFx
+augmentWidthOrHeight	js/jquery.js	/^function augmentWidthOrHeight( elem, name, extra, isBorderBox, styles ) {$/;"	f
+authors	manifest.json	/^	"authors": ["reo101", "taki"],$/;"	a
+autocompletion	js/variables.js	/^var autocompletion;$/;"	v
+background	css/main.scss	/^#background {$/;"	i
+background	index.html	/^    <canvas id="background"> <\/canvas>$/;"	I
+background	js/variables.js	/^var background = document.getElementById("background");$/;"	v
+background	manifest.json	/^	"background": {$/;"	o
+background	testindex.html	/^    <canvas id="background" width="0px !important" height="0px !important"> <\/canvas>$/;"	I
+binary-extensions	package-lock.json	/^        "binary-extensions": "2.0.0"$/;"	s	object:dependencies.is-binary-path.requires
+binary-extensions	package-lock.json	/^    "binary-extensions": {$/;"	o	object:dependencies
+bindType	js/jquery.js	/^		bindType: fix,$/;"	p	class:jQuery.event.special
+body	css/main.css	/^body {$/;"	s
+bool	js/main.js	/^        var bool = val && val.length < prevWord.length;$/;"	v
+braces	package-lock.json	/^        "braces": "3.0.2",$/;"	s	object:dependencies.chokidar.requires
+braces	package-lock.json	/^    "braces": {$/;"	o	object:dependencies
+browserPrefix	js/variables.js	/^	var browserPrefix;$/;"	v
+buildFragment	js/jquery.js	/^function buildFragment( elems, context, scripts, selection, ignored ) {$/;"	f
+buildParams	js/jquery.js	/^function buildParams( prefix, obj, traditional, add ) {$/;"	f
+cache	js/jquery.js	/^	function cache( key, value ) {$/;"	f	function:createCache
+callback	js/jquery.js	/^				callback = function( type ) {$/;"	f	function:AnonymousFunctioneadc227c18500
+catch	js/jquery.js	/^				"catch": function( fn ) {$/;"	m	class:AnonymousFunctioneadc227ca300.promise
+check	js/reoScroll.js	/^function check(elem) {$/;"	f
+checkAllAnimatedText	js/reoScroll.js	/^function checkAllAnimatedText() {$/;"	f
+chinese	js/variables.js	/^var chinese = "田由甲申甴电甶男甸甹町画甼甽甾甿畀畁畂畃畄畅畆畇畈畉畊/;"	v
+chokidar	package-lock.json	/^    "chokidar": {$/;"	o	object:dependencies
+chrome_settings_overrides	manifest.json	/^	"chrome_settings_overrides" : {$/;"	o
+chrome_url_overrides	manifest.json	/^	"chrome_url_overrides": {$/;"	o
+clearAllAnimatedText	js/reoScroll.js	/^function clearAllAnimatedText() {$/;"	f
+cloneCopyEvent	js/jquery.js	/^function cloneCopyEvent( src, dest ) {$/;"	f
+color	js/variables.js	/^var color;$/;"	v
+columns	js/variables.js	/^var columns = background.width \/ font_size; \/\/number of columns for the rain$/;"	v
+command	js/main.js	/^var command = commands[0];$/;"	v
+complete	js/jquery.js	/^	opt.complete = function() {$/;"	f	function:opt
+completed	js/jquery.js	/^function completed() {$/;"	f
+computeStyleTests	js/jquery.js	/^	function computeStyleTests() {$/;"	f	function:AnonymousFunctioneadc227c10c00
+condense	js/jquery.js	/^function condense( unmatched, map, filter, context, xml ) {$/;"	f
+constructor	js/main.js	/^    constructor(id, commands, label, url, prefix = '', suffix = '',$/;"	m	class:Command
+converters	js/jquery.js	/^		s.converters[ "script json" ] = function() {$/;"	f	function:s
+createButtonPseudo	js/jquery.js	/^function createButtonPseudo( type ) {$/;"	f
+createCache	js/jquery.js	/^function createCache() {$/;"	f
+createDisabledPseudo	js/jquery.js	/^function createDisabledPseudo( disabled ) {$/;"	f
+createFxNow	js/jquery.js	/^function createFxNow() {$/;"	f
+createInputPseudo	js/jquery.js	/^function createInputPseudo( type ) {$/;"	f
+createOptions	js/jquery.js	/^function createOptions( options ) {$/;"	f
+createPositionalPseudo	js/jquery.js	/^function createPositionalPseudo( fn ) {$/;"	f
+createTween	js/jquery.js	/^function createTween( value, prop, animation ) {$/;"	f
+cssHooks	js/jquery.js	/^	jQuery.cssHooks[ prefix + suffix ] = {$/;"	c	class:jQuery
+ctx	js/variables.js	/^var ctx = background.getContext("2d");$/;"	v
+curCSS	js/jquery.js	/^function curCSS( elem, name, computed ) {$/;"	f
+cursor	js/curdotlogic.js	/^    const cursor = curDot({$/;"	C
+data	js/reoScroll.js	/^    var data = {$/;"	c	class:textToAnimation
+dataAttr	js/jquery.js	/^function dataAttr( elem, key, data ) {$/;"	f
+defaultPrefilter	js/jquery.js	/^function defaultPrefilter( elem, props, opts ) {$/;"	f
+deferred	js/jquery.js	/^			deferred[ tuple[ 0 ] ] = function() {$/;"	f	function:AnonymousFunctioneadc227ca900
+delay	js/variables.js	/^var delay = 50;$/;"	v
+delegateType	js/jquery.js	/^		delegateType: fix,$/;"	p	class:jQuery.event.special
+dependencies	package-lock.json	/^  "dependencies": {$/;"	o
+description	manifest.json	/^	"description": "Overrides the new tab page with a custom made one by reo101 && taki",$/;"	s
+disableScript	js/jquery.js	/^function disableScript( elem ) {$/;"	f
+div	js/reoScroll.js	/^        "div": div,$/;"	p	class:textToAnimation.data
+doAnimation	js/jquery.js	/^			doAnimation = function() {$/;"	f	function:AnonymousFunctioneadc227c13100
+domManip	js/jquery.js	/^function domManip( collection, args, callback, ignored ) {$/;"	f
+done	js/jquery.js	/^		function done( status, nativeStatusText, responses, headers ) {$/;"	f	function:AnonymousFunctioneadc227c17300
+draw	js/bg.js	/^var draw = () => {$/;"	v
+drops	js/variables.js	/^var drops = [];$/;"	v
+elementMatcher	js/jquery.js	/^function elementMatcher( matchers ) {$/;"	f
+eraseCookie	js/variables.js	/^function eraseCookie(name) {   $/;"	f
+expand	js/jquery.js	/^		expand: function( value ) {$/;"	m	class:jQuery.cssHooks
+f	js/curdot.js	/^parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcelRequire,u="funct/;"	f	function:parcelRequire
+file	project.json	/^    "file": "index.html",$/;"	s
+fill-range	package-lock.json	/^        "fill-range": "7.0.1"$/;"	s	object:dependencies.braces.requires
+fill-range	package-lock.json	/^    "fill-range": {$/;"	o	object:dependencies
+filter	js/jquery.js	/^		Expr.filter["ID"] = function( id ) {$/;"	f	function:Expr
+find	js/jquery.js	/^		Expr.find["ID"] = function( id, context ) {$/;"	f	function:Expr
+fire	js/jquery.js	/^			hooks.empty.fire = function() {$/;"	f	function:hooks.empty
+fire	js/jquery.js	/^		fire = function() {$/;"	f	function:AnonymousFunctioneadc227c9500
+fixInput	js/jquery.js	/^function fixInput( src, dest ) {$/;"	f
+fn	js/jquery.js	/^				fn = function( elem, key, value ) {$/;"	f	function:AnonymousFunctioneadc227cb400
+fn	js/jquery.js	/^		fn = function( event ) {$/;"	f	function:on
+fn	js/jquery.js	/^	jQuery.fn[ name ] = function( until, selector ) {$/;"	f	function:jQuery
+font_size	js/variables.js	/^var font_size = 7.5;$/;"	v
+form	js/variables.js	/^var form = document.getElementById('search-form');$/;"	v
+fsevents	package-lock.json	/^        "fsevents": "2.1.2",$/;"	s	object:dependencies.chokidar.requires
+fsevents	package-lock.json	/^    "fsevents": {$/;"	o	object:dependencies
+gecko	manifest.json	/^		"gecko": {$/;"	o	object:applications
+genFx	js/jquery.js	/^function genFx( type, includeWidth ) {$/;"	f
+general	project.json	/^    "general": {$/;"	o
+getAll	js/jquery.js	/^function getAll( context, tag ) {$/;"	f
+getAllResponseHeaders	js/jquery.js	/^				getAllResponseHeaders: function() {$/;"	m	class:AnonymousFunctioneadc227c17300.jqXHR
+getCallbackdata	js/main.js	/^    getCallbackdata(value) {$/;"	m	class:Command
+getClass	js/jquery.js	/^function getClass( elem ) {$/;"	f
+getCookie	js/variables.js	/^function getCookie(name) {$/;"	f
+getDefaultDisplay	js/jquery.js	/^function getDefaultDisplay( elem ) {$/;"	f
+getResponseHeader	js/jquery.js	/^				getResponseHeader: function( key ) {$/;"	m	class:AnonymousFunctioneadc227c17300.jqXHR
+getWidthOrHeight	js/jquery.js	/^function getWidthOrHeight( elem, name, extra ) {$/;"	f
+getWindow	js/jquery.js	/^function getWindow( elem ) {$/;"	f
+glob-parent	package-lock.json	/^        "glob-parent": "5.1.0",$/;"	s	object:dependencies.chokidar.requires
+glob-parent	package-lock.json	/^    "glob-parent": {$/;"	o	object:dependencies
+handle	js/jquery.js	/^		handle: function( event ) {$/;"	m	class:jQuery.event.special
+handler	js/jquery.js	/^		var handler = function( event ) {$/;"	f	function:AnonymousFunctioneadc227c16500
+height	js/jquery.js	/^		attrs = { height: type };$/;"	p	class:genFx.attrs
+help	index.html	/^            <ul id="help">$/;"	I
+help	js/variables.js	/^var help = document.getElementById('help');$/;"	v
+help	testindex.html	/^            <ul id="help">$/;"	I
+hideHelp	js/main.js	/^var hideHelp =$/;"	v
+homepage	manifest.json	/^	"homepage": "https:\/\/github.com\/reo101\/reo101.github.io",$/;"	s
+homepage	manifest.json	/^ 		"homepage": "index.html"$/;"	s	object:chrome_settings_overrides
+icon	js/variables.js	/^var icon = document.getElementById('search-icon');$/;"	v
+id	manifest.json	/^			"id": "reo@reo.free.bg"$/;"	s	object:applications.gecko
+incognito	manifest.json	/^	"incognito": "spanning",$/;"	s
+inspect	js/jquery.js	/^	function inspect( dataType ) {$/;"	f
+inspectPrefiltersOrTransports	js/jquery.js	/^function inspectPrefiltersOrTransports( structure, options, originalOptions, jqXHR ) {$/;"	f
+integrity	package-lock.json	/^      "integrity": "sha1-qIwCU1eR8C7TfHahueqXc8gz+MI="$/;"	s	object:dependencies.is-extglob
+integrity	package-lock.json	/^      "integrity": "sha512-41Cifkg6e8TylSpdtTpeLVMqvSBEVzTttHvERD741+pnZ8ANv0004MRL43QKPDlK9cGvN/;"	s	object:dependencies.is-number
+integrity	package-lock.json	/^      "integrity": "sha512-5G0tKtBTFImOqDnLB2hG6Bp2qcKEFduo4tZu9MT\/H6NQv\/ghhy30o55ufafxJ\/LdH7/;"	s	object:dependencies.is-glob
+integrity	package-lock.json	/^      "integrity": "sha512-65P7iz6X5yEr1cwcgvQxbbIw7Uk3gOy5dIdtZ4rDveLqhrdJP+Li\/Hx6tyK0NEb+2GCy/;"	s	object:dependencies.to-regex-range
+integrity	package-lock.json	/^      "integrity": "sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2P/;"	s	object:dependencies.normalize-path
+integrity	package-lock.json	/^      "integrity": "sha512-OYMyqkKzK7blWO\/+XZYP6w8hH0LDvkBvdvKukti+7kqYFCiEAk+gI3DWnryapc0Dau05/;"	s	object:dependencies.picomatch
+integrity	package-lock.json	/^      "integrity": "sha512-Phlt0plgpIIBOGTT\/ehfFnbNlfsDEiqmzE2KRXoX1bLIlir4X\/MR+zSyBEkL05ffWgn/;"	s	object:dependencies.binary-extensions
+integrity	package-lock.json	/^      "integrity": "sha512-R4wDiBwZ0KzpgOWetKDug1FZcYhqYnUYKtfZYt4mD5SBz76q0KR4Q9o7GIPamsVPGmW3E/;"	s	object:dependencies.fsevents
+integrity	package-lock.json	/^      "integrity": "sha512-ZMERYes6pDydyuGidse7OsHxtbI7WVeUEozgR\/g7rd0xUimYNlvZRE\/K2MgZTjWy725/;"	s	object:dependencies.is-binary-path
+integrity	package-lock.json	/^      "integrity": "sha512-b8um+L1RzM3WDSzvhm6gIz1yfTbBt6YTlcEKAvsmqCZZFw46z626lVj9j1yEPW33H5H+l/;"	s	object:dependencies.braces
+integrity	package-lock.json	/^      "integrity": "sha512-crk4Qu3pmXwgxdSgGhgA\/eXiJAPQiX4GMOZZMXnqKxHX7TaoL+3gQVo\/WeuAiogr07D/;"	s	object:dependencies.readdirp
+integrity	package-lock.json	/^      "integrity": "sha512-dGmKLDdT3Gdl7fBUe8XK+gAtGmzy5Fn0XkkWQuYxGIgWVPPse2CxFA5mtrlD0TOHaHjEU/;"	s	object:dependencies.chokidar
+integrity	package-lock.json	/^      "integrity": "sha512-mM8522psRCqzV+6LhomX5wgp25YVibjh8Wj23I5RPkPppSVSjyKD2A2mBJmWGa+KN7f2D/;"	s	object:dependencies.anymatch
+integrity	package-lock.json	/^      "integrity": "sha512-qOo9F+dMUmC2Lcb4BbVvnKJxTPjCm+RRpe4gDuGrzkL7mEVl\/djYSu2OdQ2Pa302N4oq/;"	s	object:dependencies.fill-range
+integrity	package-lock.json	/^      "integrity": "sha512-qjtRgnIVmOfnKUE3NJAQEdk+lKrxfw8t5ke7SXtfMTHcjsBfOfWXCQfdb30zfDoZQ2IRS/;"	s	object:dependencies.glob-parent
+is-binary-path	package-lock.json	/^        "is-binary-path": "2.1.0",$/;"	s	object:dependencies.chokidar.requires
+is-binary-path	package-lock.json	/^    "is-binary-path": {$/;"	o	object:dependencies
+is-extglob	package-lock.json	/^        "is-extglob": "2.1.1"$/;"	s	object:dependencies.is-glob.requires
+is-extglob	package-lock.json	/^    "is-extglob": {$/;"	o	object:dependencies
+is-glob	package-lock.json	/^        "is-glob": "4.0.1"$/;"	s	object:dependencies.glob-parent.requires
+is-glob	package-lock.json	/^        "is-glob": "4.0.1",$/;"	s	object:dependencies.chokidar.requires
+is-glob	package-lock.json	/^    "is-glob": {$/;"	o	object:dependencies
+is-number	package-lock.json	/^        "is-number": "7.0.0"$/;"	s	object:dependencies.to-regex-range.requires
+is-number	package-lock.json	/^    "is-number": {$/;"	o	object:dependencies
+isArrayLike	js/jquery.js	/^function isArrayLike( obj ) {$/;"	f
+isBackspace	js/main.js	/^var isBackspace =$/;"	v
+isBetterRainbow	js/variables.js	/^var isBetterRainbow = false;$/;"	v
+isDimo2	js/variables.js	/^var isDimo2 = false;$/;"	v
+isRainbow	js/variables.js	/^var isRainbow = false;$/;"	v
+isVisible	js/reoScroll.js	/^function isVisible(elem) {$/;"	f
+jQuery	js/jquery.js	/^	jQuery = function( selector, context ) {$/;"	f	function:AnonymousFunctioneadc227c0100
+jQuery	js/jquery.js	/^	jQuery[ method ] = function( url, data, callback, type ) {$/;"	f	function:AnonymousFunctioneadc227c17700
+japanese	js/variables.js	/^var japanese = "あいうえおかきくけこがぎぐげごさしすせそざじずぜぞたち/;"	v
+jqXHR	js/jquery.js	/^			jqXHR = {$/;"	c	class:AnonymousFunctioneadc227c17300
+l	js/curdot.js	/^parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcelRequire,u="funct/;"	v
+left	js/jquery.js	/^				left: parentOffset.left + jQuery.css( offsetParent[ 0 ], "borderLeftWidth", true )$/;"	p	class:AnonymousFunctioneadc227c19c00.parentOffset
+left	js/jquery.js	/^			parentOffset = { top: 0, left: 0 };$/;"	p	class:AnonymousFunctioneadc227c19c00.parentOffset
+letters	js/variables.js	/^var letters = "0123456789ABCDEF";$/;"	v
+liveServer.settings.port	.vscode/settings.json	/^    "liveServer.settings.port": 5501$/;"	n
+lockfileVersion	package-lock.json	/^  "lockfileVersion": 1,$/;"	n
+logo	css/main.scss	/^		#logo {$/;"	i
+logo	index.html	/^            <img id="logo" src="assets\/newlogo.png">$/;"	I
+logo	js/variables.js	/^var logo = document.getElementById('logo');$/;"	v
+logo-box	css/main.scss	/^	#logo-box {$/;"	i
+logo-box	index.html	/^        <a id="logo-box" href="http:\/\/reo.free.bg">$/;"	I
+logo-wrapper	css/main.scss	/^#logo-wrapper {$/;"	i
+logo-wrapper	index.html	/^    <div id="logo-wrapper">$/;"	I
+makeDummyStyle	js/reoScroll.js	/^function makeDummyStyle(idName, id, animName, timeOffset){$/;"	f
+makePlaceholder	js/main.js	/^    makePlaceholder() {$/;"	m	class:Command
+makeUrl	js/main.js	/^    makeUrl(term) {$/;"	m	class:Command
+manifest_version	manifest.json	/^	"manifest_version": 2$/;"	n
+manipulationTarget	js/jquery.js	/^function manipulationTarget( elem, content ) {$/;"	f
+markFunction	js/jquery.js	/^function markFunction( fn ) {$/;"	f
+matcherFromGroupMatchers	js/jquery.js	/^function matcherFromGroupMatchers( elementMatchers, setMatchers ) {$/;"	f
+matcherFromTokens	js/jquery.js	/^function matcherFromTokens( tokens ) {$/;"	f
+message	js/reoScroll.js	/^let message = `$/;"	v
+mightThrow	js/jquery.js	/^								mightThrow = function() {$/;"	f	function:AnonymousFunctioneadc227ca300.promise.then.resolve.AnonymousFunctioneadc227ca600
+multipleContexts	js/jquery.js	/^function multipleContexts( selector, contexts, results ) {$/;"	f
+name	manifest.json	/^	"name": "RTHP",$/;"	s
+newtab	manifest.json	/^		"newtab": "index.html"$/;"	s	object:chrome_url_overrides
+next	js/jquery.js	/^			next = function() {$/;"	f	function:AnonymousFunctioneadc227cc800
+normalize-path	package-lock.json	/^        "normalize-path": "3.0.0",$/;"	s	object:dependencies.anymatch.requires
+normalize-path	package-lock.json	/^        "normalize-path": "3.0.0",$/;"	s	object:dependencies.chokidar.requires
+normalize-path	package-lock.json	/^    "normalize-path": {$/;"	o	object:dependencies
+og	js/variables.js	/^var og = "01";$/;"	v
+on	js/jquery.js	/^function on( elem, types, selector, data, fn, one ) {$/;"	f
+onreadystatechange	js/jquery.js	/^					xhr.onreadystatechange = function() {$/;"	f	function:xhr
+optional	package-lock.json	/^      "optional": true$/;"	b	object:dependencies.fsevents
+options	index.html	/^            <datalist id="options"><\/datalist>$/;"	I
+overrideMimeType	js/jquery.js	/^				overrideMimeType: function( type ) {$/;"	m	class:AnonymousFunctioneadc227c17300.jqXHR
+p	js/curdot.js	/^parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcelRequire,u="funct/;"	f	function:parcelRequire.f
+page	manifest.json	/^		"page": "index.html"$/;"	s	object:background
+parcelRequire	js/curdot.js	/^parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcelRequire,u="funct/;"	f
+parentOffset	js/jquery.js	/^			parentOffset = { top: 0, left: 0 };$/;"	c	class:AnonymousFunctioneadc227c19c00
+parentOffset	js/jquery.js	/^			parentOffset = {$/;"	c	class:AnonymousFunctioneadc227c19c00
+peacock.color	.vscode/settings.json	/^    "peacock.color": "#001a00",$/;"	s
+picomatch	package-lock.json	/^        "picomatch": "2.1.1"$/;"	s	object:dependencies.anymatch.requires
+picomatch	package-lock.json	/^        "picomatch": "2.1.1"$/;"	s	object:dependencies.readdirp.requires
+picomatch	package-lock.json	/^    "picomatch": {$/;"	o	object:dependencies
+pipe	js/jquery.js	/^				pipe: function( \/* fnDone, fnFail, fnProgress *\/ ) {$/;"	m	class:AnonymousFunctioneadc227ca300.promise
+prevWord	js/main.js	/^var prevWord = '';$/;"	v
+private	manifest.json	/^	"private": true,$/;"	b
+promise	js/jquery.js	/^			promise = {$/;"	c	class:AnonymousFunctioneadc227ca300
+propFilter	js/jquery.js	/^function propFilter( props, specialEasing ) {$/;"	f
+proxy	js/jquery.js	/^		proxy = function() {$/;"	f	function:AnonymousFunctioneadc227c2100
+quick-wrapper	css/main.scss	/^#quick-wrapper {$/;"	i
+quick-wrapper	index.html	/^    <div id="quick-wrapper">$/;"	I
+raf	js/jquery.js	/^function raf() {$/;"	f
+randomizeColor	js/variables.js	/^var randomizeColor = () => {$/;"	v
+readdirp	package-lock.json	/^        "readdirp": "3.2.0"$/;"	s	object:dependencies.chokidar.requires
+readdirp	package-lock.json	/^    "readdirp": {$/;"	o	object:dependencies
+readyState	js/jquery.js	/^				readyState: 0,$/;"	p	class:AnonymousFunctioneadc227c17300.jqXHR
+register	js/curdot.js	/^parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcelRequire,u="funct/;"	f	function:f
+remove	js/jquery.js	/^function remove( elem, selector, keepData ) {$/;"	f
+requires	package-lock.json	/^      "requires": {$/;"	o	object:dependencies.anymatch
+requires	package-lock.json	/^      "requires": {$/;"	o	object:dependencies.braces
+requires	package-lock.json	/^      "requires": {$/;"	o	object:dependencies.chokidar
+requires	package-lock.json	/^      "requires": {$/;"	o	object:dependencies.fill-range
+requires	package-lock.json	/^      "requires": {$/;"	o	object:dependencies.glob-parent
+requires	package-lock.json	/^      "requires": {$/;"	o	object:dependencies.is-binary-path
+requires	package-lock.json	/^      "requires": {$/;"	o	object:dependencies.is-glob
+requires	package-lock.json	/^      "requires": {$/;"	o	object:dependencies.readdirp
+requires	package-lock.json	/^      "requires": {$/;"	o	object:dependencies.to-regex-range
+requires	package-lock.json	/^  "requires": true,$/;"	b
+resolve	js/curdot.js	/^parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcelRequire,u="funct/;"	f	function:p
+resolve	js/jquery.js	/^					function resolve( depth, deferred, handler, special ) {$/;"	f	function:AnonymousFunctioneadc227ca300.promise.then
+resolve	js/jquery.js	/^			resolve = function() {$/;"	f	function:AnonymousFunctioneadc227cd000
+resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/anymatch\/-\/anymatch-3.1.1.tgz",$/;"	s	object:dependencies.anymatch
+resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/binary-extensions\/-\/binary-extensions-2.0.0.t/;"	s	object:dependencies.binary-extensions
+resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/braces\/-\/braces-3.0.2.tgz",$/;"	s	object:dependencies.braces
+resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/chokidar\/-\/chokidar-3.3.0.tgz",$/;"	s	object:dependencies.chokidar
+resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/fill-range\/-\/fill-range-7.0.1.tgz",$/;"	s	object:dependencies.fill-range
+resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/fsevents\/-\/fsevents-2.1.2.tgz",$/;"	s	object:dependencies.fsevents
+resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/glob-parent\/-\/glob-parent-5.1.0.tgz",$/;"	s	object:dependencies.glob-parent
+resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/is-binary-path\/-\/is-binary-path-2.1.0.tgz",$/;"	s	object:dependencies.is-binary-path
+resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/is-extglob\/-\/is-extglob-2.1.1.tgz",$/;"	s	object:dependencies.is-extglob
+resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/is-glob\/-\/is-glob-4.0.1.tgz",$/;"	s	object:dependencies.is-glob
+resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/is-number\/-\/is-number-7.0.0.tgz",$/;"	s	object:dependencies.is-number
+resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/normalize-path\/-\/normalize-path-3.0.0.tgz",$/;"	s	object:dependencies.normalize-path
+resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/picomatch\/-\/picomatch-2.1.1.tgz",$/;"	s	object:dependencies.picomatch
+resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/readdirp\/-\/readdirp-3.2.0.tgz",$/;"	s	object:dependencies.readdirp
+resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/to-regex-range\/-\/to-regex-range-5.0.1.tgz",$/;"	s	object:dependencies.to-regex-range
+restoreScript	js/jquery.js	/^function restoreScript( elem ) {$/;"	f
+returnFalse	js/jquery.js	/^function returnFalse() {$/;"	f
+returnTrue	js/jquery.js	/^function returnTrue() {$/;"	f
+root	js/variables.js	/^var root = document.documentElement;$/;"	v
+safeActiveElement	js/jquery.js	/^function safeActiveElement() {$/;"	f
+search	index.html	/^                <input type="text" name="q" id="search" autofocus="autofocus" autocomplete="off"$/;"	I
+search	js/variables.js	/^var search = document.getElementById('search');$/;"	v
+search	testindex.html	/^                <input type="text" name="q" id="search" autofocus="autofocus" autocomplete="off"$/;"	I
+search-form	css/main.scss	/^	#search-form{$/;"	i
+search-form	index.html	/^            <div id="search-form" class="autocomplete">$/;"	I
+search-form	testindex.html	/^            <div id="search-form">$/;"	I
+search-icon	index.html	/^                <label for="search"><span id="search-icon" class="fa fa-duckduckgo"><\/span><\/l/;"	I
+search-icon	testindex.html	/^                <label for="search"><span id="search-icon" class="fa fa-duckduckgo"><\/span><\/l/;"	I
+search-wrapper	css/main.scss	/^#search-wrapper{$/;"	i
+search-wrapper	index.html	/^    <div id="search-wrapper">$/;"	I
+search-wrapper	testindex.html	/^    <div id="search-wrapper">$/;"	I
+setAccents	js/variables.js	/^var setAccents = (newColor) => {$/;"	v
+setCookie	js/variables.js	/^function setCookie(name,value,secondsOrDays, isDays) {$/;"	f
+setFilters	js/jquery.js	/^function setFilters() {}$/;"	f
+setGlobalEval	js/jquery.js	/^function setGlobalEval( elems, refElements ) {$/;"	f
+setMatcher	js/jquery.js	/^function setMatcher( preFilter, selector, matcher, postFilter, postFinder, postSelector ) {$/;"	f
+setPositiveNumber	js/jquery.js	/^function setPositiveNumber( elem, value, subtract ) {$/;"	f
+setRequestHeader	js/jquery.js	/^				setRequestHeader: function( name, value ) {$/;"	m	class:AnonymousFunctioneadc227c17300.jqXHR
+setup	js/jquery.js	/^			setup: function() {$/;"	m	class:jQuery.event.special
+showHelp	js/main.js	/^var showHelp =$/;"	v
+showHide	js/jquery.js	/^function showHide( elements, show ) {$/;"	f
+shrink	js/mobile.js	/^var shrink = () => {$/;"	v
+sibling	js/jquery.js	/^function sibling( cur, dir ) {$/;"	f
+siblingCheck	js/jquery.js	/^function siblingCheck( a, b ) {$/;"	f
+sortOrder	js/jquery.js	/^	sortOrder = function( a, b ) {$/;"	f	function:AnonymousFunctioneadc227c2300
+special	js/jquery.js	/^		jQuery.event.special[ fix ] = {$/;"	c	class:jQuery.event
+special	js/jquery.js	/^	jQuery.event.special[ orig ] = {$/;"	c	class:jQuery.event
+startAnimation	js/reoScroll.js	/^function startAnimation(elem) {$/;"	f
+state	js/jquery.js	/^				state: function() {$/;"	m	class:AnonymousFunctioneadc227ca300.promise
+statusBar.background	.vscode/settings.json	/^        "statusBar.background": "#001a00",$/;"	s	object:workbench.colorCustomizations
+statusBar.border	.vscode/settings.json	/^        "statusBar.border": "#001a00",$/;"	s	object:workbench.colorCustomizations
+statusBar.foreground	.vscode/settings.json	/^        "statusBar.foreground": "#e7e7e7",$/;"	s	object:workbench.colorCustomizations
+statusBarItem.hoverBackground	.vscode/settings.json	/^        "statusBarItem.hoverBackground": "#004d00",$/;"	s	object:workbench.colorCustomizations
+statusCode	js/jquery.js	/^				statusCode: function( map ) {$/;"	m	class:AnonymousFunctioneadc227c17300.jqXHR
+stop	js/jquery.js	/^		hooks.stop = function() {$/;"	f	function:hooks
+stopQueue	js/jquery.js	/^		var stopQueue = function( hooks ) {$/;"	f	function:AnonymousFunctioneadc227c13200
+style	js/reoScroll.js	/^        "style": globalStyle$/;"	p	class:textToAnimation.data
+style	js/variables.js	/^	var style = document.createElement('style');$/;"	v
+superMatcher	js/jquery.js	/^		superMatcher = function( seed, context, xml, results, outermost ) {$/;"	f	function:matcherFromGroupMatchers
+supportsaudioprocessing	project.json	/^        "supportsaudioprocessing": true$/;"	b	object:general
+teardown	js/jquery.js	/^			teardown: function() {$/;"	m	class:jQuery.event.special
+testContext	js/jquery.js	/^function testContext( context ) {$/;"	f
+testbed	index.html	/^    <div id="testbed" style="position: absolute; left: 0; bottom: 0;"><\/div>$/;"	I
+text	js/bg.js	/^            var text = array[Math.floor(Math.random() * array.length)];$/;"	v
+textToAnimation	js/reoScroll.js	/^function textToAnimation(text="test", divId="div", animIdName="anim", styleIdName="anim", animat/;"	f
+then	js/jquery.js	/^				then: function( onFulfilled, onRejected, onProgress ) {$/;"	m	class:AnonymousFunctioneadc227ca300.promise
+tick	js/jquery.js	/^		tick = function() {$/;"	f	function:Animation
+title	project.json	/^    "title": "RTHP Desktop Edition",$/;"	s
+titleBar.activeBackground	.vscode/settings.json	/^        "titleBar.activeBackground": "#001a00",$/;"	s	object:workbench.colorCustomizations
+titleBar.activeForeground	.vscode/settings.json	/^        "titleBar.activeForeground": "#e7e7e7",$/;"	s	object:workbench.colorCustomizations
+titleBar.border	.vscode/settings.json	/^        "titleBar.border": "#001a00"$/;"	s	object:workbench.colorCustomizations
+titleBar.inactiveBackground	.vscode/settings.json	/^        "titleBar.inactiveBackground": "#001a0099",$/;"	s	object:workbench.colorCustomizations
+titleBar.inactiveForeground	.vscode/settings.json	/^        "titleBar.inactiveForeground": "#e7e7e799",$/;"	s	object:workbench.colorCustomizations
+to-regex-range	package-lock.json	/^        "to-regex-range": "5.0.1"$/;"	s	object:dependencies.fill-range.requires
+to-regex-range	package-lock.json	/^    "to-regex-range": {$/;"	o	object:dependencies
+toSelector	js/jquery.js	/^function toSelector( tokens ) {$/;"	f
+top	js/jquery.js	/^				top: parentOffset.top + jQuery.css( offsetParent[ 0 ], "borderTopWidth", true ),$/;"	p	class:AnonymousFunctioneadc227c19c00.parentOffset
+top	js/jquery.js	/^			parentOffset = { top: 0, left: 0 };$/;"	p	class:AnonymousFunctioneadc227c19c00.parentOffset
+type	project.json	/^    "type": "web"$/;"	s
+unshrink	js/mobile.js	/^var unshrink = () => {$/;"	v
+updateFunc	js/jquery.js	/^			updateFunc = function( i ) {$/;"	f	function:AnonymousFunctioneadc227cab00
+valHooks	js/jquery.js	/^		jQuery.valHooks[ this ].get = function( elem ) {$/;"	f	function:jQuery
+vendorPropName	js/jquery.js	/^function vendorPropName( name ) {$/;"	f
+version	package-lock.json	/^      "version": "2.0.0",$/;"	s	object:dependencies.binary-extensions
+version	package-lock.json	/^      "version": "2.1.0",$/;"	s	object:dependencies.is-binary-path
+version	package-lock.json	/^      "version": "2.1.1",$/;"	s	object:dependencies.is-extglob
+version	package-lock.json	/^      "version": "2.1.1",$/;"	s	object:dependencies.picomatch
+version	package-lock.json	/^      "version": "2.1.2",$/;"	s	object:dependencies.fsevents
+version	package-lock.json	/^      "version": "3.0.0",$/;"	s	object:dependencies.normalize-path
+version	package-lock.json	/^      "version": "3.0.2",$/;"	s	object:dependencies.braces
+version	package-lock.json	/^      "version": "3.1.1",$/;"	s	object:dependencies.anymatch
+version	package-lock.json	/^      "version": "3.2.0",$/;"	s	object:dependencies.readdirp
+version	package-lock.json	/^      "version": "3.3.0",$/;"	s	object:dependencies.chokidar
+version	package-lock.json	/^      "version": "4.0.1",$/;"	s	object:dependencies.is-glob
+version	package-lock.json	/^      "version": "5.0.1",$/;"	s	object:dependencies.to-regex-range
+version	package-lock.json	/^      "version": "5.1.0",$/;"	s	object:dependencies.glob-parent
+version	package-lock.json	/^      "version": "7.0.0",$/;"	s	object:dependencies.is-number
+version	package-lock.json	/^      "version": "7.0.1",$/;"	s	object:dependencies.fill-range
+weather-wrapper	css/main.scss	/^#weather-wrapper {$/;"	i
+window	js/jquery.js	/^		window[ callbackName ] = function() {$/;"	f	function:AnonymousFunctioneadc227c18e00
+winnow	js/jquery.js	/^function winnow( elements, qualifier, not ) {$/;"	f
+workbench.colorCustomizations	.vscode/settings.json	/^    "workbench.colorCustomizations": {$/;"	o
