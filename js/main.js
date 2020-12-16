@@ -88,7 +88,7 @@ class Command {
     }
 }
 
-commands = [
+var commands = [
     new Command(0, [ '/d', '/д' ], 'DuckDuckGo', 'https://duckduckgo.com/',
                 '?q=', "", false, false, true,
                 "https://duckduckgo.com/ac/?q=", "&kl=wt-wt",
@@ -167,7 +167,7 @@ commands = [
                 'https://www.fmi.uni-sofia.bg/bg/sample-exams-view', '', '',
                 true, true),
     new Command(15, [ '/wa' ], 'Wolfram Alpha', 'https://www.wolframalpha.com/',
-                'input/?i=', '', false, false)
+                'input/?i=', '', false, false),
 ];
 
 var command = commands[0];
